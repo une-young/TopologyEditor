@@ -1,0 +1,107 @@
+\hypertarget{class_clipper_lib_1_1_clipper_offset}{}\doxysection{Clipper\+Lib.\+Clipper\+Offset 클래스 참조}
+\label{class_clipper_lib_1_1_clipper_offset}\index{ClipperLib.ClipperOffset@{ClipperLib.ClipperOffset}}
+
+
+Clipper\+Lib.\+Clipper\+Offset에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_clipper_lib_1_1_clipper_offset__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_aec8da6aa87f3ec08d039af2046439550}\label{class_clipper_lib_1_1_clipper_offset_aec8da6aa87f3ec08d039af2046439550}} 
+{\bfseries Clipper\+Offset} (double miter\+Limit=2.\+0, double arc\+Tolerance=def\+\_\+arc\+\_\+tolerance)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a43516bedf6c294de19639ff0dc4a487c}\label{class_clipper_lib_1_1_clipper_offset_a43516bedf6c294de19639ff0dc4a487c}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_aac0a5528db4519e67f745497886e184e}\label{class_clipper_lib_1_1_clipper_offset_aac0a5528db4519e67f745497886e184e}} 
+void {\bfseries Add\+Path} (Path path, Join\+Type join\+Type, End\+Type end\+Type)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_af0b72b3ac10be6148889dc720f3fdac2}\label{class_clipper_lib_1_1_clipper_offset_af0b72b3ac10be6148889dc720f3fdac2}} 
+void {\bfseries Add\+Paths} (Paths paths, Join\+Type join\+Type, End\+Type end\+Type)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a18c5424399ac7bc6e2e214ddf058a43e}\label{class_clipper_lib_1_1_clipper_offset_a18c5424399ac7bc6e2e214ddf058a43e}} 
+void {\bfseries Execute} (ref Paths solution, double delta)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a26aac8064b08edcf06617e2bf0d83561}\label{class_clipper_lib_1_1_clipper_offset_a26aac8064b08edcf06617e2bf0d83561}} 
+void {\bfseries Execute} (ref \mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} solution, double delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_adb2eb06c13bb7a1084138ffeb6892b77}\label{class_clipper_lib_1_1_clipper_offset_adb2eb06c13bb7a1084138ffeb6892b77}} 
+double {\bfseries Arc\+Tolerance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a7fb11c873ea32e0888591f1e7b7698c8}\label{class_clipper_lib_1_1_clipper_offset_a7fb11c873ea32e0888591f1e7b7698c8}} 
+double {\bfseries Miter\+Limit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a624fb88d4b77b34f27de1534780deb6d}\label{class_clipper_lib_1_1_clipper_offset_a624fb88d4b77b34f27de1534780deb6d}} 
+void {\bfseries Fix\+Orientations} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_ab36b3ef417b960589e2c360db8bef8b1}\label{class_clipper_lib_1_1_clipper_offset_ab36b3ef417b960589e2c360db8bef8b1}} 
+void {\bfseries Do\+Offset} (double delta)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a5a230742dcc80329075870cb00ea683f}\label{class_clipper_lib_1_1_clipper_offset_a5a230742dcc80329075870cb00ea683f}} 
+void {\bfseries Offset\+Point} (int j, ref int k, Join\+Type jointype)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a4c797d8d85729c31aae9ae2f21b37fc6}\label{class_clipper_lib_1_1_clipper_offset_a4c797d8d85729c31aae9ae2f21b37fc6}} 
+Paths {\bfseries m\+\_\+dest\+Polys}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a7b971780129cb0cf3985df99ecc7998e}\label{class_clipper_lib_1_1_clipper_offset_a7b971780129cb0cf3985df99ecc7998e}} 
+Path {\bfseries m\+\_\+src\+Poly}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a0bce9ec9e20bbc781b8980c59083cf8d}\label{class_clipper_lib_1_1_clipper_offset_a0bce9ec9e20bbc781b8980c59083cf8d}} 
+Path {\bfseries m\+\_\+dest\+Poly}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_ad7c6eb9980783fd9569ef966cb09d63d}\label{class_clipper_lib_1_1_clipper_offset_ad7c6eb9980783fd9569ef966cb09d63d}} 
+List$<$ \mbox{\hyperlink{struct_clipper_lib_1_1_double_point}{Double\+Point}} $>$ {\bfseries m\+\_\+normals} = new List$<$\mbox{\hyperlink{struct_clipper_lib_1_1_double_point}{Double\+Point}}$>$()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_ae69a5ffb3bf13fab1a41a9e3c30f696e}\label{class_clipper_lib_1_1_clipper_offset_ae69a5ffb3bf13fab1a41a9e3c30f696e}} 
+double {\bfseries m\+\_\+delta}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_afb0c18ae7361e9c61c9f0c6f31c6c4de}\label{class_clipper_lib_1_1_clipper_offset_afb0c18ae7361e9c61c9f0c6f31c6c4de}} 
+double {\bfseries m\+\_\+sinA}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a2b291783fa20f48e75d8f754ec3777b2}\label{class_clipper_lib_1_1_clipper_offset_a2b291783fa20f48e75d8f754ec3777b2}} 
+double {\bfseries m\+\_\+sin}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_ac3ecadc493e20a0123da45c1058f192d}\label{class_clipper_lib_1_1_clipper_offset_ac3ecadc493e20a0123da45c1058f192d}} 
+double {\bfseries m\+\_\+cos}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a82bfe880fe1c2cd9e275ff3f48df46e2}\label{class_clipper_lib_1_1_clipper_offset_a82bfe880fe1c2cd9e275ff3f48df46e2}} 
+double {\bfseries m\+\_\+miter\+Lim}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a92ce81a13362a84ac730495b3f33e4b0}\label{class_clipper_lib_1_1_clipper_offset_a92ce81a13362a84ac730495b3f33e4b0}} 
+double {\bfseries m\+\_\+\+Steps\+Per\+Rad}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_acf16719bda0910f5465110921abd3fc2}\label{class_clipper_lib_1_1_clipper_offset_acf16719bda0910f5465110921abd3fc2}} 
+\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} {\bfseries m\+\_\+lowest}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_ac0350184a1c55a3d732bd3127e5d99f8}\label{class_clipper_lib_1_1_clipper_offset_ac0350184a1c55a3d732bd3127e5d99f8}} 
+\mbox{\hyperlink{class_clipper_lib_1_1_poly_node}{Poly\+Node}} {\bfseries m\+\_\+poly\+Nodes} = new \mbox{\hyperlink{class_clipper_lib_1_1_poly_node}{Poly\+Node}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a648d3622763df999dd6a03e76e62b787}\label{class_clipper_lib_1_1_clipper_offset_a648d3622763df999dd6a03e76e62b787}} 
+const double {\bfseries two\+\_\+pi} = Math.\+PI $\ast$ 2
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_offset_a4b774d15a923289a51cfc8c2f469e044}\label{class_clipper_lib_1_1_clipper_offset_a4b774d15a923289a51cfc8c2f469e044}} 
+const double {\bfseries def\+\_\+arc\+\_\+tolerance} = 0.\+25
+\end{DoxyCompactItemize}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Clipper.\+cs\end{DoxyCompactItemize}

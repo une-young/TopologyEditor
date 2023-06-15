@@ -1,0 +1,6 @@
+<map id="Poly2Tri.DTSweep.FlipScanEdgeEvent" name="Poly2Tri.DTSweep.FlipScanEdgeEvent">
+<area shape="rect" id="node1" title="Scan part of the FlipScan algorithm &#160;When a triangle pair isn&#39;t flippable we will scan for the next p..." alt="" coords="5,39,188,80"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_d_t_sweep.html#aa2a6909f9fbc31db26d068a459f33456" title="When we need to traverse from one triangle to the next we need the point in current triangle that is ..." alt="" coords="236,5,416,47"/>
+<area shape="rect" id="node4" href="$class_poly2_tri_1_1_delaunay_triangle.html#a586677240bcb4172609633b35e6b15ea" title=" " alt="" coords="238,71,414,112"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_triangulation_util.html#a03b5cb31846006443dfae4ab79872709" title=" " alt="" coords="464,5,633,47"/>
+</map>

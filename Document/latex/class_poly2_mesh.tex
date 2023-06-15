@@ -1,0 +1,154 @@
+\hypertarget{class_poly2_mesh}{}\doxysection{Poly2\+Mesh 클래스 참조}
+\label{class_poly2_mesh}\index{Poly2Mesh@{Poly2Mesh}}
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static Mesh \mbox{\hyperlink{class_poly2_mesh_a7e7e286f7eaae84f358453d58d49b76a}{Create\+Mesh}} (\mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}} polygon)
+\begin{DoxyCompactList}\small\item\em Create a Mesh from a given \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}. \end{DoxyCompactList}\item 
+static Mesh \mbox{\hyperlink{class_poly2_mesh_aaaef584e969c3a8c760072e455397304}{Create\+Triangle}} (\mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}} polygon)
+\begin{DoxyCompactList}\small\item\em Create a Mesh containing just the F\+I\+R\+ST triangle in the given \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}. (This is a much easier task since we can skip triangulation.) \end{DoxyCompactList}\item 
+static Game\+Object \mbox{\hyperlink{class_poly2_mesh_a2ef9c957f89be640d9d866c46e696ff5}{Create\+Game\+Object}} (\mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}} polygon, string name=\char`\"{}Polygon\char`\"{})
+\begin{DoxyCompactList}\small\item\em Create a Game\+Object from the given polygon. The resulting object will have a Mesh, a Mesh\+Filter, and a Mesh\+Renderer. It will be all ready to display (though you may want to add your own material). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_a80bb62dbefaa565176dd3577f6c128cf}\label{class_poly2_mesh_a80bb62dbefaa565176dd3577f6c128cf}} 
+static bool {\bfseries full\+Debug} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} $>$ \mbox{\hyperlink{class_poly2_mesh_a573c378894ee07ebdc2836a8d18fba8a}{Convert\+Points}} (List$<$ Vector3 $>$ points, Quaternion rotation, Dictionary$<$ uint, Vector3 $>$ code\+To\+Position)
+\begin{DoxyCompactList}\small\item\em Helper method to convert a set of 3D points into the 2D polygon points needed by the \mbox{\hyperlink{namespace_poly2_tri}{Poly2\+Tri}} code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_mesh_a573c378894ee07ebdc2836a8d18fba8a}\label{class_poly2_mesh_a573c378894ee07ebdc2836a8d18fba8a}} 
+\index{Poly2Mesh@{Poly2Mesh}!ConvertPoints@{ConvertPoints}}
+\index{ConvertPoints@{ConvertPoints}!Poly2Mesh@{Poly2Mesh}}
+\doxysubsubsection{\texorpdfstring{ConvertPoints()}{ConvertPoints()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}}$>$ Poly2\+Mesh.\+Convert\+Points (\begin{DoxyParamCaption}\item[{List$<$ Vector3 $>$}]{points,  }\item[{Quaternion}]{rotation,  }\item[{Dictionary$<$ uint, Vector3 $>$}]{code\+To\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Helper method to convert a set of 3D points into the 2D polygon points needed by the \mbox{\hyperlink{namespace_poly2_tri}{Poly2\+Tri}} code. 
+
+\begin{DoxyReturn}{반환값}
+List of 2D Polygon\+Points.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em points} & 3D points.\\
+\hline
+{\em rotation} & Rotation needed to convert 3D points into the XY plane.\\
+\hline
+\end{DoxyParams}
+$<$param name=\char`\"{}name=\char`\"{}code\+To\+Position"$>$Map (which we\textquotesingle{}ll update) of Polygon\+Point vertex codes to original 3D position.
+
+~\newline
+ 이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_a573c378894ee07ebdc2836a8d18fba8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_mesh_a2ef9c957f89be640d9d866c46e696ff5}\label{class_poly2_mesh_a2ef9c957f89be640d9d866c46e696ff5}} 
+\index{Poly2Mesh@{Poly2Mesh}!CreateGameObject@{CreateGameObject}}
+\index{CreateGameObject@{CreateGameObject}!Poly2Mesh@{Poly2Mesh}}
+\doxysubsubsection{\texorpdfstring{CreateGameObject()}{CreateGameObject()}}
+{\footnotesize\ttfamily static Game\+Object Poly2\+Mesh.\+Create\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}}]{polygon,  }\item[{string}]{name = {\ttfamily \char`\"{}Polygon\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a Game\+Object from the given polygon. The resulting object will have a Mesh, a Mesh\+Filter, and a Mesh\+Renderer. It will be all ready to display (though you may want to add your own material). 
+
+\begin{DoxyReturn}{반환값}
+The newly created game object.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em polygon} & \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}} you want to triangulate.\\
+\hline
+{\em name} & Name to assign to the new Game\+Object.\\
+\hline
+\end{DoxyParams}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_a2ef9c957f89be640d9d866c46e696ff5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_mesh_a7e7e286f7eaae84f358453d58d49b76a}\label{class_poly2_mesh_a7e7e286f7eaae84f358453d58d49b76a}} 
+\index{Poly2Mesh@{Poly2Mesh}!CreateMesh@{CreateMesh}}
+\index{CreateMesh@{CreateMesh}!Poly2Mesh@{Poly2Mesh}}
+\doxysubsubsection{\texorpdfstring{CreateMesh()}{CreateMesh()}}
+{\footnotesize\ttfamily static Mesh Poly2\+Mesh.\+Create\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}}]{polygon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a Mesh from a given \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}. 
+
+\begin{DoxyReturn}{반환값}
+The freshly minted mesh.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em polygon} & \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}} you want to triangulate.\\
+\hline
+\end{DoxyParams}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_a7e7e286f7eaae84f358453d58d49b76a_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_a7e7e286f7eaae84f358453d58d49b76a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_mesh_aaaef584e969c3a8c760072e455397304}\label{class_poly2_mesh_aaaef584e969c3a8c760072e455397304}} 
+\index{Poly2Mesh@{Poly2Mesh}!CreateTriangle@{CreateTriangle}}
+\index{CreateTriangle@{CreateTriangle}!Poly2Mesh@{Poly2Mesh}}
+\doxysubsubsection{\texorpdfstring{CreateTriangle()}{CreateTriangle()}}
+{\footnotesize\ttfamily static Mesh Poly2\+Mesh.\+Create\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}}]{polygon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a Mesh containing just the F\+I\+R\+ST triangle in the given \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}}. (This is a much easier task since we can skip triangulation.) 
+
+\begin{DoxyReturn}{반환값}
+The freshly minted mesh.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em polygon} & \mbox{\hyperlink{class_poly2_mesh_1_1_polygon}{Polygon}} you want to make a triangle of.\\
+\hline
+\end{DoxyParams}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_aaaef584e969c3a8c760072e455397304_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/Poly2\+Mesh.\+cs\end{DoxyCompactItemize}

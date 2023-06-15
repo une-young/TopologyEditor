@@ -1,0 +1,102 @@
+\hypertarget{class_poly2_mesh_1_1_polygon}{}\doxysection{Poly2\+Mesh.\+Polygon 클래스 참조}
+\label{class_poly2_mesh_1_1_polygon}\index{Poly2Mesh.Polygon@{Poly2Mesh.Polygon}}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_poly2_mesh_1_1_polygon_a8a601cf1a939515199fe5f61178b7c59}{Calc\+Plane\+Normal}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the plane normal for this polygon (with no flipping). Assumes a clockwise winding order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_mesh_1_1_polygon_a1148eb56a378b2abc538f1ff4bc60b4d}{Calc\+Plane\+Normal}} (Vector3 hint)
+\begin{DoxyCompactList}\small\item\em Calculates the plane normal for this polygon, trying to face the given direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_mesh_1_1_polygon_a52b6205e316cc58719a1450bf0433e8a}{Calc\+Rotation}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the rotation needed to get this polygon into the XY plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a4cf654beab6ba3389bfbf34128cd5b9c}\label{class_poly2_mesh_1_1_polygon_a4cf654beab6ba3389bfbf34128cd5b9c}} 
+Vector2 {\bfseries Closest\+UV} (Vector3 pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a89bee57812c939e98c96ee6de3c391d5}\label{class_poly2_mesh_1_1_polygon_a89bee57812c939e98c96ee6de3c391d5}} 
+List$<$ Vector3 $>$ {\bfseries outside}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a9b9f4c0ac67d7ffb88f1a59bdd1bb9a8}\label{class_poly2_mesh_1_1_polygon_a9b9f4c0ac67d7ffb88f1a59bdd1bb9a8}} 
+List$<$ List$<$ Vector3 $>$ $>$ {\bfseries holes}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a2362fce2db37f6ba060a0b4cfc09cbb7}\label{class_poly2_mesh_1_1_polygon_a2362fce2db37f6ba060a0b4cfc09cbb7}} 
+List$<$ Vector2 $>$ {\bfseries outside\+U\+Vs}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a22a7915fbb0cdd6428dbb4110d9af88a}\label{class_poly2_mesh_1_1_polygon_a22a7915fbb0cdd6428dbb4110d9af88a}} 
+List$<$ List$<$ Vector2 $>$ $>$ {\bfseries holes\+U\+Vs}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a69e1812decb3b815fad53de364651864}\label{class_poly2_mesh_1_1_polygon_a69e1812decb3b815fad53de364651864}} 
+Vector3 {\bfseries plane\+Normal}
+\item 
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a11fc87ee10925dafd917beccdd4a7091}\label{class_poly2_mesh_1_1_polygon_a11fc87ee10925dafd917beccdd4a7091}} 
+Quaternion {\bfseries rotation} = Quaternion.\+identity
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a8a601cf1a939515199fe5f61178b7c59}\label{class_poly2_mesh_1_1_polygon_a8a601cf1a939515199fe5f61178b7c59}} 
+\index{Poly2Mesh.Polygon@{Poly2Mesh.Polygon}!CalcPlaneNormal@{CalcPlaneNormal}}
+\index{CalcPlaneNormal@{CalcPlaneNormal}!Poly2Mesh.Polygon@{Poly2Mesh.Polygon}}
+\doxysubsubsection{\texorpdfstring{CalcPlaneNormal()}{CalcPlaneNormal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poly2\+Mesh.\+Polygon.\+Calc\+Plane\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the plane normal for this polygon (with no flipping). Assumes a clockwise winding order. 
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_1_1_polygon_a8a601cf1a939515199fe5f61178b7c59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a1148eb56a378b2abc538f1ff4bc60b4d}\label{class_poly2_mesh_1_1_polygon_a1148eb56a378b2abc538f1ff4bc60b4d}} 
+\index{Poly2Mesh.Polygon@{Poly2Mesh.Polygon}!CalcPlaneNormal@{CalcPlaneNormal}}
+\index{CalcPlaneNormal@{CalcPlaneNormal}!Poly2Mesh.Polygon@{Poly2Mesh.Polygon}}
+\doxysubsubsection{\texorpdfstring{CalcPlaneNormal()}{CalcPlaneNormal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poly2\+Mesh.\+Polygon.\+Calc\+Plane\+Normal (\begin{DoxyParamCaption}\item[{Vector3}]{hint }\end{DoxyParamCaption})}
+
+
+
+Calculates the plane normal for this polygon, trying to face the given direction. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em hint} & Direction which you\textquotesingle{}d like the polygon to face as closely as possible.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_mesh_1_1_polygon_a52b6205e316cc58719a1450bf0433e8a}\label{class_poly2_mesh_1_1_polygon_a52b6205e316cc58719a1450bf0433e8a}} 
+\index{Poly2Mesh.Polygon@{Poly2Mesh.Polygon}!CalcRotation@{CalcRotation}}
+\index{CalcRotation@{CalcRotation}!Poly2Mesh.Polygon@{Poly2Mesh.Polygon}}
+\doxysubsubsection{\texorpdfstring{CalcRotation()}{CalcRotation()}}
+{\footnotesize\ttfamily void Poly2\+Mesh.\+Polygon.\+Calc\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates the rotation needed to get this polygon into the XY plane. 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_1_1_polygon_a52b6205e316cc58719a1450bf0433e8a_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_mesh_1_1_polygon_a52b6205e316cc58719a1450bf0433e8a_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/Poly2\+Mesh.\+cs\end{DoxyCompactItemize}

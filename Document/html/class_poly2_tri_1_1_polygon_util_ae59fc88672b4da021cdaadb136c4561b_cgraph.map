@@ -1,0 +1,4 @@
+<map id="Poly2Tri.PolygonUtil.PolygonContainsPolygon" name="Poly2Tri.PolygonUtil.PolygonContainsPolygon">
+<area shape="rect" id="node1" title="Checks to see if poly1 contains poly2. return true if so, false otherwise." alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_polygon_util.html#a76c9eedf1a162358f1edba772a9f2ab8" title="Check if the polys are similar to within a tolerance (Doesn&#39;t include reflections,..." alt="" coords="244,5,441,47"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Poly2Mesh.Polygon.CalcPlaneNormal" name="Poly2Mesh.Polygon.CalcPlaneNormal">
+<area shape="rect" id="node1" title="Calculates the plane normal for this polygon (with no flipping). Assumes a clockwise winding order." alt="" coords="729,5,931,47"/>
+<area shape="rect" id="node2" href="$class_poly2_mesh_1_1_polygon.html#a52b6205e316cc58719a1450bf0433e8a" title="Calculates the rotation needed to get this polygon into the XY plane." alt="" coords="465,13,681,39"/>
+<area shape="rect" id="node3" href="$class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,13,417,39"/>
+<area shape="rect" id="node4" href="$class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,13,208,39"/>
+</map>

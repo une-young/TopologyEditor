@@ -1,0 +1,18 @@
+<map id="Poly2Tri.DelaunayTriangle.Legalize" name="Poly2Tri.DelaunayTriangle.Legalize">
+<area shape="rect" id="node1" title="Legalize triangle by rotating clockwise around oPoint" alt="" coords="2679,17,2855,59"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_d_t_sweep.html#a757b9ad196af61a017208cbec6c410d6" title="Rotates a triangle pair one vertex CW n2 n2 P +&#45;&#45;—+ P +&#45;&#45;—+ | t /| |\ t | &#160;&#160;| / | | \ | n1| / |n3 n1|..." alt="" coords="2392,25,2631,51"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_d_t_sweep.html#a127cc39b39d0b80b503ffb443fc7771f" title="If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexH..." alt="" coords="1425,33,1624,75"/>
+<area shape="rect" id="node7" href="$class_poly2_tri_1_1_d_t_sweep.html#ad0d613a6e740a78655b3a8b2a59bbc04" title="Returns true if triangle was legalized" alt="" coords="2164,95,2344,122"/>
+<area shape="rect" id="node4" href="$class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,59,660,86"/>
+<area shape="rect" id="node5" href="$class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,59,417,86"/>
+<area shape="rect" id="node6" href="$class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,59,208,86"/>
+<area shape="rect" id="node8" href="$class_poly2_tri_1_1_d_t_sweep.html#ad796bebcdbf54e3c484d61f65a5ef491" title="Adds a triangle to the advancing front to fill a hole." alt="" coords="1951,125,2101,151"/>
+<area shape="rect" id="node15" href="$class_poly2_tri_1_1_d_t_sweep.html#ab330ccb161e7d84673a798bfa976ebfa" title="Creates a new front triangle and legalize it" alt="" coords="1180,231,1367,272"/>
+<area shape="rect" id="node16" href="$class_poly2_tri_1_1_d_t_sweep.html#a1c8a1449893687580739f509e9e692af" title="After a flip we have two triangles and know that only one will still be intersecting the edge...." alt="" coords="1936,59,2116,100"/>
+<area shape="rect" id="node9" href="$class_poly2_tri_1_1_d_t_sweep.html#addb0d738f141be9a967a4fc8f8743376" title="Fills holes in the Advancing Front" alt="" coords="1169,151,1377,192"/>
+<area shape="rect" id="node10" href="$class_poly2_tri_1_1_d_t_sweep.html#a1ef754bd75be0de5c4ec66091abe7e70" title="Find closes node to the left of the new point and create a new triangle. If needed new holes and basi..." alt="" coords="927,143,1121,170"/>
+<area shape="rect" id="node12" href="$class_poly2_tri_1_1_d_t_sweep.html#ae6066a935df2d0cab34e302e1e6f1426" title="Recursive algorithm to fill a Basin with triangles" alt="" coords="1677,150,1883,177"/>
+<area shape="rect" id="node14" href="$class_poly2_tri_1_1_d_t_sweep.html#a694912090e07a2fe696380e41ad6a5cf" title="We will traverse the entire advancing front and fill it to form a convex hull." alt="" coords="1672,33,1888,75"/>
+<area shape="rect" id="node11" href="$class_poly2_tri_1_1_d_t_sweep.html#a830c669978e4da8e451abe040d5e35cb" title="Start sweeping the Y&#45;sorted point set from bottom to top" alt="" coords="708,115,879,142"/>
+<area shape="rect" id="node13" href="$class_poly2_tri_1_1_d_t_sweep.html#ae914acc7045d1e5d79c7c45c3c1df254" title="Fills a basin that has formed on the Advancing Front to the right of given node. &#160;First we decide a l..." alt="" coords="1433,150,1616,177"/>
+</map>

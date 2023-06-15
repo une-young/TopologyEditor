@@ -1,0 +1,122 @@
+\hypertarget{class_poly2_tri_1_1_advancing_front}{}\doxysection{Poly2\+Tri.\+Advancing\+Front 클래스 참조}
+\label{class_poly2_tri_1_1_advancing_front}\index{Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}}
+
+
+Poly2\+Tri.\+Advancing\+Front에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_advancing_front__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_a708a598fa6ed19508c351a313b2734a9}\label{class_poly2_tri_1_1_advancing_front_a708a598fa6ed19508c351a313b2734a9}} 
+{\bfseries Advancing\+Front} (\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} head, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} tail)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_a573b832c68b5037a7d2363350c21818f}\label{class_poly2_tri_1_1_advancing_front_a573b832c68b5037a7d2363350c21818f}} 
+void {\bfseries Add\+Node} (\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_a9befe41064dc2a34872476d1f6a21479}\label{class_poly2_tri_1_1_advancing_front_a9befe41064dc2a34872476d1f6a21479}} 
+void {\bfseries Remove\+Node} (\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_a0a71a0b281362ed2a93b999dcdfd9f24}\label{class_poly2_tri_1_1_advancing_front_a0a71a0b281362ed2a93b999dcdfd9f24}} 
+override string {\bfseries To\+String} ()
+\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_ab146dc81cd5f18627a96c7839d612a26}{Locate\+Node}} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} point)
+\begin{DoxyCompactList}\small\item\em We use a balancing tree to locate a node smaller or equal to given key value (in theory) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_afad0b5db587bf054aea94d925ec2297e}{Locate\+Point}} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} point)
+\begin{DoxyCompactList}\small\item\em This implementation will use simple node traversal algorithm to find a point on the front \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_ad171801c37125065d28b9901a57ab4bd}\label{class_poly2_tri_1_1_advancing_front_ad171801c37125065d28b9901a57ab4bd}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} {\bfseries Head}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_a21a217efa4ff7b00fdc5b1f4e7c2b46a}\label{class_poly2_tri_1_1_advancing_front_a21a217efa4ff7b00fdc5b1f4e7c2b46a}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} {\bfseries Tail}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_af7c095ea1bf53512b77493631304bef9}\label{class_poly2_tri_1_1_advancing_front_af7c095ea1bf53512b77493631304bef9}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} {\bfseries Search}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_aafaed9c58f9dde98902071ff7edbea4c}{Find\+Search\+Node}} (double x)
+\begin{DoxyCompactList}\small\item\em MM\+: This seems to be used by Locate\+Node to guess a position in the implicit linked list of Advancing\+Front\+Nodes near x Removed an overload that depended on this being exact \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_a1209a59504175eb9c04a4fb862e9dd6f}\label{class_poly2_tri_1_1_advancing_front_a1209a59504175eb9c04a4fb862e9dd6f}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} {\bfseries Locate\+Node} (double x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\begin{DoxyAuthor}{작성자}
+Thomas Åhlen (\href{mailto:thahlen@gmail.com}{\texttt{ thahlen@gmail.\+com}}) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_aafaed9c58f9dde98902071ff7edbea4c}\label{class_poly2_tri_1_1_advancing_front_aafaed9c58f9dde98902071ff7edbea4c}} 
+\index{Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}!FindSearchNode@{FindSearchNode}}
+\index{FindSearchNode@{FindSearchNode}!Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}}
+\doxysubsubsection{\texorpdfstring{FindSearchNode()}{FindSearchNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} Poly2\+Tri.\+Advancing\+Front.\+Find\+Search\+Node (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+MM\+: This seems to be used by Locate\+Node to guess a position in the implicit linked list of Advancing\+Front\+Nodes near x Removed an overload that depended on this being exact 
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_advancing_front_aafaed9c58f9dde98902071ff7edbea4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_ab146dc81cd5f18627a96c7839d612a26}\label{class_poly2_tri_1_1_advancing_front_ab146dc81cd5f18627a96c7839d612a26}} 
+\index{Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}!LocateNode@{LocateNode}}
+\index{LocateNode@{LocateNode}!Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}}
+\doxysubsubsection{\texorpdfstring{LocateNode()}{LocateNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} Poly2\+Tri.\+Advancing\+Front.\+Locate\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{point }\end{DoxyParamCaption})}
+
+
+
+We use a balancing tree to locate a node smaller or equal to given key value (in theory) 
+
+\mbox{\Hypertarget{class_poly2_tri_1_1_advancing_front_afad0b5db587bf054aea94d925ec2297e}\label{class_poly2_tri_1_1_advancing_front_afad0b5db587bf054aea94d925ec2297e}} 
+\index{Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}!LocatePoint@{LocatePoint}}
+\index{LocatePoint@{LocatePoint}!Poly2Tri.AdvancingFront@{Poly2Tri.AdvancingFront}}
+\doxysubsubsection{\texorpdfstring{LocatePoint()}{LocatePoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} Poly2\+Tri.\+Advancing\+Front.\+Locate\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{point }\end{DoxyParamCaption})}
+
+
+
+This implementation will use simple node traversal algorithm to find a point on the front 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_advancing_front_afad0b5db587bf054aea94d925ec2297e_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_advancing_front_afad0b5db587bf054aea94d925ec2297e_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Delaunay/\+Sweep/Advancing\+Front.\+cs\end{DoxyCompactItemize}

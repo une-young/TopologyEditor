@@ -1,0 +1,129 @@
+\hypertarget{class_camera_movement2_d}{}\doxysection{Camera\+Movement2D 클래스 참조}
+\label{class_camera_movement2_d}\index{CameraMovement2D@{CameraMovement2D}}
+
+
+Camera\+Movement2\+D에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_camera_movement2_d__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Camera\+Movement2\+D에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_camera_movement2_d__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a8d455b58a0244c56449951c73d8168c0}\label{class_camera_movement2_d_a8d455b58a0244c56449951c73d8168c0}} 
+void {\bfseries Look\+At} (Vector3 look\+At, float distance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a7f8569b305001b8f9242369eb2b14e54}\label{class_camera_movement2_d_a7f8569b305001b8f9242369eb2b14e54}} 
+float {\bfseries speed} = 2.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a2de8bd777939f837ab0c47e5da5f110b}\label{class_camera_movement2_d_a2de8bd777939f837ab0c47e5da5f110b}} 
+float {\bfseries zoom\+Speed} = 5.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ae4cac55c890f8ac69113b96d07b7c0e8}\label{class_camera_movement2_d_ae4cac55c890f8ac69113b96d07b7c0e8}} 
+float {\bfseries minX} = -\/360.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_acee44e553aea2c74639aa08c149ca168}\label{class_camera_movement2_d_acee44e553aea2c74639aa08c149ca168}} 
+float {\bfseries maxX} = 360.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a4268fc9b3744fb7e0ebb85543948ad34}\label{class_camera_movement2_d_a4268fc9b3744fb7e0ebb85543948ad34}} 
+float {\bfseries minY} = -\/45.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a6a3617cd5ce8e6c13ccc414a01951fef}\label{class_camera_movement2_d_a6a3617cd5ce8e6c13ccc414a01951fef}} 
+float {\bfseries maxY} = 45.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a11510106167c0bf97a8a6db535a28280}\label{class_camera_movement2_d_a11510106167c0bf97a8a6db535a28280}} 
+float {\bfseries sensX} = 100.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a3f964b0d22c2bdb76f657741043edaf5}\label{class_camera_movement2_d_a3f964b0d22c2bdb76f657741043edaf5}} 
+float {\bfseries sensY} = 100.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a02c9adce23160a39cabdd6eda012de07}\label{class_camera_movement2_d_a02c9adce23160a39cabdd6eda012de07}} 
+float {\bfseries smooth\+Time} = 0.\+3F
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a6827ee8d721d9f2bd447419e618a2f6d}\label{class_camera_movement2_d_a6827ee8d721d9f2bd447419e618a2f6d}} 
+float {\bfseries rotation\+Smooth\+Time} = 0.\+3F
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ae65ec82db0bf66170453a5f056c95951}\label{class_camera_movement2_d_ae65ec82db0bf66170453a5f056c95951}} 
+Game\+Object {\bfseries Selected\+Sphere}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ac4bf6d05502f7bb49863f12755ea48ff}\label{class_camera_movement2_d_ac4bf6d05502f7bb49863f12755ea48ff}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_aec88c4249916218e9408da69a430a763}\label{class_camera_movement2_d_aec88c4249916218e9408da69a430a763}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_abb2a6141c7e62af221674aa4a2a7c9c0}\label{class_camera_movement2_d_abb2a6141c7e62af221674aa4a2a7c9c0}} 
+Vector3 {\bfseries handle\+Touch\+Control} (Vector3 to\+Position)
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ad59d8d8ed9ecb6188a05b4abc5656bfc}\label{class_camera_movement2_d_ad59d8d8ed9ecb6188a05b4abc5656bfc}} 
+Vector3 {\bfseries handle\+Mouse\+Control} (Vector3 to\+Position)
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a3fb5e6211e4c280c4c4c29e44c90564f}\label{class_camera_movement2_d_a3fb5e6211e4c280c4c4c29e44c90564f}} 
+void {\bfseries On\+Post\+Render} ()
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ab6f3ce85c69661c4edabf9ca29257028}\label{class_camera_movement2_d_ab6f3ce85c69661c4edabf9ca29257028}} 
+Vector3 {\bfseries get\+Snap\+Position} (Vector3 pos)
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ae5f9ab2a6ae91e78f89a40c1739482f0}\label{class_camera_movement2_d_ae5f9ab2a6ae91e78f89a40c1739482f0}} 
+void {\bfseries Draw2\+D\+Grid} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a58451e6efdaeec9ee88acf31bca9a0a8}\label{class_camera_movement2_d_a58451e6efdaeec9ee88acf31bca9a0a8}} 
+\mbox{\hyperlink{class_main_behaviour}{Main\+Behaviour}} {\bfseries main\+Behaviour} = null
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ae1fba2fc9e2c8663156660bf00a40427}\label{class_camera_movement2_d_ae1fba2fc9e2c8663156660bf00a40427}} 
+Material {\bfseries line\+Material} = null
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_ad3c60714a514bb1d5c642a63a93e396d}\label{class_camera_movement2_d_ad3c60714a514bb1d5c642a63a93e396d}} 
+Transform {\bfseries grid2\+D\+Transform} = null
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a388cb6d9104759df1222cf6730dba17e}\label{class_camera_movement2_d_a388cb6d9104759df1222cf6730dba17e}} 
+float {\bfseries grid\+Z\+Pos} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_af8bfa90a8b4152cc224bb4f0a6ad11fe}\label{class_camera_movement2_d_af8bfa90a8b4152cc224bb4f0a6ad11fe}} 
+float {\bfseries grid\+Step} = 1.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a7b457c4d5916996038e0037fafad395b}\label{class_camera_movement2_d_a7b457c4d5916996038e0037fafad395b}} 
+Vector3 {\bfseries velocity} = Vector3.\+zero
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a737bec48030d86c8835ce191b8325789}\label{class_camera_movement2_d_a737bec48030d86c8835ce191b8325789}} 
+Vector3 {\bfseries rotation\+Velocity} = Vector3.\+zero
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a4a9fb1a9c0b137f8cf0eea6190caf9bf}\label{class_camera_movement2_d_a4a9fb1a9c0b137f8cf0eea6190caf9bf}} 
+Camera {\bfseries camera2D} = null
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a7c167e3abb78758154bcfc0710d91336}\label{class_camera_movement2_d_a7c167e3abb78758154bcfc0710d91336}} 
+Game\+Object {\bfseries selected\+Sphere} = null
+\item 
+\mbox{\Hypertarget{class_camera_movement2_d_a2197e6fae2165b78c2580b3dbca42adf}\label{class_camera_movement2_d_a2197e6fae2165b78c2580b3dbca42adf}} 
+Color {\bfseries grid\+Line\+Color} = new Color(0f, 1f, 0f, 1f)
+\end{DoxyCompactItemize}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Camera\+Movement2\+D.\+cs\end{DoxyCompactItemize}

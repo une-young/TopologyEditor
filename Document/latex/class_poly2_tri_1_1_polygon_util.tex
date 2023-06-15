@@ -1,0 +1,300 @@
+\hypertarget{class_poly2_tri_1_1_polygon_util}{}\doxysection{Poly2\+Tri.\+Polygon\+Util 클래스 참조}
+\label{class_poly2_tri_1_1_polygon_util}\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_acaa855b72fd6450aefdbc067007aef47}\label{class_poly2_tri_1_1_polygon_util_acaa855b72fd6450aefdbc067007aef47}} 
+enum {\bfseries Poly\+Union\+Error} \{ {\bfseries None}, 
+{\bfseries No\+Intersections}, 
+{\bfseries Poly1\+Inside\+Poly2}, 
+{\bfseries Infinite\+Loop}
+ \}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a7ce36bcd0acda126fe1721bbd52cd447}\label{class_poly2_tri_1_1_polygon_util_a7ce36bcd0acda126fe1721bbd52cd447}} 
+enum {\bfseries Poly\+Operation} \+: uint \{ {\bfseries None} = 0, 
+{\bfseries Union} = 1 $<$$<$ 0, 
+{\bfseries Intersect} = 1 $<$$<$ 1, 
+{\bfseries Subtract} = 1 $<$$<$ 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_aec48705f44abe782833a0b10f975a469}\label{class_poly2_tri_1_1_polygon_util_aec48705f44abe782833a0b10f975a469}} 
+bool {\bfseries Polygon\+Contains\+Polygon} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly1, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} bound\+Rect1, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly2, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} bound\+Rect2)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_ac11f473a6dcd1129c4e64772f4c30f2b}\label{class_poly2_tri_1_1_polygon_util_ac11f473a6dcd1129c4e64772f4c30f2b}} 
+static Point2\+D\+List.\+Winding\+Order\+Type {\bfseries Calculate\+Winding\+Order} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ l)
+\item 
+static bool \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8}{Polygons\+Are\+Same2D}} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly1, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly2)
+\begin{DoxyCompactList}\small\item\em Check if the polys are similar to within a tolerance (Doesn\textquotesingle{}t include reflections, but allows for the points to be numbered differently, but not reversed). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a79dcabf454b6c49fac365558df5f821f}\label{class_poly2_tri_1_1_polygon_util_a79dcabf454b6c49fac365558df5f821f}} 
+static bool {\bfseries Point\+In\+Polygon2D} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ polygon, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a920d673e776b3e562a7c52bd13a8a2b8}\label{class_poly2_tri_1_1_polygon_util_a920d673e776b3e562a7c52bd13a8a2b8}} 
+static bool {\bfseries Polygons\+Intersect2D} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly1, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} bound\+Rect1, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly2, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} bound\+Rect2)
+\item 
+static bool \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b}{Polygon\+Contains\+Polygon}} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly1, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} bound\+Rect1, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly2, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} bound\+Rect2, bool run\+Intersection\+Test)
+\begin{DoxyCompactList}\small\item\em Checks to see if poly1 contains poly2. return true if so, false otherwise. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_af4076fc756f31034a427bce485dbc48f}\label{class_poly2_tri_1_1_polygon_util_af4076fc756f31034a427bce485dbc48f}} 
+static void {\bfseries Clip\+Polygon\+To\+Edge2D} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} edge\+Begin, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} edge\+End, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly, out List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ out\+Poly)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a3abfb74a502fd5411a91bbd27e3158b9}\label{class_poly2_tri_1_1_polygon_util_a3abfb74a502fd5411a91bbd27e3158b9}} 
+static void {\bfseries Clip\+Polygon\+To\+Polygon} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ poly, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ clip\+Poly, out List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ out\+Poly)
+\item 
+static Polygon\+Util.\+Poly\+Union\+Error \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_a2fd560af23d2a1fedc495288a6895956}{Polygon\+Union}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon2, out \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} union)
+\item 
+static Polygon\+Util.\+Poly\+Union\+Error \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_a917c010e179e41275a879e3a4b8ded6c}{Polygon\+Intersect}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon2, out \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} intersect\+Out)
+\begin{DoxyCompactList}\small\item\em Finds the intersection between two polygons. \end{DoxyCompactList}\item 
+static Polygon\+Util.\+Poly\+Union\+Error \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_ab9b4767ef0c6fc0fdfbe04dbc09ddc4a}{Polygon\+Subtract}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon2, out \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} subtract)
+\begin{DoxyCompactList}\small\item\em Subtracts one polygon from another. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a1729e0afa5edb090c9ee38785bba8463}\label{class_poly2_tri_1_1_polygon_util_a1729e0afa5edb090c9ee38785bba8463}} 
+static void {\bfseries Polygon\+Subtract\+Internal} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context}{Polygon\+Operation\+Context}} ctx)
+\item 
+static Polygon\+Util.\+Poly\+Union\+Error \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c}{Polygon\+Operation}} (Polygon\+Util.\+Poly\+Operation operations, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon2, out Dictionary$<$ uint, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} $>$ results)
+\begin{DoxyCompactList}\small\item\em Performs one or more polygon operations on the 2 provided polygons \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a4c3cc93dc6477cd0a82ef16341a952ed}\label{class_poly2_tri_1_1_polygon_util_a4c3cc93dc6477cd0a82ef16341a952ed}} 
+static Polygon\+Util.\+Poly\+Union\+Error {\bfseries Polygon\+Operation} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context}{Polygon\+Operation\+Context}} ctx)
+\item 
+static List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} $>$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2}{Split\+Complex\+Polygon}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} verts, double epsilon)
+\begin{DoxyCompactList}\small\item\em Trace the edge of a non-\/simple polygon and return a simple polygon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a069a3fe66f4633d37348dc9149aae744}\label{class_poly2_tri_1_1_polygon_util_a069a3fe66f4633d37348dc9149aae744}} 
+static void {\bfseries Polygon\+Union\+Internal} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context}{Polygon\+Operation\+Context}} ctx)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_adcb17ccea64322c429e566b5d279b5ee}\label{class_poly2_tri_1_1_polygon_util_adcb17ccea64322c429e566b5d279b5ee}} 
+static void {\bfseries Polygon\+Intersect\+Internal} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context}{Polygon\+Operation\+Context}} ctx)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a9d79d4255a4fdfde6c993f14e6f29745}\label{class_poly2_tri_1_1_polygon_util_a9d79d4255a4fdfde6c993f14e6f29745}} 
+static List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} $>$ {\bfseries Split\+Complex\+Polygon\+Cleanup} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ orig)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b}\label{class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!PolygonContainsPolygon@{PolygonContainsPolygon}}
+\index{PolygonContainsPolygon@{PolygonContainsPolygon}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{PolygonContainsPolygon()}{PolygonContainsPolygon()}}
+{\footnotesize\ttfamily static bool Poly2\+Tri.\+Polygon\+Util.\+Polygon\+Contains\+Polygon (\begin{DoxyParamCaption}\item[{I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$}]{poly1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}}}]{bound\+Rect1,  }\item[{I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$}]{poly2,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}}}]{bound\+Rect2,  }\item[{bool}]{run\+Intersection\+Test }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks to see if poly1 contains poly2. return true if so, false otherwise. 
+
+If the polygons intersect, then poly1 cannot contain poly2 (or vice-\/versa for that matter) Since the poly intersection test can be somewhat expensive, we\textquotesingle{}ll only run it if the user requests it. If run\+Intersection\+Test is false, then it is assumed that the user has already verified that the polygons do not intersect. If the polygons DO intersect and run\+Intersection\+Test is false, then the return value is meaningless. Caveat emptor.
+
+As an added bonus, just to cause more user-\/carnage, if run\+Intersection\+Test is false, then the bound\+Rects are not used and can safely be passed in as nulls. However, if run\+Intersection\+Test is true and you pass nulls for bound\+Rect1 or bound\+Rect2, you will cause a program crash.
+
+Finally, the polygon points are assumed to be passed in Clockwise winding order. It is possible that Counter\+Clockwise ordering would work, but I have not verified the behavior in that case.
+
+
+\begin{DoxyParams}{매개변수}
+{\em poly1} & points of polygon1\\
+\hline
+{\em bound\+Rect1} & bounding rect of polygon1. Only used if run\+Intersection\+Test is true\\
+\hline
+{\em poly2} & points of polygon2\\
+\hline
+{\em bound\+Rect2} & bounding rect of polygon2. Only used if run\+Intersection\+Test is true\\
+\hline
+{\em run\+Intersection\+Test} & see summary above\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+true if poly1 fully contains poly2
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a917c010e179e41275a879e3a4b8ded6c}\label{class_poly2_tri_1_1_polygon_util_a917c010e179e41275a879e3a4b8ded6c}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!PolygonIntersect@{PolygonIntersect}}
+\index{PolygonIntersect@{PolygonIntersect}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{PolygonIntersect()}{PolygonIntersect()}}
+{\footnotesize\ttfamily static Polygon\+Util.\+Poly\+Union\+Error Poly2\+Tri.\+Polygon\+Util.\+Polygon\+Intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon2,  }\item[{out \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{intersect\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Finds the intersection between two polygons. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon1} & The first polygon.\\
+\hline
+{\em polygon2} & The second polygon.\\
+\hline
+{\em intersect\+Out} & The intersection of the two polygons\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+error code
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c}\label{class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!PolygonOperation@{PolygonOperation}}
+\index{PolygonOperation@{PolygonOperation}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{PolygonOperation()}{PolygonOperation()}}
+{\footnotesize\ttfamily static Polygon\+Util.\+Poly\+Union\+Error Poly2\+Tri.\+Polygon\+Util.\+Polygon\+Operation (\begin{DoxyParamCaption}\item[{Polygon\+Util.\+Poly\+Operation}]{operations,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon2,  }\item[{out Dictionary$<$ uint, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} $>$}]{results }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Performs one or more polygon operations on the 2 provided polygons 
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon1} & The first polygon.\\
+\hline
+{\em polygon2} & The second polygon\\
+\hline
+{\em subtract} & The result of the polygon subtraction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+error code
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8}\label{class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!PolygonsAreSame2D@{PolygonsAreSame2D}}
+\index{PolygonsAreSame2D@{PolygonsAreSame2D}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{PolygonsAreSame2D()}{PolygonsAreSame2D()}}
+{\footnotesize\ttfamily static bool Poly2\+Tri.\+Polygon\+Util.\+Polygons\+Are\+Same2D (\begin{DoxyParamCaption}\item[{I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$}]{poly1,  }\item[{I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$}]{poly2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if the polys are similar to within a tolerance (Doesn\textquotesingle{}t include reflections, but allows for the points to be numbered differently, but not reversed). 
+
+
+\begin{DoxyParams}{매개변수}
+{\em poly1} & \\
+\hline
+{\em poly2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_ab9b4767ef0c6fc0fdfbe04dbc09ddc4a}\label{class_poly2_tri_1_1_polygon_util_ab9b4767ef0c6fc0fdfbe04dbc09ddc4a}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!PolygonSubtract@{PolygonSubtract}}
+\index{PolygonSubtract@{PolygonSubtract}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{PolygonSubtract()}{PolygonSubtract()}}
+{\footnotesize\ttfamily static Polygon\+Util.\+Poly\+Union\+Error Poly2\+Tri.\+Polygon\+Util.\+Polygon\+Subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon2,  }\item[{out \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{subtract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Subtracts one polygon from another. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon1} & The base polygon.\\
+\hline
+{\em polygon2} & The polygon to subtract from the base.\\
+\hline
+{\em subtract} & The result of the polygon subtraction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+error code
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_a2fd560af23d2a1fedc495288a6895956}\label{class_poly2_tri_1_1_polygon_util_a2fd560af23d2a1fedc495288a6895956}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!PolygonUnion@{PolygonUnion}}
+\index{PolygonUnion@{PolygonUnion}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{PolygonUnion()}{PolygonUnion()}}
+{\footnotesize\ttfamily static Polygon\+Util.\+Poly\+Union\+Error Poly2\+Tri.\+Polygon\+Util.\+Polygon\+Union (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon2,  }\item[{out \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{union }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+
+
+Merges two polygons, given that they intersect.
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon1} & The first polygon.\\
+\hline
+{\em polygon2} & The second polygon.\\
+\hline
+{\em union} & The union of the two polygons\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+The error returned from union
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2}\label{class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2}} 
+\index{Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}!SplitComplexPolygon@{SplitComplexPolygon}}
+\index{SplitComplexPolygon@{SplitComplexPolygon}!Poly2Tri.PolygonUtil@{Poly2Tri.PolygonUtil}}
+\doxysubsubsection{\texorpdfstring{SplitComplexPolygon()}{SplitComplexPolygon()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}$>$ Poly2\+Tri.\+Polygon\+Util.\+Split\+Complex\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{verts,  }\item[{double}]{epsilon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trace the edge of a non-\/simple polygon and return a simple polygon. 
+
+Method\+: Start at vertex with minimum y (pick maximum x one if there are two). ~\newline
+ We aim our \char`\"{}last\+Dir\char`\"{} vector at (1.\+0, 0) We look at the two rays going off from our start vertex, and follow whichever has the smallest angle (in -\/Pi . Pi) wrt last\+Dir (\char`\"{}rightest\char`\"{} turn)
+
+Loop until we hit starting vertex\+:
+
+We add our current vertex to the list. We check the seg from current vertex to next vertex for intersections
+\begin{DoxyItemize}
+\item if no intersections, follow to next vertex and continue
+\item if intersections, pick one with minimum distance
+\begin{DoxyItemize}
+\item if more than one, pick one with \char`\"{}rightest\char`\"{} next point (two possibilities for each)
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{매개변수}
+{\em verts} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2_cgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Polygon/Polygon\+Util.\+cs\end{DoxyCompactItemize}

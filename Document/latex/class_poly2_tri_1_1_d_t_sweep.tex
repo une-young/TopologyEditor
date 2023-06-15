@@ -1,0 +1,597 @@
+\hypertarget{class_poly2_tri_1_1_d_t_sweep}{}\doxysection{Poly2\+Tri.\+D\+T\+Sweep 클래스 참조}
+\label{class_poly2_tri_1_1_d_t_sweep}\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a7f9a4b48f907ef96be2559a95c03a5cf}{Triangulate}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx)
+\begin{DoxyCompactList}\small\item\em Triangulate simple polygon with holes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a830c669978e4da8e451abe040d5e35cb}{Sweep}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx)
+\begin{DoxyCompactList}\small\item\em Start sweeping the Y-\/sorted point set from bottom to top \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a919843e93a59d861c86d1b2eaea3240e}\label{class_poly2_tri_1_1_d_t_sweep_a919843e93a59d861c86d1b2eaea3240e}} 
+static void {\bfseries Fixup\+Constrained\+Edges} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx)
+\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a127cc39b39d0b80b503ffb443fc7771f}{Finalization\+Convex\+Hull}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx)
+\begin{DoxyCompactList}\small\item\em If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a Convex\+Hull \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a694912090e07a2fe696380e41ad6a5cf}{Turn\+Advancing\+Front\+Convex}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} b, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} c)
+\begin{DoxyCompactList}\small\item\em We will traverse the entire advancing front and fill it to form a convex hull. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a4754873ced8d479bb66d6a68876faee8}\label{class_poly2_tri_1_1_d_t_sweep_a4754873ced8d479bb66d6a68876faee8}} 
+static void {\bfseries Finalization\+Polygon} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx)
+\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ac7a981adc1c0e375f4bda0c934d64035}{Finalization\+Constraints}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx)
+\begin{DoxyCompactList}\small\item\em N\+O\+TE\+: W\+O\+RK IN P\+R\+O\+G\+R\+E\+SS -\/ for now this will just clean out all triangles from inside the outermost holes without paying attention to holes within holes.. hence the work in progress \+:) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a1ef754bd75be0de5c4ec66091abe7e70}{Point\+Event}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} point)
+\begin{DoxyCompactList}\small\item\em Find closes node to the left of the new point and create a new triangle. If needed new holes and basins will be filled to. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ab330ccb161e7d84673a798bfa976ebfa}{New\+Front\+Triangle}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} point, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Creates a new front triangle and legalize it \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a9d5cb71495d91af18bb7a8be019299c8}\label{class_poly2_tri_1_1_d_t_sweep_a9d5cb71495d91af18bb7a8be019299c8}} 
+static void {\bfseries Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_acc78d4a2c12ac137e519ad3106c0ca99}\label{class_poly2_tri_1_1_d_t_sweep_acc78d4a2c12ac137e519ad3106c0ca99}} 
+static void {\bfseries Fill\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a3c1803ccddcae229048cb808da04cef2}\label{class_poly2_tri_1_1_d_t_sweep_a3c1803ccddcae229048cb808da04cef2}} 
+static void {\bfseries Fill\+Right\+Concave\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a8c26c7e59a53af7ce8d6b2302bc89d96}\label{class_poly2_tri_1_1_d_t_sweep_a8c26c7e59a53af7ce8d6b2302bc89d96}} 
+static void {\bfseries Fill\+Right\+Convex\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a2738fca88734d1663f51144c82a01116}\label{class_poly2_tri_1_1_d_t_sweep_a2738fca88734d1663f51144c82a01116}} 
+static void {\bfseries Fill\+Right\+Below\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a8fc0e381e88ff4ad6d1bb2f06a62f0d3}\label{class_poly2_tri_1_1_d_t_sweep_a8fc0e381e88ff4ad6d1bb2f06a62f0d3}} 
+static void {\bfseries Fill\+Right\+Above\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a56e7e8b1f3a9d78614955032d5b71a15}\label{class_poly2_tri_1_1_d_t_sweep_a56e7e8b1f3a9d78614955032d5b71a15}} 
+static void {\bfseries Fill\+Left\+Convex\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_abc96ccc414cb949cbfb00a7b100528cc}\label{class_poly2_tri_1_1_d_t_sweep_abc96ccc414cb949cbfb00a7b100528cc}} 
+static void {\bfseries Fill\+Left\+Concave\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ad6583367ad92a87f87854c17a2677cf8}\label{class_poly2_tri_1_1_d_t_sweep_ad6583367ad92a87f87854c17a2677cf8}} 
+static void {\bfseries Fill\+Left\+Below\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a6564fe6e512921fa1d6dce22c6390f09}\label{class_poly2_tri_1_1_d_t_sweep_a6564fe6e512921fa1d6dce22c6390f09}} 
+static void {\bfseries Fill\+Left\+Above\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_constraint}{D\+T\+Sweep\+Constraint}} edge, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a08ff8b0a302b8aab8c64e1d81e507697}\label{class_poly2_tri_1_1_d_t_sweep_a08ff8b0a302b8aab8c64e1d81e507697}} 
+static bool {\bfseries Is\+Edge\+Side\+Of\+Triangle} (\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} triangle, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} ep, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} eq)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ad5aa347ce6c9688a282d562e5ab8eb3a}\label{class_poly2_tri_1_1_d_t_sweep_ad5aa347ce6c9688a282d562e5ab8eb3a}} 
+static void {\bfseries Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} ep, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} eq, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} triangle, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} point)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a5b20441135db39894f343a9873b0ddd9}\label{class_poly2_tri_1_1_d_t_sweep_a5b20441135db39894f343a9873b0ddd9}} 
+static void {\bfseries Flip\+Edge\+Event} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} ep, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} eq, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+static bool \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_aa2a6909f9fbc31db26d068a459f33456}{Next\+Flip\+Point}} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} ep, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} eq, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} ot, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} op, out \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} newP)
+\begin{DoxyCompactList}\small\item\em When we need to traverse from one triangle to the next we need the point in current triangle that is the opposite point to the next triangle. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a1c8a1449893687580739f509e9e692af}{Next\+Flip\+Triangle}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, Orientation o, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} ot, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} op)
+\begin{DoxyCompactList}\small\item\em After a flip we have two triangles and know that only one will still be intersecting the edge. So decide which to contiune with and legalize the other \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a02c0c2e6e9b242186e1379483b5be39e}{Flip\+Scan\+Edge\+Event}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} ep, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} eq, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} flip\+Triangle, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\begin{DoxyCompactList}\small\item\em Scan part of the Flip\+Scan algorithm~\newline
+ When a triangle pair isn\textquotesingle{}t flippable we will scan for the next point that is inside the flip triangle scan area. When found we generate a new flip\+Edge\+Event \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_addb0d738f141be9a967a4fc8f8743376}{Fill\+Advancing\+Front}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} n)
+\begin{DoxyCompactList}\small\item\em Fills holes in the Advancing Front \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ae914acc7045d1e5d79c7c45c3c1df254}{Fill\+Basin}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Fills a basin that has formed on the Advancing Front to the right of given node.~\newline
+ First we decide a left,bottom and right node that forms the boundaries of the basin. Then we do a reqursive fill. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ae6066a935df2d0cab34e302e1e6f1426}{Fill\+Basin\+Req}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Recursive algorithm to fill a Basin with triangles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a02b41cbeb7054c88b8b3733e33f7158e}\label{class_poly2_tri_1_1_d_t_sweep_a02b41cbeb7054c88b8b3733e33f7158e}} 
+static bool {\bfseries Is\+Shallow} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\item 
+static double \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ad872c5a0be331d40da854b6dd464254e}{Hole\+Angle}} (\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\begin{DoxyCompactList}\small\item\em ??? \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a7539f074d4c76147c2d7a60d6d3a2e56}{Basin\+Angle}} (\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\begin{DoxyCompactList}\small\item\em The basin angle is decided against the horizontal line \mbox{[}1,0\mbox{]} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ad796bebcdbf54e3c484d61f65a5ef491}{Fill}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} node)
+\begin{DoxyCompactList}\small\item\em Adds a triangle to the advancing front to fill a hole. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_ad0d613a6e740a78655b3a8b2a59bbc04}{Legalize}} (\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}} tcx, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t)
+\begin{DoxyCompactList}\small\item\em Returns true if triangle was legalized \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_a757b9ad196af61a017208cbec6c410d6}{Rotate\+Triangle\+Pair}} (\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p, \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} ot, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} op)
+\begin{DoxyCompactList}\small\item\em Rotates a triangle pair one vertex CW n2 n2 P +-\/-\/---+ P +-\/-\/---+ $\vert$ t /$\vert$ $\vert$\textbackslash{} t $\vert$ ~\newline
+ $\vert$ / $\vert$ $\vert$ \textbackslash{} $\vert$ n1$\vert$ / $\vert$n3 n1$\vert$ \textbackslash{} $\vert$n3 $\vert$ / $\vert$ after CW $\vert$ \textbackslash{} $\vert$ $\vert$/ oT $\vert$ $\vert$ oT $|$ +-\/-\/---+ oP +-\/-\/---+ n4 n4 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a927cc3c33c67990b9b70179a2caae3f5}\label{class_poly2_tri_1_1_d_t_sweep_a927cc3c33c67990b9b70179a2caae3f5}} 
+const double {\bfseries P\+I\+\_\+div2} = Math.\+PI / 2
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_aa7803666f1de456b5582a80356b45086}\label{class_poly2_tri_1_1_d_t_sweep_aa7803666f1de456b5582a80356b45086}} 
+const double {\bfseries P\+I\+\_\+3div4} = 3 $\ast$ Math.\+PI / 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a7539f074d4c76147c2d7a60d6d3a2e56}\label{class_poly2_tri_1_1_d_t_sweep_a7539f074d4c76147c2d7a60d6d3a2e56}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!BasinAngle@{BasinAngle}}
+\index{BasinAngle@{BasinAngle}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{BasinAngle()}{BasinAngle()}}
+{\footnotesize\ttfamily static double Poly2\+Tri.\+D\+T\+Sweep.\+Basin\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The basin angle is decided against the horizontal line \mbox{[}1,0\mbox{]} 
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a7539f074d4c76147c2d7a60d6d3a2e56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ad796bebcdbf54e3c484d61f65a5ef491}\label{class_poly2_tri_1_1_d_t_sweep_ad796bebcdbf54e3c484d61f65a5ef491}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!Fill@{Fill}}
+\index{Fill@{Fill}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adds a triangle to the advancing front to fill a hole. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em tcx} & \\
+\hline
+{\em node} & middle node, that is the bottom of the hole\\
+\hline
+\end{DoxyParams}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ad796bebcdbf54e3c484d61f65a5ef491_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ad796bebcdbf54e3c484d61f65a5ef491_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_addb0d738f141be9a967a4fc8f8743376}\label{class_poly2_tri_1_1_d_t_sweep_addb0d738f141be9a967a4fc8f8743376}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!FillAdvancingFront@{FillAdvancingFront}}
+\index{FillAdvancingFront@{FillAdvancingFront}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{FillAdvancingFront()}{FillAdvancingFront()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Fill\+Advancing\+Front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Fills holes in the Advancing Front 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_addb0d738f141be9a967a4fc8f8743376_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_addb0d738f141be9a967a4fc8f8743376_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ae914acc7045d1e5d79c7c45c3c1df254}\label{class_poly2_tri_1_1_d_t_sweep_ae914acc7045d1e5d79c7c45c3c1df254}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!FillBasin@{FillBasin}}
+\index{FillBasin@{FillBasin}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{FillBasin()}{FillBasin()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Fill\+Basin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Fills a basin that has formed on the Advancing Front to the right of given node.~\newline
+ First we decide a left,bottom and right node that forms the boundaries of the basin. Then we do a reqursive fill. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em tcx} & \\
+\hline
+{\em node} & starting node, this or next node will be left node\\
+\hline
+\end{DoxyParams}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ae914acc7045d1e5d79c7c45c3c1df254_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ae914acc7045d1e5d79c7c45c3c1df254_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ae6066a935df2d0cab34e302e1e6f1426}\label{class_poly2_tri_1_1_d_t_sweep_ae6066a935df2d0cab34e302e1e6f1426}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!FillBasinReq@{FillBasinReq}}
+\index{FillBasinReq@{FillBasinReq}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{FillBasinReq()}{FillBasinReq()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Fill\+Basin\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Recursive algorithm to fill a Basin with triangles 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ae6066a935df2d0cab34e302e1e6f1426_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ae6066a935df2d0cab34e302e1e6f1426_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ac7a981adc1c0e375f4bda0c934d64035}\label{class_poly2_tri_1_1_d_t_sweep_ac7a981adc1c0e375f4bda0c934d64035}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!FinalizationConstraints@{FinalizationConstraints}}
+\index{FinalizationConstraints@{FinalizationConstraints}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{FinalizationConstraints()}{FinalizationConstraints()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Finalization\+Constraints (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+N\+O\+TE\+: W\+O\+RK IN P\+R\+O\+G\+R\+E\+SS -\/ for now this will just clean out all triangles from inside the outermost holes without paying attention to holes within holes.. hence the work in progress \+:) 
+
+Removes triangles inside \char`\"{}holes\char`\"{} (that are not inside of other holes already)
+
+In the example below, assume that triangle A\+BC is a user-\/defined \char`\"{}hole\char`\"{}. Thus any triangles inside it (that aren\textquotesingle{}t inside yet another user-\/defined hole inside triangle A\+BC) should get removed. In this case, since there are no user-\/defined holes inside A\+BC, we would remove triangles A\+DE, B\+CE, and C\+DE. We would also need to combine the appropriate edges so that we end up with just triangle A\+BC \begin{DoxyVerb}     E
+\end{DoxyVerb}
+ A +-\/-\/-\/---+-\/-\/---+ B A +-\/-\/-\/-\/-\/-\/-\/-\/---+ B \textbackslash{} /$\vert$ / \textbackslash{} / \textbackslash{} / $\vert$ / \textbackslash{} / D + $\vert$ / ======$>$ \textbackslash{} / \textbackslash{} $\vert$ / \textbackslash{} / \textbackslash{} $\vert$/ \textbackslash{} /
+\begin{DoxyItemize}
+\item + C C
+\end{DoxyItemize}\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a127cc39b39d0b80b503ffb443fc7771f}\label{class_poly2_tri_1_1_d_t_sweep_a127cc39b39d0b80b503ffb443fc7771f}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!FinalizationConvexHull@{FinalizationConvexHull}}
+\index{FinalizationConvexHull@{FinalizationConvexHull}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{FinalizationConvexHull()}{FinalizationConvexHull()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Finalization\+Convex\+Hull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a Convex\+Hull 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a127cc39b39d0b80b503ffb443fc7771f_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a127cc39b39d0b80b503ffb443fc7771f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a02c0c2e6e9b242186e1379483b5be39e}\label{class_poly2_tri_1_1_d_t_sweep_a02c0c2e6e9b242186e1379483b5be39e}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!FlipScanEdgeEvent@{FlipScanEdgeEvent}}
+\index{FlipScanEdgeEvent@{FlipScanEdgeEvent}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{FlipScanEdgeEvent()}{FlipScanEdgeEvent()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Flip\+Scan\+Edge\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{ep,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{eq,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{flip\+Triangle,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{t,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Scan part of the Flip\+Scan algorithm~\newline
+ When a triangle pair isn\textquotesingle{}t flippable we will scan for the next point that is inside the flip triangle scan area. When found we generate a new flip\+Edge\+Event 
+
+
+\begin{DoxyParams}{매개변수}
+{\em tcx} & \\
+\hline
+{\em ep} & last point on the edge we are traversing\\
+\hline
+{\em eq} & first point on the edge we are traversing\\
+\hline
+{\em flip\+Triangle} & the current triangle sharing the point eq with edge\\
+\hline
+{\em t} & \\
+\hline
+{\em p} & \\
+\hline
+\end{DoxyParams}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a02c0c2e6e9b242186e1379483b5be39e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ad872c5a0be331d40da854b6dd464254e}\label{class_poly2_tri_1_1_d_t_sweep_ad872c5a0be331d40da854b6dd464254e}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!HoleAngle@{HoleAngle}}
+\index{HoleAngle@{HoleAngle}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{HoleAngle()}{HoleAngle()}}
+{\footnotesize\ttfamily static double Poly2\+Tri.\+D\+T\+Sweep.\+Hole\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+??? 
+
+
+\begin{DoxyParams}{매개변수}
+{\em node} & middle node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+the angle between 3 front nodes
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ad872c5a0be331d40da854b6dd464254e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ad0d613a6e740a78655b3a8b2a59bbc04}\label{class_poly2_tri_1_1_d_t_sweep_ad0d613a6e740a78655b3a8b2a59bbc04}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!Legalize@{Legalize}}
+\index{Legalize@{Legalize}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{Legalize()}{Legalize()}}
+{\footnotesize\ttfamily static bool Poly2\+Tri.\+D\+T\+Sweep.\+Legalize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Returns true if triangle was legalized 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ad0d613a6e740a78655b3a8b2a59bbc04_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ad0d613a6e740a78655b3a8b2a59bbc04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_ab330ccb161e7d84673a798bfa976ebfa}\label{class_poly2_tri_1_1_d_t_sweep_ab330ccb161e7d84673a798bfa976ebfa}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!NewFrontTriangle@{NewFrontTriangle}}
+\index{NewFrontTriangle@{NewFrontTriangle}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{NewFrontTriangle()}{NewFrontTriangle()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} Poly2\+Tri.\+D\+T\+Sweep.\+New\+Front\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{point,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Creates a new front triangle and legalize it 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ab330ccb161e7d84673a798bfa976ebfa_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_ab330ccb161e7d84673a798bfa976ebfa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_aa2a6909f9fbc31db26d068a459f33456}\label{class_poly2_tri_1_1_d_t_sweep_aa2a6909f9fbc31db26d068a459f33456}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!NextFlipPoint@{NextFlipPoint}}
+\index{NextFlipPoint@{NextFlipPoint}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{NextFlipPoint()}{NextFlipPoint()}}
+{\footnotesize\ttfamily static bool Poly2\+Tri.\+D\+T\+Sweep.\+Next\+Flip\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{ep,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{eq,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{ot,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{op,  }\item[{out \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{newP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+When we need to traverse from one triangle to the next we need the point in current triangle that is the opposite point to the next triangle. 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_aa2a6909f9fbc31db26d068a459f33456_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_aa2a6909f9fbc31db26d068a459f33456_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a1c8a1449893687580739f509e9e692af}\label{class_poly2_tri_1_1_d_t_sweep_a1c8a1449893687580739f509e9e692af}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!NextFlipTriangle@{NextFlipTriangle}}
+\index{NextFlipTriangle@{NextFlipTriangle}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{NextFlipTriangle()}{NextFlipTriangle()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} Poly2\+Tri.\+D\+T\+Sweep.\+Next\+Flip\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{Orientation}]{o,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{t,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{ot,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{p,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+After a flip we have two triangles and know that only one will still be intersecting the edge. So decide which to contiune with and legalize the other 
+
+
+\begin{DoxyParams}{매개변수}
+{\em tcx} & \\
+\hline
+{\em o} & should be the result of an Triangulation\+Util.\+orient2d( eq, op, ep )\\
+\hline
+{\em t} & triangle 1\\
+\hline
+{\em ot} & triangle 2\\
+\hline
+{\em p} & a point shared by both triangles\\
+\hline
+{\em op} & another point shared by both triangles\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+returns the triangle still intersecting the edge
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a1c8a1449893687580739f509e9e692af_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a1ef754bd75be0de5c4ec66091abe7e70}\label{class_poly2_tri_1_1_d_t_sweep_a1ef754bd75be0de5c4ec66091abe7e70}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!PointEvent@{PointEvent}}
+\index{PointEvent@{PointEvent}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{PointEvent()}{PointEvent()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}} Poly2\+Tri.\+D\+T\+Sweep.\+Point\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Find closes node to the left of the new point and create a new triangle. If needed new holes and basins will be filled to. 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a1ef754bd75be0de5c4ec66091abe7e70_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a1ef754bd75be0de5c4ec66091abe7e70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a757b9ad196af61a017208cbec6c410d6}\label{class_poly2_tri_1_1_d_t_sweep_a757b9ad196af61a017208cbec6c410d6}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!RotateTrianglePair@{RotateTrianglePair}}
+\index{RotateTrianglePair@{RotateTrianglePair}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{RotateTrianglePair()}{RotateTrianglePair()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Rotate\+Triangle\+Pair (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{t,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{p,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}}}]{ot,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}}]{op }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Rotates a triangle pair one vertex CW n2 n2 P +-\/-\/---+ P +-\/-\/---+ $\vert$ t /$\vert$ $\vert$\textbackslash{} t $\vert$ ~\newline
+ $\vert$ / $\vert$ $\vert$ \textbackslash{} $\vert$ n1$\vert$ / $\vert$n3 n1$\vert$ \textbackslash{} $\vert$n3 $\vert$ / $\vert$ after CW $\vert$ \textbackslash{} $\vert$ $\vert$/ oT $\vert$ $\vert$ oT $|$ +-\/-\/---+ oP +-\/-\/---+ n4 n4 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a757b9ad196af61a017208cbec6c410d6_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a757b9ad196af61a017208cbec6c410d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a830c669978e4da8e451abe040d5e35cb}\label{class_poly2_tri_1_1_d_t_sweep_a830c669978e4da8e451abe040d5e35cb}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!Sweep@{Sweep}}
+\index{Sweep@{Sweep}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{Sweep()}{Sweep()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Sweep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Start sweeping the Y-\/sorted point set from bottom to top 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a830c669978e4da8e451abe040d5e35cb_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a830c669978e4da8e451abe040d5e35cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a7f9a4b48f907ef96be2559a95c03a5cf}\label{class_poly2_tri_1_1_d_t_sweep_a7f9a4b48f907ef96be2559a95c03a5cf}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!Triangulate@{Triangulate}}
+\index{Triangulate@{Triangulate}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{Triangulate()}{Triangulate()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Triangulate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Triangulate simple polygon with holes 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a7f9a4b48f907ef96be2559a95c03a5cf_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a7f9a4b48f907ef96be2559a95c03a5cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_d_t_sweep_a694912090e07a2fe696380e41ad6a5cf}\label{class_poly2_tri_1_1_d_t_sweep_a694912090e07a2fe696380e41ad6a5cf}} 
+\index{Poly2Tri.DTSweep@{Poly2Tri.DTSweep}!TurnAdvancingFrontConvex@{TurnAdvancingFrontConvex}}
+\index{TurnAdvancingFrontConvex@{TurnAdvancingFrontConvex}!Poly2Tri.DTSweep@{Poly2Tri.DTSweep}}
+\doxysubsubsection{\texorpdfstring{TurnAdvancingFrontConvex()}{TurnAdvancingFrontConvex()}}
+{\footnotesize\ttfamily static void Poly2\+Tri.\+D\+T\+Sweep.\+Turn\+Advancing\+Front\+Convex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_d_t_sweep_context}{D\+T\+Sweep\+Context}}}]{tcx,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{b,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_advancing_front_node}{Advancing\+Front\+Node}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+We will traverse the entire advancing front and fill it to form a convex hull. 
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a694912090e07a2fe696380e41ad6a5cf_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_d_t_sweep_a694912090e07a2fe696380e41ad6a5cf_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Delaunay/\+Sweep/D\+T\+Sweep.\+cs\end{DoxyCompactItemize}

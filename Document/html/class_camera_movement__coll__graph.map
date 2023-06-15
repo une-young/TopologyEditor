@@ -1,0 +1,5 @@
+<map id="CameraMovement" name="CameraMovement">
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,132,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="28,5,139,32"/>
+<area shape="rect" id="node3" href="$class_move_gizmo_behaviour.html" title=" " alt="" coords="85,81,231,108"/>
+</map>

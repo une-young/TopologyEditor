@@ -1,0 +1,13 @@
+<map id="Poly2Tri.DTSweep.NewFrontTriangle" name="Poly2Tri.DTSweep.NewFrontTriangle">
+<area shape="rect" id="node1" title="Creates a new front triangle and legalize it" alt="" coords="5,111,192,152"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_d_t_sweep.html#ad0d613a6e740a78655b3a8b2a59bbc04" title="Returns true if triangle was legalized" alt="" coords="240,118,420,145"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_d_t_sweep_context.html#a313a7276994ab399e503588020ca4a29" title="Try to map a node to all sides of this triangle that don&#39;t have a neighbor." alt="" coords="499,5,676,47"/>
+<area shape="rect" id="node9" href="$class_poly2_tri_1_1_delaunay_triangle.html#a0d5f891ce36cd6761bba8966cecc7035" title="Update neighbor pointers" alt="" coords="755,220,931,261"/>
+<area shape="rect" id="node6" href="$class_poly2_tri_1_1_delaunay_triangle.html#a586677240bcb4172609633b35e6b15ea" title=" " alt="" coords="499,71,675,112"/>
+<area shape="rect" id="node7" href="$class_poly2_tri_1_1_d_t_sweep.html#a757b9ad196af61a017208cbec6c410d6" title="Rotates a triangle pair one vertex CW n2 n2 P +&#45;&#45;—+ P +&#45;&#45;—+ | t /| |\ t | &#160;&#160;| / | | \ | n1| / |n3 n1|..." alt="" coords="468,137,707,163"/>
+<area shape="rect" id="node11" href="$class_poly2_tri_1_1_triangulation_util.html#a5529e2866f2a35dacb303b41a94a08cf" title="Requirements:" alt="" coords="503,188,672,229"/>
+<area shape="rect" id="node4" href="$class_poly2_tri_1_1_advancing_front.html#afad0b5db587bf054aea94d925ec2297e" title="This implementation will use simple node traversal algorithm to find a point on the front" alt="" coords="759,5,926,47"/>
+<area shape="rect" id="node5" href="$class_poly2_tri_1_1_advancing_front.html#aafaed9c58f9dde98902071ff7edbea4c" title="MM: This seems to be used by LocateNode to guess a position in the implicit linked list of AdvancingF..." alt="" coords="983,5,1150,47"/>
+<area shape="rect" id="node8" href="$class_poly2_tri_1_1_delaunay_triangle.html#aff435b32982ecd234e37bc0d5bf9bd0e" title="Legalize triangle by rotating clockwise around oPoint" alt="" coords="755,129,931,171"/>
+<area shape="rect" id="node10" href="$class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="979,220,1155,261"/>
+</map>

@@ -1,0 +1,129 @@
+\hypertarget{class_clipper_lib_1_1_clipper_base}{}\doxysection{Clipper\+Lib.\+Clipper\+Base 클래스 참조}
+\label{class_clipper_lib_1_1_clipper_base}\index{ClipperLib.ClipperBase@{ClipperLib.ClipperBase}}
+
+
+Clipper\+Lib.\+Clipper\+Base에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{class_clipper_lib_1_1_clipper_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Clipper\+Lib.\+Clipper\+Base에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{class_clipper_lib_1_1_clipper_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a71dede7ede023a87f45c3fb89b8092ee}\label{class_clipper_lib_1_1_clipper_base_a71dede7ede023a87f45c3fb89b8092ee}} 
+void {\bfseries Swap} (ref c\+Int val1, ref c\+Int val2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_aba7888aa2c56d767a395d94c8b6f1cec}\label{class_clipper_lib_1_1_clipper_base_aba7888aa2c56d767a395d94c8b6f1cec}} 
+virtual void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a82c93b3cb61cf96836443f9b51076e61}\label{class_clipper_lib_1_1_clipper_base_a82c93b3cb61cf96836443f9b51076e61}} 
+bool {\bfseries Add\+Path} (Path pg, Poly\+Type poly\+Type, bool Closed)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a4682cb8b416761eea4132aab28f59acb}\label{class_clipper_lib_1_1_clipper_base_a4682cb8b416761eea4132aab28f59acb}} 
+bool {\bfseries Add\+Paths} (Paths ppg, Poly\+Type poly\+Type, bool closed)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_ac7058458d1a0ca505f8a2459ff7cfd16}\label{class_clipper_lib_1_1_clipper_base_ac7058458d1a0ca505f8a2459ff7cfd16}} 
+static \mbox{\hyperlink{struct_clipper_lib_1_1_int_rect}{Int\+Rect}} {\bfseries Get\+Bounds} (Paths paths)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_adf27d806571b1c8dd8d2d6a22579aef2}\label{class_clipper_lib_1_1_clipper_base_adf27d806571b1c8dd8d2d6a22579aef2}} 
+const c\+Int {\bfseries lo\+Range} = 0x3\+F\+F\+F\+F\+F\+FF
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a7c832a8b278b22e2bb775a4fe9b01c26}\label{class_clipper_lib_1_1_clipper_base_a7c832a8b278b22e2bb775a4fe9b01c26}} 
+const c\+Int {\bfseries hi\+Range} = 0x3\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FL
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a3c13aeed90e7db9bf222546727ed180b}\label{class_clipper_lib_1_1_clipper_base_a3c13aeed90e7db9bf222546727ed180b}} 
+void {\bfseries Pop\+Local\+Minima} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a899c0b3fa7a81549d5bcc1c3a95b01b1}\label{class_clipper_lib_1_1_clipper_base_a899c0b3fa7a81549d5bcc1c3a95b01b1}} 
+virtual void {\bfseries Reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a638f3a0347fe5dee31078fd40f2c7c01}\label{class_clipper_lib_1_1_clipper_base_a638f3a0347fe5dee31078fd40f2c7c01}} 
+static bool {\bfseries Slopes\+Equal} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt3, bool Use\+Full\+Range)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a3f1e45302b2c32f9ad065ae617ab2c36}\label{class_clipper_lib_1_1_clipper_base_a3f1e45302b2c32f9ad065ae617ab2c36}} 
+static bool {\bfseries Slopes\+Equal} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt3, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt4, bool Use\+Full\+Range)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a66dcb25eba2d4221d35fba23c926ab62}\label{class_clipper_lib_1_1_clipper_base_a66dcb25eba2d4221d35fba23c926ab62}} 
+const double {\bfseries horizontal} = -\/3.\+4E+38
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a4361a2fcac024883dd82c4d0e100ebcd}\label{class_clipper_lib_1_1_clipper_base_a4361a2fcac024883dd82c4d0e100ebcd}} 
+const int {\bfseries Skip} = -\/2
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a192e319b2985df73ddf856231965b9c1}\label{class_clipper_lib_1_1_clipper_base_a192e319b2985df73ddf856231965b9c1}} 
+const int {\bfseries Unassigned} = -\/1
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a6f9770ebc412c3b0525e3c10e9f5cc86}\label{class_clipper_lib_1_1_clipper_base_a6f9770ebc412c3b0525e3c10e9f5cc86}} 
+const double {\bfseries tolerance} = 1.\+0E-\/20
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a35bb87534c17efc436a16db2cd4684b0}\label{class_clipper_lib_1_1_clipper_base_a35bb87534c17efc436a16db2cd4684b0}} 
+bool {\bfseries Preserve\+Collinear}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a5fa64c844cc90a543da94e51d625054d}\label{class_clipper_lib_1_1_clipper_base_a5fa64c844cc90a543da94e51d625054d}} 
+void {\bfseries Dispose\+Local\+Minima\+List} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a8ddb0dfccfb6efa493688dbdec3a92c7}\label{class_clipper_lib_1_1_clipper_base_a8ddb0dfccfb6efa493688dbdec3a92c7}} 
+void {\bfseries Range\+Test} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} Pt, ref bool use\+Full\+Range)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a6a9d94a66a51e572bba9b3971098de49}\label{class_clipper_lib_1_1_clipper_base_a6a9d94a66a51e572bba9b3971098de49}} 
+void {\bfseries Init\+Edge} (T\+Edge e, T\+Edge e\+Next, T\+Edge e\+Prev, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_adf2eaa9b99c76b5c5855870dd46bbcdb}\label{class_clipper_lib_1_1_clipper_base_adf2eaa9b99c76b5c5855870dd46bbcdb}} 
+void {\bfseries Init\+Edge2} (T\+Edge e, Poly\+Type poly\+Type)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a1a2768dc3506197c7d47ef373f36c7d0}\label{class_clipper_lib_1_1_clipper_base_a1a2768dc3506197c7d47ef373f36c7d0}} 
+T\+Edge {\bfseries Find\+Next\+Loc\+Min} (T\+Edge E)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_aa2ae891515e0d73c39ea714effe7d7ea}\label{class_clipper_lib_1_1_clipper_base_aa2ae891515e0d73c39ea714effe7d7ea}} 
+T\+Edge {\bfseries Process\+Bound} (T\+Edge E, bool Left\+Bound\+Is\+Forward)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a243192af8b0f3df7960e0f779034a711}\label{class_clipper_lib_1_1_clipper_base_a243192af8b0f3df7960e0f779034a711}} 
+T\+Edge {\bfseries Remove\+Edge} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_aa27f20dbee2966acc8d8d911e4efd731}\label{class_clipper_lib_1_1_clipper_base_aa27f20dbee2966acc8d8d911e4efd731}} 
+void {\bfseries Set\+Dx} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a18b36edea801ed439bb14c43324ac65b}\label{class_clipper_lib_1_1_clipper_base_a18b36edea801ed439bb14c43324ac65b}} 
+void {\bfseries Insert\+Local\+Minima} (Local\+Minima new\+Lm)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_base_a1329cc41e3318f05d7d1206b5fa5a914}\label{class_clipper_lib_1_1_clipper_base_a1329cc41e3318f05d7d1206b5fa5a914}} 
+void {\bfseries Reverse\+Horizontal} (T\+Edge e)
+\end{DoxyCompactItemize}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Clipper.\+cs\end{DoxyCompactItemize}

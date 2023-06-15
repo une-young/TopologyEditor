@@ -1,0 +1,6 @@
+<map id="Poly2Tri.DTSweep.Sweep" name="Poly2Tri.DTSweep.Sweep">
+<area shape="rect" id="node1" title="Start sweeping the Y&#45;sorted point set from bottom to top" alt="" coords="708,5,879,32"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,5,660,32"/>
+<area shape="rect" id="node3" href="$class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,5,417,32"/>
+<area shape="rect" id="node4" href="$class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,5,208,32"/>
+</map>

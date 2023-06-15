@@ -1,0 +1,5 @@
+<map id="Poly2Tri.DTSweepContext.MapTriangleToNodes" name="Poly2Tri.DTSweepContext.MapTriangleToNodes">
+<area shape="rect" id="node1" title="Try to map a node to all sides of this triangle that don&#39;t have a neighbor." alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_advancing_front.html#afad0b5db587bf054aea94d925ec2297e" title="This implementation will use simple node traversal algorithm to find a point on the front" alt="" coords="231,5,397,47"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_advancing_front.html#aafaed9c58f9dde98902071ff7edbea4c" title="MM: This seems to be used by LocateNode to guess a position in the implicit linked list of AdvancingF..." alt="" coords="445,5,612,47"/>
+</map>

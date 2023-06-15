@@ -1,0 +1,106 @@
+\hypertarget{class_assets_1_1_scripts_1_1_building}{}\doxysection{Assets.\+Scripts.\+Building 클래스 참조}
+\label{class_assets_1_1_scripts_1_1_building}\index{Assets.Scripts.Building@{Assets.Scripts.Building}}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_ae2e01847f5dde2d7b118a1c8ef80d0ef}\label{class_assets_1_1_scripts_1_1_building_ae2e01847f5dde2d7b118a1c8ef80d0ef}} 
+void {\bfseries Save\+Xml} (string file\+Name)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a1311b8aae6d7ae676dc8a7bbf8fdb7a0}\label{class_assets_1_1_scripts_1_1_building_a1311b8aae6d7ae676dc8a7bbf8fdb7a0}} 
+\mbox{\hyperlink{class_assets_1_1_scripts_1_1_building}{Building}} {\bfseries Load\+Xml} (string file\+Name)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_acf418b0743166c927595e9edd96e82ee}\label{class_assets_1_1_scripts_1_1_building_acf418b0743166c927595e9edd96e82ee}} 
+void {\bfseries Export\+Indoor\+Gml} (string file\+Name, int max\+Object\+Num=int.\+Max\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_ac24ac7ac8cafc6aa9c5cdaca772d75e2}\label{class_assets_1_1_scripts_1_1_building_ac24ac7ac8cafc6aa9c5cdaca772d75e2}} 
+List$<$ \mbox{\hyperlink{class_assets_1_1_scripts_1_1_floor}{Floor}} $>$ {\bfseries floor\+List} = new List$<$\mbox{\hyperlink{class_assets_1_1_scripts_1_1_floor}{Floor}}$>$()
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_adacd48b49f0d0240a54383a70fbdf22e}\label{class_assets_1_1_scripts_1_1_building_adacd48b49f0d0240a54383a70fbdf22e}} 
+List$<$ \mbox{\hyperlink{class_assets_1_1_scripts_1_1_door_base}{Door\+Base}} $>$ {\bfseries door\+Base\+List} = new List$<$\mbox{\hyperlink{class_assets_1_1_scripts_1_1_door_base}{Door\+Base}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a23897bee1ba985ad468720c31424caed}\label{class_assets_1_1_scripts_1_1_building_a23897bee1ba985ad468720c31424caed}} 
+void {\bfseries process\+Edges} (Xml\+Document doc, Xml\+Element edges, string id, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_node}{Node}} node)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_ae87ad95cf1910778fdb7fe4d58647f01}\label{class_assets_1_1_scripts_1_1_building_ae87ad95cf1910778fdb7fe4d58647f01}} 
+void {\bfseries process\+Edges} (Xml\+Document doc, Xml\+Element edges, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_door_base}{Door\+Base}} door)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a17c8290da93acd6e10e24433ee1c031d}\label{class_assets_1_1_scripts_1_1_building_a17c8290da93acd6e10e24433ee1c031d}} 
+void {\bfseries process\+Edges} (Xml\+Document doc, Xml\+Element edges, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_floor}{Floor}} floor)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a23167c17891a133eaf64def4ccbec8e3}\label{class_assets_1_1_scripts_1_1_building_a23167c17891a133eaf64def4ccbec8e3}} 
+void {\bfseries add\+Pos\+Element} (Xml\+Document doc, float\mbox{[}$\,$\mbox{]} position, Xml\+Element parent)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_af5b63d3fd9ebfb4b4abaa91716701a41}\label{class_assets_1_1_scripts_1_1_building_af5b63d3fd9ebfb4b4abaa91716701a41}} 
+void {\bfseries process\+Nodes} (Xml\+Document doc, Xml\+Element nodes, string id, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_node}{Node}} node)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a1bf7db5b24196a7308b272bf1a176635}\label{class_assets_1_1_scripts_1_1_building_a1bf7db5b24196a7308b272bf1a176635}} 
+void {\bfseries process\+Nodes} (Xml\+Document doc, Xml\+Element nodes, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_door_base}{Door\+Base}} door)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a3df3e47722ba813af7b836c09e385557}\label{class_assets_1_1_scripts_1_1_building_a3df3e47722ba813af7b836c09e385557}} 
+void {\bfseries process\+Nodes} (Xml\+Document doc, Xml\+Element nodes, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_floor}{Floor}} floor)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a79b3ca039a547f91f5f26648930b70b3}\label{class_assets_1_1_scripts_1_1_building_a79b3ca039a547f91f5f26648930b70b3}} 
+void {\bfseries process\+Door\+Base\+Surface} (Xml\+Document doc, Xml\+Element primal\+Space\+Features, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_door_base}{Door\+Base}} door\+Base)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_ab88f36e4a4033a7c2fbf2955470a39f0}\label{class_assets_1_1_scripts_1_1_building_ab88f36e4a4033a7c2fbf2955470a39f0}} 
+void {\bfseries process\+Surface} (Xml\+Document doc, Xml\+Element primal\+Space\+Features, string id, float\mbox{[}$\,$\mbox{]} outline, float height)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_ac5cebd09f991acbbef92e5c77e3e6a03}\label{class_assets_1_1_scripts_1_1_building_ac5cebd09f991acbbef92e5c77e3e6a03}} 
+void {\bfseries process\+Floor\+Surface} (Xml\+Document doc, Xml\+Element primal\+Space\+Features, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_floor}{Floor}} floor)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_af0c6c62ed2242dcb54031543cea6a2e5}\label{class_assets_1_1_scripts_1_1_building_af0c6c62ed2242dcb54031543cea6a2e5}} 
+void {\bfseries Append\+Namespace} (Xml\+Document doc, Xml\+Element element, string prefix, string domain, string prefix\+Uri, string domain\+Uri)
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a64d1f64c4df1165fba1eae6a7294f128}\label{class_assets_1_1_scripts_1_1_building_a64d1f64c4df1165fba1eae6a7294f128}} 
+List$<$ List$<$ float $>$ $>$ {\bfseries Extrude} (float\mbox{[}$\,$\mbox{]} base\+Line, float height, bool reverse=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a96638e6b0975a917feff18e8ab8f89ed}\label{class_assets_1_1_scripts_1_1_building_a96638e6b0975a917feff18e8ab8f89ed}} 
+string {\bfseries xmlns\+Uri} = \char`\"{}http\+://www.\+w3.\+org/2000/xmlns/\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_ab46185a24aa002e19a2841041f2886e8}\label{class_assets_1_1_scripts_1_1_building_ab46185a24aa002e19a2841041f2886e8}} 
+string {\bfseries core\+Uri} = \char`\"{}http\+://www.\+opengis.\+net/indoorgml/1.\+0/core\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a9e12e460a08291a14999f378b496059f}\label{class_assets_1_1_scripts_1_1_building_a9e12e460a08291a14999f378b496059f}} 
+string {\bfseries gml\+Uri} = \char`\"{}http\+://www.\+opengis.\+net/gml/3.\+2\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a0c297bcaf030284577c55ceec0e448b4}\label{class_assets_1_1_scripts_1_1_building_a0c297bcaf030284577c55ceec0e448b4}} 
+string {\bfseries xlink\+Uri} = \char`\"{}http\+://www.\+w3.\+org/1999/xlink\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a926896d59ae0ff45a8eac85c3884ba6d}\label{class_assets_1_1_scripts_1_1_building_a926896d59ae0ff45a8eac85c3884ba6d}} 
+string {\bfseries xsi\+Uri} = \char`\"{}http\+://www.\+w3.\+org/2001/X\+M\+L\+Schema-\/instance\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a3bce8b9dae88534a3129ccb257bf0a2b}\label{class_assets_1_1_scripts_1_1_building_a3bce8b9dae88534a3129ccb257bf0a2b}} 
+string {\bfseries schema\+Location\+Uri} = \char`\"{}http\+://www.\+opengis.\+net/indoorgml/1.\+0/core/indoorgmlcore.\+xsd\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a1d55d902d9de6959f848e3ad85ecada2}\label{class_assets_1_1_scripts_1_1_building_a1d55d902d9de6959f848e3ad85ecada2}} 
+string {\bfseries gml\+Id\+Uri} = \char`\"{}http\+://www.\+gml.\+com/test\char`\"{}
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a2314490d792fc03e92f9829588e16596}\label{class_assets_1_1_scripts_1_1_building_a2314490d792fc03e92f9829588e16596}} 
+Dictionary$<$ string, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_node}{Node}} $>$ {\bfseries node\+Map} = new Dictionary$<$string, \mbox{\hyperlink{class_assets_1_1_scripts_1_1_node}{Node}}$>$()
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_af58d8a8a7ec8d1daa4c61945e6fbadf4}\label{class_assets_1_1_scripts_1_1_building_af58d8a8a7ec8d1daa4c61945e6fbadf4}} 
+int {\bfseries point\+Counter} = 0
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_aef0057cb3bdd0bfcf76418a4b8ffff94}\label{class_assets_1_1_scripts_1_1_building_aef0057cb3bdd0bfcf76418a4b8ffff94}} 
+int {\bfseries line\+Counter} = 0
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_aad7375a4787fc3bfbc59d1d814854e1a}\label{class_assets_1_1_scripts_1_1_building_aad7375a4787fc3bfbc59d1d814854e1a}} 
+Dictionary$<$ string, string $>$ {\bfseries transition\+Map} = new Dictionary$<$string, string$>$()
+\item 
+\mbox{\Hypertarget{class_assets_1_1_scripts_1_1_building_a3f491936d36b5052fe89891a1b5b5f09}\label{class_assets_1_1_scripts_1_1_building_a3f491936d36b5052fe89891a1b5b5f09}} 
+int {\bfseries transition\+Counter} = 0
+\end{DoxyCompactItemize}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Building.\+cs\end{DoxyCompactItemize}

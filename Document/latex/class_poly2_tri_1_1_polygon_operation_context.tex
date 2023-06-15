@@ -1,0 +1,157 @@
+\hypertarget{class_poly2_tri_1_1_polygon_operation_context}{}\doxysection{Poly2\+Tri.\+Polygon\+Operation\+Context 클래스 참조}
+\label{class_poly2_tri_1_1_polygon_operation_context}\index{Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}}
+
+
+Poly2\+Tri.\+Polygon\+Operation\+Context에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_operation_context__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_ae172c49d4f14eff03afdd6925e154b2e}\label{class_poly2_tri_1_1_polygon_operation_context_ae172c49d4f14eff03afdd6925e154b2e}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_aa7be69eb8ef9cf0883c19b3c46767a71}\label{class_poly2_tri_1_1_polygon_operation_context_aa7be69eb8ef9cf0883c19b3c46767a71}} 
+bool {\bfseries Init} (Polygon\+Util.\+Poly\+Operation operations, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon2)
+\item 
+bool \mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context_adfc4c6fd69707d11c1ab6b31bc968518}{Point\+In\+Polygon\+Angle}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} point, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon)
+\item 
+double \mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context_acb60d12cab75886430c7b8f12e02d12b}{Vector\+Angle}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p2)
+\begin{DoxyCompactList}\small\item\em Return the angle between two vectors on a plane The angle is from vector 1 to vector 2, positive anticlockwise The result is between -\/pi -\/$>$ pi \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a41f306a943726bd66f08abeaff193422}\label{class_poly2_tri_1_1_polygon_operation_context_a41f306a943726bd66f08abeaff193422}} 
+Polygon\+Util.\+Poly\+Operation {\bfseries m\+Operations}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a2cfec67d8a5ba2e16f12f212c8778954}\label{class_poly2_tri_1_1_polygon_operation_context_a2cfec67d8a5ba2e16f12f212c8778954}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries m\+Original\+Polygon1}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_aae9f9ec3efb27d922455aa47b79674b3}\label{class_poly2_tri_1_1_polygon_operation_context_aae9f9ec3efb27d922455aa47b79674b3}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries m\+Original\+Polygon2}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a8eff799b2dd26b5a6c880e5c41abd427}\label{class_poly2_tri_1_1_polygon_operation_context_a8eff799b2dd26b5a6c880e5c41abd427}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries m\+Poly1}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a22df3fc7c91f21f8b8991b3c36c0a152}\label{class_poly2_tri_1_1_polygon_operation_context_a22df3fc7c91f21f8b8991b3c36c0a152}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries m\+Poly2}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a9f57043cf49d4fb22aa81af5b468e468}\label{class_poly2_tri_1_1_polygon_operation_context_a9f57043cf49d4fb22aa81af5b468e468}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_edge_intersect_info}{Edge\+Intersect\+Info}} $>$ {\bfseries m\+Intersections}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a3f85be5f5dadb280c7acc7bacd57c62a}\label{class_poly2_tri_1_1_polygon_operation_context_a3f85be5f5dadb280c7acc7bacd57c62a}} 
+int {\bfseries m\+Starting\+Index}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_ad1915fd0fd559dacda7dc89edf1829c5}\label{class_poly2_tri_1_1_polygon_operation_context_ad1915fd0fd559dacda7dc89edf1829c5}} 
+Polygon\+Util.\+Poly\+Union\+Error {\bfseries m\+Error}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_ae671c85ac7dd4401de1673f4aa2fa5ca}\label{class_poly2_tri_1_1_polygon_operation_context_ae671c85ac7dd4401de1673f4aa2fa5ca}} 
+List$<$ int $>$ {\bfseries m\+Poly1\+Vector\+Angles}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a59d96d903c6e7ed696f1e21a7c582da3}\label{class_poly2_tri_1_1_polygon_operation_context_a59d96d903c6e7ed696f1e21a7c582da3}} 
+List$<$ int $>$ {\bfseries m\+Poly2\+Vector\+Angles}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_aca7fdc3225ddf4b9642f8f2c309c6497}\label{class_poly2_tri_1_1_polygon_operation_context_aca7fdc3225ddf4b9642f8f2c309c6497}} 
+Dictionary$<$ uint, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} $>$ {\bfseries m\+Output} = new Dictionary$<$uint, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a82413202c5d80fefe0e6a1377f25e8c9}\label{class_poly2_tri_1_1_polygon_operation_context_a82413202c5d80fefe0e6a1377f25e8c9}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries Union}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a7d48a39ba5097dca3dbde0d43dd64f65}\label{class_poly2_tri_1_1_polygon_operation_context_a7d48a39ba5097dca3dbde0d43dd64f65}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries Intersect}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_a606b87d818ed7db552716971be6e852f}\label{class_poly2_tri_1_1_polygon_operation_context_a606b87d818ed7db552716971be6e852f}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} {\bfseries Subtract}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_poly2_tri_1_1_polygon_operation_context_aa637f21c2d0cc526fc4ee09ead7319ae}{Vertices\+Intersect}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} polygon2, out List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_edge_intersect_info}{Edge\+Intersect\+Info}} $>$ intersections)
+\begin{DoxyCompactList}\small\item\em Check and return polygon intersections \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_adfc4c6fd69707d11c1ab6b31bc968518}\label{class_poly2_tri_1_1_polygon_operation_context_adfc4c6fd69707d11c1ab6b31bc968518}} 
+\index{Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}!PointInPolygonAngle@{PointInPolygonAngle}}
+\index{PointInPolygonAngle@{PointInPolygonAngle}!Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}}
+\doxysubsubsection{\texorpdfstring{PointInPolygonAngle()}{PointInPolygonAngle()}}
+{\footnotesize\ttfamily bool Poly2\+Tri.\+Polygon\+Operation\+Context.\+Point\+In\+Polygon\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{point,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyItemize}
+\item ref\+: \href{http://ozviz.wasp.uwa.edu.au/~pbourke/geometry/insidepoly/}{\texttt{ http\+://ozviz.\+wasp.\+uwa.\+edu.\+au/$\sim$pbourke/geometry/insidepoly/}} -\/ Solution 2
+\item Compute the sum of the angles made between the test point and each pair of points making up the polygon.
+\item If this sum is 2pi then the point is an interior point, if 0 then the point is an exterior point.
+\end{DoxyItemize}이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_operation_context_adfc4c6fd69707d11c1ab6b31bc968518_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_acb60d12cab75886430c7b8f12e02d12b}\label{class_poly2_tri_1_1_polygon_operation_context_acb60d12cab75886430c7b8f12e02d12b}} 
+\index{Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}!VectorAngle@{VectorAngle}}
+\index{VectorAngle@{VectorAngle}!Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}}
+\doxysubsubsection{\texorpdfstring{VectorAngle()}{VectorAngle()}}
+{\footnotesize\ttfamily double Poly2\+Tri.\+Polygon\+Operation\+Context.\+Vector\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{p1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Return the angle between two vectors on a plane The angle is from vector 1 to vector 2, positive anticlockwise The result is between -\/pi -\/$>$ pi 
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_operation_context_acb60d12cab75886430c7b8f12e02d12b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_operation_context_aa637f21c2d0cc526fc4ee09ead7319ae}\label{class_poly2_tri_1_1_polygon_operation_context_aa637f21c2d0cc526fc4ee09ead7319ae}} 
+\index{Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}!VerticesIntersect@{VerticesIntersect}}
+\index{VerticesIntersect@{VerticesIntersect}!Poly2Tri.PolygonOperationContext@{Poly2Tri.PolygonOperationContext}}
+\doxysubsubsection{\texorpdfstring{VerticesIntersect()}{VerticesIntersect()}}
+{\footnotesize\ttfamily bool Poly2\+Tri.\+Polygon\+Operation\+Context.\+Vertices\+Intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}}}]{polygon2,  }\item[{out List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_edge_intersect_info}{Edge\+Intersect\+Info}} $>$}]{intersections }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check and return polygon intersections 
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon1} & \\
+\hline
+{\em polygon2} & \\
+\hline
+{\em intersections} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_operation_context_aa637f21c2d0cc526fc4ee09ead7319ae_cgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Polygon/Polygon\+Util.\+cs\end{DoxyCompactItemize}

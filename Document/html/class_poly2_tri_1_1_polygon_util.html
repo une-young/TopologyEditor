@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Topology Editor: Poly2Tri.PolygonUtil 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Topology Editor
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_poly2_tri.html">Poly2Tri</a></li><li class="navelem"><a class="el" href="class_poly2_tri_1_1_polygon_util.html">PolygonUtil</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 타입</a> &#124;
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="#pro-static-methods">정적 Protected 멤버 함수</a> &#124;
+<a href="#pri-static-methods">정적 Private 멤버 함수</a> &#124;
+<a href="class_poly2_tri_1_1_polygon_util-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">Poly2Tri.PolygonUtil 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 타입</h2></td></tr>
+<tr class="memitem:acaa855b72fd6450aefdbc067007aef47"><td class="memItemLeft" align="right" valign="top"><a id="acaa855b72fd6450aefdbc067007aef47"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PolyUnionError</b> { <b>None</b>, 
+<b>NoIntersections</b>, 
+<b>Poly1InsidePoly2</b>, 
+<b>InfiniteLoop</b>
+ }</td></tr>
+<tr class="separator:acaa855b72fd6450aefdbc067007aef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce36bcd0acda126fe1721bbd52cd447"><td class="memItemLeft" align="right" valign="top"><a id="a7ce36bcd0acda126fe1721bbd52cd447"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PolyOperation</b> : uint { <b>None</b> = 0, 
+<b>Union</b> = 1 &lt;&lt; 0, 
+<b>Intersect</b> = 1 &lt;&lt; 1, 
+<b>Subtract</b> = 1 &lt;&lt; 2
+ }</td></tr>
+<tr class="separator:a7ce36bcd0acda126fe1721bbd52cd447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:aec48705f44abe782833a0b10f975a469"><td class="memItemLeft" align="right" valign="top"><a id="aec48705f44abe782833a0b10f975a469"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PolygonContainsPolygon</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly1, <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a> boundRect1, IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly2, <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a> boundRect2)</td></tr>
+<tr class="separator:aec48705f44abe782833a0b10f975a469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ac11f473a6dcd1129c4e64772f4c30f2b"><td class="memItemLeft" align="right" valign="top"><a id="ac11f473a6dcd1129c4e64772f4c30f2b"></a>
+static Point2DList.WindingOrderType&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWindingOrder</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; l)</td></tr>
+<tr class="separator:ac11f473a6dcd1129c4e64772f4c30f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c9eedf1a162358f1edba772a9f2ab8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#a76c9eedf1a162358f1edba772a9f2ab8">PolygonsAreSame2D</a> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly1, IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly2)</td></tr>
+<tr class="memdesc:a76c9eedf1a162358f1edba772a9f2ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the polys are similar to within a tolerance (Doesn't include reflections, but allows for the points to be numbered differently, but not reversed).  <a href="class_poly2_tri_1_1_polygon_util.html#a76c9eedf1a162358f1edba772a9f2ab8">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a76c9eedf1a162358f1edba772a9f2ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79dcabf454b6c49fac365558df5f821f"><td class="memItemLeft" align="right" valign="top"><a id="a79dcabf454b6c49fac365558df5f821f"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PointInPolygon2D</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; polygon, <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> p)</td></tr>
+<tr class="separator:a79dcabf454b6c49fac365558df5f821f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920d673e776b3e562a7c52bd13a8a2b8"><td class="memItemLeft" align="right" valign="top"><a id="a920d673e776b3e562a7c52bd13a8a2b8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>PolygonsIntersect2D</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly1, <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a> boundRect1, IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly2, <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a> boundRect2)</td></tr>
+<tr class="separator:a920d673e776b3e562a7c52bd13a8a2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59fc88672b4da021cdaadb136c4561b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#ae59fc88672b4da021cdaadb136c4561b">PolygonContainsPolygon</a> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly1, <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a> boundRect1, IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly2, <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a> boundRect2, bool runIntersectionTest)</td></tr>
+<tr class="memdesc:ae59fc88672b4da021cdaadb136c4561b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if poly1 contains poly2. return true if so, false otherwise.  <a href="class_poly2_tri_1_1_polygon_util.html#ae59fc88672b4da021cdaadb136c4561b">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ae59fc88672b4da021cdaadb136c4561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4076fc756f31034a427bce485dbc48f"><td class="memItemLeft" align="right" valign="top"><a id="af4076fc756f31034a427bce485dbc48f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ClipPolygonToEdge2D</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> edgeBegin, <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> edgeEnd, IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly, out List&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; outPoly)</td></tr>
+<tr class="separator:af4076fc756f31034a427bce485dbc48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3abfb74a502fd5411a91bbd27e3158b9"><td class="memItemLeft" align="right" valign="top"><a id="a3abfb74a502fd5411a91bbd27e3158b9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ClipPolygonToPolygon</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; poly, IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; clipPoly, out List&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; outPoly)</td></tr>
+<tr class="separator:a3abfb74a502fd5411a91bbd27e3158b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd560af23d2a1fedc495288a6895956"><td class="memItemLeft" align="right" valign="top">static PolygonUtil.PolyUnionError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#a2fd560af23d2a1fedc495288a6895956">PolygonUnion</a> (<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon1, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon2, out <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> union)</td></tr>
+<tr class="separator:a2fd560af23d2a1fedc495288a6895956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917c010e179e41275a879e3a4b8ded6c"><td class="memItemLeft" align="right" valign="top">static PolygonUtil.PolyUnionError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#a917c010e179e41275a879e3a4b8ded6c">PolygonIntersect</a> (<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon1, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon2, out <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> intersectOut)</td></tr>
+<tr class="memdesc:a917c010e179e41275a879e3a4b8ded6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection between two polygons.  <a href="class_poly2_tri_1_1_polygon_util.html#a917c010e179e41275a879e3a4b8ded6c">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a917c010e179e41275a879e3a4b8ded6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b4767ef0c6fc0fdfbe04dbc09ddc4a"><td class="memItemLeft" align="right" valign="top">static PolygonUtil.PolyUnionError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#ab9b4767ef0c6fc0fdfbe04dbc09ddc4a">PolygonSubtract</a> (<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon1, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon2, out <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> subtract)</td></tr>
+<tr class="memdesc:ab9b4767ef0c6fc0fdfbe04dbc09ddc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts one polygon from another.  <a href="class_poly2_tri_1_1_polygon_util.html#ab9b4767ef0c6fc0fdfbe04dbc09ddc4a">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ab9b4767ef0c6fc0fdfbe04dbc09ddc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1729e0afa5edb090c9ee38785bba8463"><td class="memItemLeft" align="right" valign="top"><a id="a1729e0afa5edb090c9ee38785bba8463"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PolygonSubtractInternal</b> (<a class="el" href="class_poly2_tri_1_1_polygon_operation_context.html">PolygonOperationContext</a> ctx)</td></tr>
+<tr class="separator:a1729e0afa5edb090c9ee38785bba8463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ac4a7462b61af271d6472c4030424c"><td class="memItemLeft" align="right" valign="top">static PolygonUtil.PolyUnionError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#a18ac4a7462b61af271d6472c4030424c">PolygonOperation</a> (PolygonUtil.PolyOperation operations, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon1, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> polygon2, out Dictionary&lt; uint, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> &gt; results)</td></tr>
+<tr class="memdesc:a18ac4a7462b61af271d6472c4030424c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs one or more polygon operations on the 2 provided polygons  <a href="class_poly2_tri_1_1_polygon_util.html#a18ac4a7462b61af271d6472c4030424c">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a18ac4a7462b61af271d6472c4030424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3cc93dc6477cd0a82ef16341a952ed"><td class="memItemLeft" align="right" valign="top"><a id="a4c3cc93dc6477cd0a82ef16341a952ed"></a>
+static PolygonUtil.PolyUnionError&#160;</td><td class="memItemRight" valign="bottom"><b>PolygonOperation</b> (<a class="el" href="class_poly2_tri_1_1_polygon_operation_context.html">PolygonOperationContext</a> ctx)</td></tr>
+<tr class="separator:a4c3cc93dc6477cd0a82ef16341a952ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e63fd30de838c90cc183990898f3b2"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_polygon_util.html#af4e63fd30de838c90cc183990898f3b2">SplitComplexPolygon</a> (<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> verts, double epsilon)</td></tr>
+<tr class="memdesc:af4e63fd30de838c90cc183990898f3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace the edge of a non-simple polygon and return a simple polygon.  <a href="class_poly2_tri_1_1_polygon_util.html#af4e63fd30de838c90cc183990898f3b2">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:af4e63fd30de838c90cc183990898f3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+정적 Protected 멤버 함수</h2></td></tr>
+<tr class="memitem:a069a3fe66f4633d37348dc9149aae744"><td class="memItemLeft" align="right" valign="top"><a id="a069a3fe66f4633d37348dc9149aae744"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PolygonUnionInternal</b> (<a class="el" href="class_poly2_tri_1_1_polygon_operation_context.html">PolygonOperationContext</a> ctx)</td></tr>
+<tr class="separator:a069a3fe66f4633d37348dc9149aae744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb17ccea64322c429e566b5d279b5ee"><td class="memItemLeft" align="right" valign="top"><a id="adcb17ccea64322c429e566b5d279b5ee"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PolygonIntersectInternal</b> (<a class="el" href="class_poly2_tri_1_1_polygon_operation_context.html">PolygonOperationContext</a> ctx)</td></tr>
+<tr class="separator:adcb17ccea64322c429e566b5d279b5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+정적 Private 멤버 함수</h2></td></tr>
+<tr class="memitem:a9d79d4255a4fdfde6c993f14e6f29745"><td class="memItemLeft" align="right" valign="top"><a id="a9d79d4255a4fdfde6c993f14e6f29745"></a>
+static List&lt; <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SplitComplexPolygonCleanup</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; orig)</td></tr>
+<tr class="separator:a9d79d4255a4fdfde6c993f14e6f29745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="ae59fc88672b4da021cdaadb136c4561b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59fc88672b4da021cdaadb136c4561b">&#9670;&nbsp;</a></span>PolygonContainsPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Poly2Tri.PolygonUtil.PolygonContainsPolygon </td>
+          <td>(</td>
+          <td class="paramtype">IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt;&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a>&#160;</td>
+          <td class="paramname"><em>boundRect1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt;&#160;</td>
+          <td class="paramname"><em>poly2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a>&#160;</td>
+          <td class="paramname"><em>boundRect2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>runIntersectionTest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks to see if poly1 contains poly2. return true if so, false otherwise. </p>
+<p>If the polygons intersect, then poly1 cannot contain poly2 (or vice-versa for that matter) Since the poly intersection test can be somewhat expensive, we'll only run it if the user requests it. If runIntersectionTest is false, then it is assumed that the user has already verified that the polygons do not intersect. If the polygons DO intersect and runIntersectionTest is false, then the return value is meaningless. Caveat emptor.</p>
+<p>As an added bonus, just to cause more user-carnage, if runIntersectionTest is false, then the boundRects are not used and can safely be passed in as nulls. However, if runIntersectionTest is true and you pass nulls for boundRect1 or boundRect2, you will cause a program crash.</p>
+<p>Finally, the polygon points are assumed to be passed in Clockwise winding order. It is possible that CounterClockwise ordering would work, but I have not verified the behavior in that case.</p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poly1</td><td>points of polygon1</td></tr>
+    <tr><td class="paramname">boundRect1</td><td>bounding rect of polygon1. Only used if runIntersectionTest is true</td></tr>
+    <tr><td class="paramname">poly2</td><td>points of polygon2</td></tr>
+    <tr><td class="paramname">boundRect2</td><td>bounding rect of polygon2. Only used if runIntersectionTest is true</td></tr>
+    <tr><td class="paramname">runIntersectionTest</td><td>see summary above</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>true if poly1 fully contains poly2</dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b_cgraph" id="class_poly2_tri_1_1_polygon_util_ae59fc88672b4da021cdaadb136c4561b_cgraph">
+<area shape="rect" title="Checks to see if poly1 contains poly2. return true if so, false otherwise." alt="" coords="5,5,196,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_polygon_util.html#a76c9eedf1a162358f1edba772a9f2ab8" title="Check if the polys are similar to within a tolerance (Doesn&#39;t include reflections,..." alt="" coords="244,5,441,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a917c010e179e41275a879e3a4b8ded6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917c010e179e41275a879e3a4b8ded6c">&#9670;&nbsp;</a></span>PolygonIntersect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PolygonUtil.PolyUnionError Poly2Tri.PolygonUtil.PolygonIntersect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>intersectOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds the intersection between two polygons. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon1</td><td>The first polygon.</td></tr>
+    <tr><td class="paramname">polygon2</td><td>The second polygon.</td></tr>
+    <tr><td class="paramname">intersectOut</td><td>The intersection of the two polygons</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>error code</dd></dl>
+
+</div>
+</div>
+<a id="a18ac4a7462b61af271d6472c4030424c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ac4a7462b61af271d6472c4030424c">&#9670;&nbsp;</a></span>PolygonOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PolygonUtil.PolyUnionError Poly2Tri.PolygonUtil.PolygonOperation </td>
+          <td>(</td>
+          <td class="paramtype">PolygonUtil.PolyOperation&#160;</td>
+          <td class="paramname"><em>operations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out Dictionary&lt; uint, <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> &gt;&#160;</td>
+          <td class="paramname"><em>results</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs one or more polygon operations on the 2 provided polygons </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon1</td><td>The first polygon.</td></tr>
+    <tr><td class="paramname">polygon2</td><td>The second polygon</td></tr>
+    <tr><td class="paramname">subtract</td><td>The result of the polygon subtraction</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>error code</dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_cgraph" id="class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_cgraph">
+<area shape="rect" title="Performs one or more polygon operations on the 2 provided polygons" alt="" coords="5,29,196,71"/>
+</map>
+</div>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_icgraph" id="class_poly2_tri_1_1_polygon_util_a18ac4a7462b61af271d6472c4030424c_icgraph">
+<area shape="rect" title="Performs one or more polygon operations on the 2 provided polygons" alt="" coords="5,29,196,71"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a76c9eedf1a162358f1edba772a9f2ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c9eedf1a162358f1edba772a9f2ab8">&#9670;&nbsp;</a></span>PolygonsAreSame2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Poly2Tri.PolygonUtil.PolygonsAreSame2D </td>
+          <td>(</td>
+          <td class="paramtype">IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt;&#160;</td>
+          <td class="paramname"><em>poly1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt;&#160;</td>
+          <td class="paramname"><em>poly2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the polys are similar to within a tolerance (Doesn't include reflections, but allows for the points to be numbered differently, but not reversed). </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poly1</td><td></td></tr>
+    <tr><td class="paramname">poly2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8_icgraph" id="class_poly2_tri_1_1_polygon_util_a76c9eedf1a162358f1edba772a9f2ab8_icgraph">
+<area shape="rect" title="Check if the polys are similar to within a tolerance (Doesn&#39;t include reflections,..." alt="" coords="244,5,441,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_polygon_util.html#ae59fc88672b4da021cdaadb136c4561b" title="Checks to see if poly1 contains poly2. return true if so, false otherwise." alt="" coords="5,5,196,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab9b4767ef0c6fc0fdfbe04dbc09ddc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b4767ef0c6fc0fdfbe04dbc09ddc4a">&#9670;&nbsp;</a></span>PolygonSubtract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PolygonUtil.PolyUnionError Poly2Tri.PolygonUtil.PolygonSubtract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>subtract</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts one polygon from another. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon1</td><td>The base polygon.</td></tr>
+    <tr><td class="paramname">polygon2</td><td>The polygon to subtract from the base.</td></tr>
+    <tr><td class="paramname">subtract</td><td>The result of the polygon subtraction</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>error code</dd></dl>
+
+</div>
+</div>
+<a id="a2fd560af23d2a1fedc495288a6895956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd560af23d2a1fedc495288a6895956">&#9670;&nbsp;</a></span>PolygonUnion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PolygonUtil.PolyUnionError Poly2Tri.PolygonUtil.PolygonUnion </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>polygon2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out <a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>union</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+<p>Merges two polygons, given that they intersect.</p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon1</td><td>The first polygon.</td></tr>
+    <tr><td class="paramname">polygon2</td><td>The second polygon.</td></tr>
+    <tr><td class="paramname">union</td><td>The union of the two polygons</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>The error returned from union</dd></dl>
+
+</div>
+</div>
+<a id="af4e63fd30de838c90cc183990898f3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e63fd30de838c90cc183990898f3b2">&#9670;&nbsp;</a></span>SplitComplexPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static List&lt;<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&gt; Poly2Tri.PolygonUtil.SplitComplexPolygon </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a>&#160;</td>
+          <td class="paramname"><em>verts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsilon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Trace the edge of a non-simple polygon and return a simple polygon. </p>
+<p>Method: Start at vertex with minimum y (pick maximum x one if there are two). <br  />
+ We aim our "lastDir" vector at (1.0, 0) We look at the two rays going off from our start vertex, and follow whichever has the smallest angle (in -Pi . Pi) wrt lastDir ("rightest" turn)</p>
+<p>Loop until we hit starting vertex:</p>
+<p>We add our current vertex to the list. We check the seg from current vertex to next vertex for intersections</p><ul>
+<li>if no intersections, follow to next vertex and continue</li>
+<li>if intersections, pick one with minimum distance<ul>
+<li>if more than one, pick one with "rightest" next point (two possibilities for each)</li>
+</ul>
+</li>
+</ul>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">verts</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2_cgraph" id="class_poly2_tri_1_1_polygon_util_af4e63fd30de838c90cc183990898f3b2_cgraph">
+<area shape="rect" title="Trace the edge of a non&#45;simple polygon and return a simple polygon." alt="" coords="5,5,175,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_triangulation_util.html#ac46c6c3a292146300095b929815d216f" title="This method detects if two line segments (or lines) intersect, and, if so, the point of intersection...." alt="" coords="223,5,392,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>C:/Users/apple/Documents/Unity/TopologyEditor/Assets/Scripts/Poly2Mesh/Poly2Tri/Triangulation/Polygon/PolygonUtil.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

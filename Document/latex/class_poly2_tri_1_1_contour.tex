@@ -1,0 +1,236 @@
+\hypertarget{class_poly2_tri_1_1_contour}{}\doxysection{Poly2\+Tri.\+Contour 클래스 참조}
+\label{class_poly2_tri_1_1_contour}\index{Poly2Tri.Contour@{Poly2Tri.Contour}}
+
+
+This is basically a light-\/weight version of the \mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}} class, but with limited functionality and used for different purposes. Nonetheless, for all intents and purposes, this should actually be a polygon (though not a \mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}}..)  
+
+
+
+
+Poly2\+Tri.\+Contour에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_contour__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Poly2\+Tri.\+Contour에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_contour__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a353c856a02dce8c987c5453534700609}\label{class_poly2_tri_1_1_contour_a353c856a02dce8c987c5453534700609}} 
+{\bfseries Contour} (\mbox{\hyperlink{interface_poly2_tri_1_1_i_triangulatable}{I\+Triangulatable}} parent)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a24d6f2256de06149d80a85cf58c3394c}\label{class_poly2_tri_1_1_contour_a24d6f2256de06149d80a85cf58c3394c}} 
+{\bfseries Contour} (\mbox{\hyperlink{interface_poly2_tri_1_1_i_triangulatable}{I\+Triangulatable}} parent, I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ points, Point2\+D\+List.\+Winding\+Order\+Type winding\+Order)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a2dacdbfa3684e1276adab05a72b40725}\label{class_poly2_tri_1_1_contour_a2dacdbfa3684e1276adab05a72b40725}} 
+override string {\bfseries To\+String} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ac894c1969a92044377871784c1f65a39}\label{class_poly2_tri_1_1_contour_ac894c1969a92044377871784c1f65a39}} 
+int {\bfseries Index\+Of} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a9194c4abdd16ea2e0cb2faaa884d9c30}\label{class_poly2_tri_1_1_contour_a9194c4abdd16ea2e0cb2faaa884d9c30}} 
+void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a4f2d3be87dda5af58ee8fdd092469569}\label{class_poly2_tri_1_1_contour_a4f2d3be87dda5af58ee8fdd092469569}} 
+override void {\bfseries Add\+Range} (I\+Enumerator$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ iter, Winding\+Order\+Type winding\+Order)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a0154b1008403b02df866858835ba65fa}\label{class_poly2_tri_1_1_contour_a0154b1008403b02df866858835ba65fa}} 
+void {\bfseries Add\+Range} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ points, Point2\+D\+List.\+Winding\+Order\+Type winding\+Order)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a040ff7f902946d986828fa3001b7547d}\label{class_poly2_tri_1_1_contour_a040ff7f902946d986828fa3001b7547d}} 
+void {\bfseries Insert} (int idx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a18bb01c2e96d2ecafa52782da3900cdf}\label{class_poly2_tri_1_1_contour_a18bb01c2e96d2ecafa52782da3900cdf}} 
+bool {\bfseries Remove} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ad4e9dd3682d80fad08af5039089be060}\label{class_poly2_tri_1_1_contour_ad4e9dd3682d80fad08af5039089be060}} 
+bool {\bfseries Contains} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a342f5fd6fd35f2e67e952835d170bbaa}\label{class_poly2_tri_1_1_contour_a342f5fd6fd35f2e67e952835d170bbaa}} 
+void {\bfseries Copy\+To} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\item 
+int \mbox{\hyperlink{class_poly2_tri_1_1_contour_afa38cc7fda1d285a56837725be3807cb}{Get\+Num\+Holes}} (bool parent\+Is\+Hole)
+\begin{DoxyCompactList}\small\item\em returns number of holes that are actually holes, including all children of children, etc. Does N\+OT include holes that are not actually holes. For example, if the parent is not a hole and this contour has a hole that contains a hole, then the number of holes returned would be 2 -\/ one for the current hole (because the parent is N\+OT a hole and thus this hole IS a hole), and 1 for the child of the child. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_poly2_tri_1_1_contour_abe042b16379a8531e9feb7736197e2cf}{Get\+Num\+Holes}} ()
+\begin{DoxyCompactList}\small\item\em returns the basic number of child holes of T\+H\+IS contour, not including any children of children, etc nor examining whether any children are actual holes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a34eb45c597e059fafbcfe1a36696db0a}\label{class_poly2_tri_1_1_contour_a34eb45c597e059fafbcfe1a36696db0a}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}} {\bfseries Get\+Hole} (int idx)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a7fb8d397f08b0ff2ee3a3634fc6de413}\label{class_poly2_tri_1_1_contour_a7fb8d397f08b0ff2ee3a3634fc6de413}} 
+void {\bfseries Get\+Actual\+Holes} (bool parent\+Is\+Hole, ref List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}} $>$ holes)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_acdd3fd6550b309f31f33c1e5dab44bc0}\label{class_poly2_tri_1_1_contour_acdd3fd6550b309f31f33c1e5dab44bc0}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}} $>$.Enumerator {\bfseries Get\+Hole\+Enumerator} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a9c79e4e494ed8a138e2a4cfdda2669f4}\label{class_poly2_tri_1_1_contour_a9c79e4e494ed8a138e2a4cfdda2669f4}} 
+void {\bfseries Initialize\+Holes} (\mbox{\hyperlink{class_poly2_tri_1_1_constrained_point_set}{Constrained\+Point\+Set}} cps)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a0fa77295ed996a350c648b00dbf83901}\label{class_poly2_tri_1_1_contour_a0fa77295ed996a350c648b00dbf83901}} 
+void {\bfseries Prepare} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_context}{Triangulation\+Context}} tcx)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a755a742ebd13cf202eded59b3f3156d7}\label{class_poly2_tri_1_1_contour_a755a742ebd13cf202eded59b3f3156d7}} 
+void {\bfseries Add\+Triangle} (\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ac8ce4eeb493be40230ca96e3b45290e6}\label{class_poly2_tri_1_1_contour_ac8ce4eeb493be40230ca96e3b45290e6}} 
+void {\bfseries Add\+Triangles} (I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} $>$ list)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ab1159fb43d72c058bec01febe77ac0cf}\label{class_poly2_tri_1_1_contour_ab1159fb43d72c058bec01febe77ac0cf}} 
+void {\bfseries Clear\+Triangles} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a90df5999caa365df1ff99ef115615a8c}\label{class_poly2_tri_1_1_contour_a90df5999caa365df1ff99ef115615a8c}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} {\bfseries Find\+Point\+In\+Contour} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_adced14085b21f0048cb4109985f4e2e8}\label{class_poly2_tri_1_1_contour_adced14085b21f0048cb4109985f4e2e8}} 
+bool {\bfseries Is\+Point\+Inside\+Contour} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ad9d6f9edfb8295033c1f392a25c72895}\label{class_poly2_tri_1_1_contour_ad9d6f9edfb8295033c1f392a25c72895}} 
+static void {\bfseries Initialize\+Holes} (List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}} $>$ holes, \mbox{\hyperlink{interface_poly2_tri_1_1_i_triangulatable}{I\+Triangulatable}} parent, \mbox{\hyperlink{class_poly2_tri_1_1_constrained_point_set}{Constrained\+Point\+Set}} cps)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_af300dd8e4fd6fa84a96586e4b746d8d8}\label{class_poly2_tri_1_1_contour_af300dd8e4fd6fa84a96586e4b746d8d8}} 
+override void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p, int idx, bool b\+Calc\+Winding\+Order\+And\+Epsilon)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_aa08e276d6b67661b7e16a6bacac1090c}\label{class_poly2_tri_1_1_contour_aa08e276d6b67661b7e16a6bacac1090c}} 
+void {\bfseries Add\+Hole} (\mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}} c)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a1941b846b688eeecbf61bed9f603137b}\label{class_poly2_tri_1_1_contour_a1941b846b688eeecbf61bed9f603137b}} 
+new \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} {\bfseries this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_aaeaee55d0bf2ceaa28d3d4c6b5e7f6fc}\label{class_poly2_tri_1_1_contour_aaeaee55d0bf2ceaa28d3d4c6b5e7f6fc}} 
+string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_affbd7dc5e3897883663cfc998865380a}\label{class_poly2_tri_1_1_contour_affbd7dc5e3897883663cfc998865380a}} 
+I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} $>$ {\bfseries Triangles}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ab12cab0f60feadc0b2d53b87e0193614}\label{class_poly2_tri_1_1_contour_ab12cab0f60feadc0b2d53b87e0193614}} 
+Triangulation\+Mode {\bfseries Triangulation\+Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a5b9d9a52fa0d8fb616a788d87ec592e8}\label{class_poly2_tri_1_1_contour_a5b9d9a52fa0d8fb616a788d87ec592e8}} 
+string {\bfseries File\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_afc93cd908d77543a43cb47699ffa6250}\label{class_poly2_tri_1_1_contour_afc93cd908d77543a43cb47699ffa6250}} 
+bool {\bfseries Display\+FlipX}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a8e0d9b83ab348ae3e9bd3c696aac1bcc}\label{class_poly2_tri_1_1_contour_a8e0d9b83ab348ae3e9bd3c696aac1bcc}} 
+bool {\bfseries Display\+FlipY}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ad769c44014c09144b76db97a4de69d07}\label{class_poly2_tri_1_1_contour_ad769c44014c09144b76db97a4de69d07}} 
+float {\bfseries Display\+Rotate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ac177037f81d8fea6a967f8a6579f0bec}\label{class_poly2_tri_1_1_contour_ac177037f81d8fea6a967f8a6579f0bec}} 
+double {\bfseries Precision}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a970fe2ef5d8c96e49f31ed033d48c21b}\label{class_poly2_tri_1_1_contour_a970fe2ef5d8c96e49f31ed033d48c21b}} 
+double {\bfseries MinX}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_afa15a0a3b3b3ef0a9730c00180094f03}\label{class_poly2_tri_1_1_contour_afa15a0a3b3b3ef0a9730c00180094f03}} 
+double {\bfseries MaxX}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_afa166994d475249808eb72c3a90ee38f}\label{class_poly2_tri_1_1_contour_afa166994d475249808eb72c3a90ee38f}} 
+double {\bfseries MinY}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a258083278fb5d10cbd49cac0f74c78f1}\label{class_poly2_tri_1_1_contour_a258083278fb5d10cbd49cac0f74c78f1}} 
+double {\bfseries MaxY}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_ae72bd911dd4df91359ad18fe9bf837af}\label{class_poly2_tri_1_1_contour_ae72bd911dd4df91359ad18fe9bf837af}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} {\bfseries Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_a09d59716502fe15b276ae0c86eeb25b8}\label{class_poly2_tri_1_1_contour_a09d59716502fe15b276ae0c86eeb25b8}} 
+I\+Enumerator$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$. {\bfseries Get\+Enumerator} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_aab56dde63d2e8d5db671e865013b7acb}\label{class_poly2_tri_1_1_contour_aab56dde63d2e8d5db671e865013b7acb}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}} $>$ {\bfseries m\+Holes} = new List$<$\mbox{\hyperlink{class_poly2_tri_1_1_contour}{Contour}}$>$()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_abde79c0188ccec7979aeee9a26b103a9}\label{class_poly2_tri_1_1_contour_abde79c0188ccec7979aeee9a26b103a9}} 
+\mbox{\hyperlink{interface_poly2_tri_1_1_i_triangulatable}{I\+Triangulatable}} {\bfseries m\+Parent} = null
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_acfec8ee858d3c26d409d3254aff944fa}\label{class_poly2_tri_1_1_contour_acfec8ee858d3c26d409d3254aff944fa}} 
+string {\bfseries m\+Name} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{상세한 설명}
+This is basically a light-\/weight version of the \mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}} class, but with limited functionality and used for different purposes. Nonetheless, for all intents and purposes, this should actually be a polygon (though not a \mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}}..) 
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_abe042b16379a8531e9feb7736197e2cf}\label{class_poly2_tri_1_1_contour_abe042b16379a8531e9feb7736197e2cf}} 
+\index{Poly2Tri.Contour@{Poly2Tri.Contour}!GetNumHoles@{GetNumHoles}}
+\index{GetNumHoles@{GetNumHoles}!Poly2Tri.Contour@{Poly2Tri.Contour}}
+\doxysubsubsection{\texorpdfstring{GetNumHoles()}{GetNumHoles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Poly2\+Tri.\+Contour.\+Get\+Num\+Holes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the basic number of child holes of T\+H\+IS contour, not including any children of children, etc nor examining whether any children are actual holes. 
+
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_contour_afa38cc7fda1d285a56837725be3807cb}\label{class_poly2_tri_1_1_contour_afa38cc7fda1d285a56837725be3807cb}} 
+\index{Poly2Tri.Contour@{Poly2Tri.Contour}!GetNumHoles@{GetNumHoles}}
+\index{GetNumHoles@{GetNumHoles}!Poly2Tri.Contour@{Poly2Tri.Contour}}
+\doxysubsubsection{\texorpdfstring{GetNumHoles()}{GetNumHoles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Poly2\+Tri.\+Contour.\+Get\+Num\+Holes (\begin{DoxyParamCaption}\item[{bool}]{parent\+Is\+Hole }\end{DoxyParamCaption})}
+
+
+
+returns number of holes that are actually holes, including all children of children, etc. Does N\+OT include holes that are not actually holes. For example, if the parent is not a hole and this contour has a hole that contains a hole, then the number of holes returned would be 2 -\/ one for the current hole (because the parent is N\+OT a hole and thus this hole IS a hole), and 1 for the child of the child. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em parent\+Is\+Hole} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_poly2_tri_1_1_contour_afa38cc7fda1d285a56837725be3807cb_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_poly2_tri_1_1_contour_afa38cc7fda1d285a56837725be3807cb_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Polygon/Contour.\+cs\end{DoxyCompactItemize}

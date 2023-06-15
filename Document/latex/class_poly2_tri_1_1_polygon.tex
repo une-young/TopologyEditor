@@ -1,0 +1,286 @@
+\hypertarget{class_poly2_tri_1_1_polygon}{}\doxysection{Poly2\+Tri.\+Polygon 클래스 참조}
+\label{class_poly2_tri_1_1_polygon}\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+
+
+Poly2\+Tri.\+Polygon에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Poly2\+Tri.\+Polygon에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_polygon_ad3aba76543c0967dc3cbf3e8b5a48582}{Polygon}} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} $>$ points)
+\begin{DoxyCompactList}\small\item\em Create a polygon from a list of at least 3 points with no duplicates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_polygon_a6469dbbcb970a08285b487dc583f3776}{Polygon??}} (I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} $>$ points)
+\begin{DoxyCompactList}\small\item\em Create a polygon from a list of at least 3 points with no duplicates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_polygon_a71c8c9b8eca6a849060671948f61a866}{Polygon}} (params \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}}\mbox{[}$\,$\mbox{]} points)
+\begin{DoxyCompactList}\small\item\em Create a polygon from a list of at least 3 points with no duplicates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a8d6239162e3bd5ee74ee667bed267ea6}\label{class_poly2_tri_1_1_polygon_a8d6239162e3bd5ee74ee667bed267ea6}} 
+int {\bfseries Index\+Of} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_abcce2c8bf0759bded580ba6719ed2cfb}\label{class_poly2_tri_1_1_polygon_abcce2c8bf0759bded580ba6719ed2cfb}} 
+override void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ac83daa459f1bb709202ad8f0f0b7a139}\label{class_poly2_tri_1_1_polygon_ac83daa459f1bb709202ad8f0f0b7a139}} 
+void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a2fea3306afa97f783c4d16ca37acf36d}\label{class_poly2_tri_1_1_polygon_a2fea3306afa97f783c4d16ca37acf36d}} 
+void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a9bd26b65f30803d946376fd1a7201444}\label{class_poly2_tri_1_1_polygon_a9bd26b65f30803d946376fd1a7201444}} 
+void {\bfseries Add\+Range} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} $>$ points, Point2\+D\+List.\+Winding\+Order\+Type winding\+Order)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a97819dd7f0713c5f7f0d47c0a637127e}\label{class_poly2_tri_1_1_polygon_a97819dd7f0713c5f7f0d47c0a637127e}} 
+void {\bfseries Add\+Range} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ points, Point2\+D\+List.\+Winding\+Order\+Type winding\+Order)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a1ad776fafae8a7991ee21548461666ae}\label{class_poly2_tri_1_1_polygon_a1ad776fafae8a7991ee21548461666ae}} 
+void {\bfseries Insert} (int idx, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_abf4ebad5754bbd9004a7e5380d821676}\label{class_poly2_tri_1_1_polygon_abf4ebad5754bbd9004a7e5380d821676}} 
+bool {\bfseries Remove} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_polygon_a2bd822fb9ffac8c8b8ea72bc68ca8de3}{Remove\+Point}} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} p)
+\begin{DoxyCompactList}\small\item\em Removes a point from the polygon. Note this can be a somewhat expensive operation as it must recalculate the bounding area from scratch. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ae255933be36b3144e0948e161a7c6660}\label{class_poly2_tri_1_1_polygon_ae255933be36b3144e0948e161a7c6660}} 
+bool {\bfseries Contains} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a5b92398e98163805d9470092e73d14af}\label{class_poly2_tri_1_1_polygon_a5b92398e98163805d9470092e73d14af}} 
+void {\bfseries Copy\+To} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a2e9752d4ed6de8f6e94a6ab197e2942e}\label{class_poly2_tri_1_1_polygon_a2e9752d4ed6de8f6e94a6ab197e2942e}} 
+void {\bfseries Add\+Steiner\+Point} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} point)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a8e6aebc5d9641ce61aa3dd0b918bde78}\label{class_poly2_tri_1_1_polygon_a8e6aebc5d9641ce61aa3dd0b918bde78}} 
+void {\bfseries Add\+Steiner\+Points} (List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ points)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a47c4198ee37ee47bad88c050a91cc251}\label{class_poly2_tri_1_1_polygon_a47c4198ee37ee47bad88c050a91cc251}} 
+void {\bfseries Clear\+Steiner\+Points} ()
+\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_polygon_ad22ab676a830ae1b43c05befa3a6e4c2}{Add\+Hole}} (\mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}} poly)
+\begin{DoxyCompactList}\small\item\em Add a hole to the polygon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a3fcb2aa7991696cabc90a4bcfc11795d}\label{class_poly2_tri_1_1_polygon_a3fcb2aa7991696cabc90a4bcfc11795d}} 
+void {\bfseries Add\+Triangle} (\mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} t)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a85a73d70db415833aeb28cf35b1360a0}\label{class_poly2_tri_1_1_polygon_a85a73d70db415833aeb28cf35b1360a0}} 
+void {\bfseries Add\+Triangles} (I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} $>$ list)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ad8e6bffe855a99a22ddb9a7f6e03db27}\label{class_poly2_tri_1_1_polygon_ad8e6bffe855a99a22ddb9a7f6e03db27}} 
+void {\bfseries Clear\+Triangles} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_afe91da96fb3b173a8754df375d118360}\label{class_poly2_tri_1_1_polygon_afe91da96fb3b173a8754df375d118360}} 
+bool {\bfseries Is\+Point\+Inside} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} p)
+\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_polygon_aaa83792b7c7719984886fb37b4620d24}{Prepare}} (\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_context}{Triangulation\+Context}} tcx)
+\begin{DoxyCompactList}\small\item\em Creates constraints and populates the context with points \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a4af9b522f553cca28ced31d1a6b32696}\label{class_poly2_tri_1_1_polygon_a4af9b522f553cca28ced31d1a6b32696}} 
+override void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p, int idx, bool b\+Calc\+Winding\+Order\+And\+Epsilon)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a2ca7f3f4ee13608674dfbe5ab705151f}\label{class_poly2_tri_1_1_polygon_a2ca7f3f4ee13608674dfbe5ab705151f}} 
+Dictionary$<$ uint, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ {\bfseries m\+Point\+Map} = new Dictionary$<$uint, \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}}$>$()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_aab9f0b0ed2e1a1869c2561cfc8a5e157}\label{class_poly2_tri_1_1_polygon_aab9f0b0ed2e1a1869c2561cfc8a5e157}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} $>$ {\bfseries m\+Triangles}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a91f9e8c1d87d697fb8dc429c7e941901}\label{class_poly2_tri_1_1_polygon_a91f9e8c1d87d697fb8dc429c7e941901}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}} $>$ {\bfseries m\+Holes}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ab72e2848c56db23d30e01ad53d112786}\label{class_poly2_tri_1_1_polygon_ab72e2848c56db23d30e01ad53d112786}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ {\bfseries m\+Steiner\+Points}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a97421079545e0c0f403fe75e4839fdf8}\label{class_poly2_tri_1_1_polygon_a97421079545e0c0f403fe75e4839fdf8}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} {\bfseries \+\_\+last}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ae66838b7db5fdf560c1604cb9719308e}\label{class_poly2_tri_1_1_polygon_ae66838b7db5fdf560c1604cb9719308e}} 
+I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ {\bfseries Points}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a57dde8d82eabacbd886e83a3f4df541c}\label{class_poly2_tri_1_1_polygon_a57dde8d82eabacbd886e83a3f4df541c}} 
+I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_delaunay_triangle}{Delaunay\+Triangle}} $>$ {\bfseries Triangles}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a177f23536dae86b5a9872834c8a68846}\label{class_poly2_tri_1_1_polygon_a177f23536dae86b5a9872834c8a68846}} 
+Triangulation\+Mode {\bfseries Triangulation\+Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ab150e0384eee157d3f6676a4e78047db}\label{class_poly2_tri_1_1_polygon_ab150e0384eee157d3f6676a4e78047db}} 
+string {\bfseries File\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a7c2080d1cd44e5fec792966e73e3cd8b}\label{class_poly2_tri_1_1_polygon_a7c2080d1cd44e5fec792966e73e3cd8b}} 
+bool {\bfseries Display\+FlipX}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a26f03cc647cc5c39d972c6fcc938fd13}\label{class_poly2_tri_1_1_polygon_a26f03cc647cc5c39d972c6fcc938fd13}} 
+bool {\bfseries Display\+FlipY}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_af5fecdee25b778ca9c6524afc01aad7e}\label{class_poly2_tri_1_1_polygon_af5fecdee25b778ca9c6524afc01aad7e}} 
+float {\bfseries Display\+Rotate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ad2f386cd2e535810f19309f8dc7382d6}\label{class_poly2_tri_1_1_polygon_ad2f386cd2e535810f19309f8dc7382d6}} 
+double {\bfseries Precision}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a7ae96372cca871a172876543ff76af46}\label{class_poly2_tri_1_1_polygon_a7ae96372cca871a172876543ff76af46}} 
+double {\bfseries MinX}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a79ea5c81cde9fc286117a8a7fa91751f}\label{class_poly2_tri_1_1_polygon_a79ea5c81cde9fc286117a8a7fa91751f}} 
+double {\bfseries MaxX}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_af32bc29e0a63b4e63435aaadfca98e8f}\label{class_poly2_tri_1_1_polygon_af32bc29e0a63b4e63435aaadfca98e8f}} 
+double {\bfseries MinY}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ac048ce46749712a9168271cf4781802d}\label{class_poly2_tri_1_1_polygon_ac048ce46749712a9168271cf4781802d}} 
+double {\bfseries MaxY}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a7b66bbee5d5b881ad97b9025be4bccae}\label{class_poly2_tri_1_1_polygon_a7b66bbee5d5b881ad97b9025be4bccae}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} {\bfseries Bounds}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a5c6387fc14f8ad9b8d3e7070cc8037a1}\label{class_poly2_tri_1_1_polygon_a5c6387fc14f8ad9b8d3e7070cc8037a1}} 
+new \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} {\bfseries this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ac01a141be22da0c21507b8afde2db584}\label{class_poly2_tri_1_1_polygon_ac01a141be22da0c21507b8afde2db584}} 
+I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}} $>$ {\bfseries Holes}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a8000efe80c1af2d5d20ff7bfb23a66af}\label{class_poly2_tri_1_1_polygon_a8000efe80c1af2d5d20ff7bfb23a66af}} 
+I\+Enumerator$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$ I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_point}{Triangulation\+Point}} $>$. {\bfseries Get\+Enumerator} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ae98d5a1f290db77226853034f0aff5f8}\label{class_poly2_tri_1_1_polygon_ae98d5a1f290db77226853034f0aff5f8}} 
+double {\bfseries m\+Precision} = Triangulation\+Point.\+k\+Vertex\+Code\+Default\+Precision
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ad3aba76543c0967dc3cbf3e8b5a48582}\label{class_poly2_tri_1_1_polygon_ad3aba76543c0967dc3cbf3e8b5a48582}} 
+\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Poly2\+Tri.\+Polygon.\+Polygon (\begin{DoxyParamCaption}\item[{I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} $>$}]{points }\end{DoxyParamCaption})}
+
+
+
+Create a polygon from a list of at least 3 points with no duplicates. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em points} & A list of unique points\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a71c8c9b8eca6a849060671948f61a866}\label{class_poly2_tri_1_1_polygon_a71c8c9b8eca6a849060671948f61a866}} 
+\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Poly2\+Tri.\+Polygon.\+Polygon (\begin{DoxyParamCaption}\item[{params \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}}\mbox{[}$\,$\mbox{]}}]{points }\end{DoxyParamCaption})}
+
+
+
+Create a polygon from a list of at least 3 points with no duplicates. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em points} & A list of unique points.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_ad22ab676a830ae1b43c05befa3a6e4c2}\label{class_poly2_tri_1_1_polygon_ad22ab676a830ae1b43c05befa3a6e4c2}} 
+\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}!AddHole@{AddHole}}
+\index{AddHole@{AddHole}!Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+\doxysubsubsection{\texorpdfstring{AddHole()}{AddHole()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Polygon.\+Add\+Hole (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_polygon}{Polygon}}}]{poly }\end{DoxyParamCaption})}
+
+
+
+Add a hole to the polygon. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em poly} & A subtraction polygon fully contained inside this polygon.\\
+\hline
+\end{DoxyParams}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_polygon_ad22ab676a830ae1b43c05befa3a6e4c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a6469dbbcb970a08285b487dc583f3776}\label{class_poly2_tri_1_1_polygon_a6469dbbcb970a08285b487dc583f3776}} 
+\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}!Polygon??@{Polygon??}}
+\index{Polygon??@{Polygon??}!Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon??()}{Polygon??()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_poly2_tri_1_1_polygon_ad3aba76543c0967dc3cbf3e8b5a48582}{Poly2\+Tri.\+Polygon.\+Polygon}}?? (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}} $>$}]{points }\end{DoxyParamCaption})}
+
+
+
+Create a polygon from a list of at least 3 points with no duplicates. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em points} & A list of unique points.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_aaa83792b7c7719984886fb37b4620d24}\label{class_poly2_tri_1_1_polygon_aaa83792b7c7719984886fb37b4620d24}} 
+\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}!Prepare@{Prepare}}
+\index{Prepare@{Prepare}!Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+\doxysubsubsection{\texorpdfstring{Prepare()}{Prepare()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Polygon.\+Prepare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_triangulation_context}{Triangulation\+Context}}}]{tcx }\end{DoxyParamCaption})}
+
+
+
+Creates constraints and populates the context with points 
+
+
+\begin{DoxyParams}{매개변수}
+{\em tcx} & The context\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{interface_poly2_tri_1_1_i_triangulatable}{Poly2\+Tri.\+I\+Triangulatable}}를 구현.
+
+\mbox{\Hypertarget{class_poly2_tri_1_1_polygon_a2bd822fb9ffac8c8b8ea72bc68ca8de3}\label{class_poly2_tri_1_1_polygon_a2bd822fb9ffac8c8b8ea72bc68ca8de3}} 
+\index{Poly2Tri.Polygon@{Poly2Tri.Polygon}!RemovePoint@{RemovePoint}}
+\index{RemovePoint@{RemovePoint}!Poly2Tri.Polygon@{Poly2Tri.Polygon}}
+\doxysubsubsection{\texorpdfstring{RemovePoint()}{RemovePoint()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Polygon.\+Remove\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_polygon_point}{Polygon\+Point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Removes a point from the polygon. Note this can be a somewhat expensive operation as it must recalculate the bounding area from scratch. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Polygon/Polygon.\+cs\end{DoxyCompactItemize}

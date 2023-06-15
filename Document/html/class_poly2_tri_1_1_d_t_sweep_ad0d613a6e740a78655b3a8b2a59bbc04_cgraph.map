@@ -1,0 +1,12 @@
+<map id="Poly2Tri.DTSweep.Legalize" name="Poly2Tri.DTSweep.Legalize">
+<area shape="rect" id="node1" title="Returns true if triangle was legalized" alt="" coords="5,107,185,134"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_d_t_sweep_context.html#a313a7276994ab399e503588020ca4a29" title="Try to map a node to all sides of this triangle that don&#39;t have a neighbor." alt="" coords="264,5,441,47"/>
+<area shape="rect" id="node5" href="$class_poly2_tri_1_1_delaunay_triangle.html#a586677240bcb4172609633b35e6b15ea" title=" " alt="" coords="265,71,441,112"/>
+<area shape="rect" id="node6" href="$class_poly2_tri_1_1_d_t_sweep.html#a757b9ad196af61a017208cbec6c410d6" title="Rotates a triangle pair one vertex CW n2 n2 P +&#45;&#45;—+ P +&#45;&#45;—+ | t /| |\ t | &#160;&#160;| / | | \ | n1| / |n3 n1|..." alt="" coords="233,137,472,163"/>
+<area shape="rect" id="node10" href="$class_poly2_tri_1_1_triangulation_util.html#a5529e2866f2a35dacb303b41a94a08cf" title="Requirements:" alt="" coords="268,188,437,229"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_advancing_front.html#afad0b5db587bf054aea94d925ec2297e" title="This implementation will use simple node traversal algorithm to find a point on the front" alt="" coords="525,5,691,47"/>
+<area shape="rect" id="node4" href="$class_poly2_tri_1_1_advancing_front.html#aafaed9c58f9dde98902071ff7edbea4c" title="MM: This seems to be used by LocateNode to guess a position in the implicit linked list of AdvancingF..." alt="" coords="749,5,915,47"/>
+<area shape="rect" id="node7" href="$class_poly2_tri_1_1_delaunay_triangle.html#aff435b32982ecd234e37bc0d5bf9bd0e" title="Legalize triangle by rotating clockwise around oPoint" alt="" coords="520,100,696,141"/>
+<area shape="rect" id="node8" href="$class_poly2_tri_1_1_delaunay_triangle.html#a0d5f891ce36cd6761bba8966cecc7035" title="Update neighbor pointers" alt="" coords="520,165,696,207"/>
+<area shape="rect" id="node9" href="$class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="744,165,920,207"/>
+</map>

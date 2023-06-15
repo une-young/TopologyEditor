@@ -1,0 +1,87 @@
+\hypertarget{class_camera_movement}{}\doxysection{Camera\+Movement 클래스 참조}
+\label{class_camera_movement}\index{CameraMovement@{CameraMovement}}
+
+
+Camera\+Movement에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_camera_movement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Camera\+Movement에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{class_camera_movement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement_a9875be36638382ee9b89e8eaeefbef17}\label{class_camera_movement_a9875be36638382ee9b89e8eaeefbef17}} 
+float {\bfseries speed} = 2.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_a77e060975cd64eb6f6c3a79b16bad988}\label{class_camera_movement_a77e060975cd64eb6f6c3a79b16bad988}} 
+float {\bfseries zoom\+Speed} = 5.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_aefc3f35172918f3bb1ec8ebd8d57345d}\label{class_camera_movement_aefc3f35172918f3bb1ec8ebd8d57345d}} 
+float {\bfseries minX} = -\/360.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_aaa83139c94577b03ff8985f52e65eb43}\label{class_camera_movement_aaa83139c94577b03ff8985f52e65eb43}} 
+float {\bfseries maxX} = 360.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_a7f110923156c50c45a8aeda7daef6206}\label{class_camera_movement_a7f110923156c50c45a8aeda7daef6206}} 
+float {\bfseries minY} = -\/45.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_a6b9abc8a48f148e17a0e839042c0feac}\label{class_camera_movement_a6b9abc8a48f148e17a0e839042c0feac}} 
+float {\bfseries maxY} = 45.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_a35687eb5ce231a2e16d1eb466f3eaef2}\label{class_camera_movement_a35687eb5ce231a2e16d1eb466f3eaef2}} 
+float {\bfseries sensX} = 100.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_af7a31f4bc42913182077a083586613bc}\label{class_camera_movement_af7a31f4bc42913182077a083586613bc}} 
+float {\bfseries sensY} = 100.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_adfb797c520346a9a7240964c58bd44c6}\label{class_camera_movement_adfb797c520346a9a7240964c58bd44c6}} 
+float {\bfseries smooth\+Time} = 0.\+3F
+\item 
+\mbox{\Hypertarget{class_camera_movement_a99c6dd3313599629561b966b1c403452}\label{class_camera_movement_a99c6dd3313599629561b966b1c403452}} 
+float {\bfseries rotation\+Smooth\+Time} = 0.\+3F
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement_a3d5bf0407152d0e16efafa655bfc15e9}\label{class_camera_movement_a3d5bf0407152d0e16efafa655bfc15e9}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_camera_movement_a6d70b582440500fff98506ebd3e9050e}\label{class_camera_movement_a6d70b582440500fff98506ebd3e9050e}} 
+void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_movement_ab5c414ccf5e12be706663656de8a002d}\label{class_camera_movement_ab5c414ccf5e12be706663656de8a002d}} 
+float {\bfseries rotationY} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_abac6ab858192e37a0e94edbbd92f2447}\label{class_camera_movement_abac6ab858192e37a0e94edbbd92f2447}} 
+float {\bfseries rotationX} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_camera_movement_acb2134b5113b3186c66d12fb14554a03}\label{class_camera_movement_acb2134b5113b3186c66d12fb14554a03}} 
+Vector3 {\bfseries velocity} = Vector3.\+zero
+\item 
+\mbox{\Hypertarget{class_camera_movement_ad8b8886362581e056f8b43df39ea51ad}\label{class_camera_movement_ad8b8886362581e056f8b43df39ea51ad}} 
+Vector3 {\bfseries rotation\+Velocity} = Vector3.\+zero
+\item 
+\mbox{\Hypertarget{class_camera_movement_a96e561cc8f88d23b5b30b4a2d48bba5e}\label{class_camera_movement_a96e561cc8f88d23b5b30b4a2d48bba5e}} 
+\mbox{\hyperlink{class_move_gizmo_behaviour}{Move\+Gizmo\+Behaviour}} {\bfseries move\+Gizmo\+Behaviour} = null
+\end{DoxyCompactItemize}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Camera\+Movement.\+cs\end{DoxyCompactItemize}

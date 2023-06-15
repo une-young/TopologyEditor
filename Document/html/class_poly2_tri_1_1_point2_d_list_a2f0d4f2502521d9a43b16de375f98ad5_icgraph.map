@@ -1,0 +1,4 @@
+<map id="Poly2Tri.Point2DList.IsSimple" name="Poly2Tri.Point2DList.IsSimple">
+<area shape="rect" id="node1" title="Check for edge crossings" alt="" coords="235,13,429,39"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="5,5,187,47"/>
+</map>

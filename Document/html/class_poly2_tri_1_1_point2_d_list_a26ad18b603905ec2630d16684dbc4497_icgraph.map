@@ -1,0 +1,5 @@
+<map id="Poly2Tri.Point2DList.PreviousIndex" name="Poly2Tri.Point2DList.PreviousIndex">
+<area shape="rect" id="node1" title="Gets the previous index." alt="" coords="244,35,437,76"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="10,5,191,47"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_point2_d_list.html#a5ad63631fc720adb9cc6c18b56df6c62" title="Removes all collinear points on the polygon. Note that this is NOT safe to run on a complex polygon a..." alt="" coords="5,71,196,98"/>
+</map>

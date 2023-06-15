@@ -1,0 +1,4 @@
+<map id="Poly2Mesh.Polygon.CalcRotation" name="Poly2Mesh.Polygon.CalcRotation">
+<area shape="rect" id="node1" title="Calculates the rotation needed to get this polygon into the XY plane." alt="" coords="5,13,221,39"/>
+<area shape="rect" id="node2" href="$class_poly2_mesh_1_1_polygon.html#a8a601cf1a939515199fe5f61178b7c59" title="Calculates the plane normal for this polygon (with no flipping). Assumes a clockwise winding order." alt="" coords="269,5,471,47"/>
+</map>

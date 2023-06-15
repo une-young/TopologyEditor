@@ -1,0 +1,416 @@
+\hypertarget{class_main_behaviour}{}\doxysection{Main\+Behaviour 클래스 참조}
+\label{class_main_behaviour}\index{MainBehaviour@{MainBehaviour}}
+
+
+Main\+Behaviour에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_main_behaviour__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Main\+Behaviour에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_behaviour__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a7fd51ba1511999f6c1aae1e9829f1c30}\label{class_main_behaviour_a7fd51ba1511999f6c1aae1e9829f1c30}} 
+enum {\bfseries Edit\+Mode} \{ {\bfseries None}, 
+{\bfseries Add\+Link}, 
+{\bfseries Add\+Node}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a549e21e02cb9e6320ee78e85c9cbab86}\label{class_main_behaviour_a549e21e02cb9e6320ee78e85c9cbab86}} 
+void {\bfseries Toggle\+Building\+Wireframe} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab56b8b8e4e4235d5b4c833b74e82227a}\label{class_main_behaviour_ab56b8b8e4e4235d5b4c833b74e82227a}} 
+void {\bfseries Toggle\+Line} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a8ae56cdcfa68f33fc931d46812a6328f}\label{class_main_behaviour_a8ae56cdcfa68f33fc931d46812a6328f}} 
+void {\bfseries create\+Outline\+Polygon} (\mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} room=null)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab467565b4884b0d916864e924e0c24b4}\label{class_main_behaviour_ab467565b4884b0d916864e924e0c24b4}} 
+void {\bfseries Clear\+All} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a1f5a96a19f5cefa45486b41e2da9e374}\label{class_main_behaviour_a1f5a96a19f5cefa45486b41e2da9e374}} 
+void {\bfseries Add} (Vector3 position, \mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} room\+Behaviour)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a865bbae70f1d86f1f0a0e7b57a011c3e}\label{class_main_behaviour_a865bbae70f1d86f1f0a0e7b57a011c3e}} 
+void {\bfseries On\+Done\+Button\+Clicked} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a34fcf02b8780c9db108ca75d88459c56}\label{class_main_behaviour_a34fcf02b8780c9db108ca75d88459c56}} 
+void {\bfseries update\+Target\+Position} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a893588721197796c39a65673053f736a}\label{class_main_behaviour_a893588721197796c39a65673053f736a}} 
+void {\bfseries draw\+Line} (\mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} room\+Behaviour)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ae0547bbd3f071971f8f69be79e8d23ef}\label{class_main_behaviour_ae0547bbd3f071971f8f69be79e8d23ef}} 
+void {\bfseries remove\+Lines} (\mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} room\+Behaviour)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af4a19f550e3f0d2968502ffc75eca5b5}\label{class_main_behaviour_af4a19f550e3f0d2968502ffc75eca5b5}} 
+void {\bfseries add\+Sample\+Data} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a6e60bb72d6359b5efe803345ab94ba9c}\label{class_main_behaviour_a6e60bb72d6359b5efe803345ab94ba9c}} 
+void {\bfseries On\+Draw\+Button\+Clicked} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a2f9b89675db179230411ae995426d8ab}\label{class_main_behaviour_a2f9b89675db179230411ae995426d8ab}} 
+void {\bfseries Extrude} (float height)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a68ff8c0c3858c8c76f81e4d3ee400a92}\label{class_main_behaviour_a68ff8c0c3858c8c76f81e4d3ee400a92}} 
+void {\bfseries Toggle\+Building} (Unity\+Engine.\+U\+I.\+Toggle toggle)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a30c4e21d39d4c652d81465325326162e}\label{class_main_behaviour_a30c4e21d39d4c652d81465325326162e}} 
+void {\bfseries Save\+Indoor\+G\+ML} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a204edd26c8e396a54ec4366cf946665c}\label{class_main_behaviour_a204edd26c8e396a54ec4366cf946665c}} 
+void {\bfseries Export} (string file\+Name)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ac1eb396929b361a6cb9f80d79c011dd4}\label{class_main_behaviour_ac1eb396929b361a6cb9f80d79c011dd4}} 
+void {\bfseries Create\+Topology} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a79237cd2ad1224b7bdb30852657366c8}\label{class_main_behaviour_a79237cd2ad1224b7bdb30852657366c8}} 
+void {\bfseries Button\+Delete\+Node\+Pressed} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af8af21c1b8a87f22caa0be27af18c1ec}\label{class_main_behaviour_af8af21c1b8a87f22caa0be27af18c1ec}} 
+void {\bfseries Button\+Delete\+Link\+Pressed} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a2c77cc277d65975b8aeddc1a5bd2c3fc}\label{class_main_behaviour_a2c77cc277d65975b8aeddc1a5bd2c3fc}} 
+void {\bfseries Restore\+Node\+Link} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a02549994a41e7957da33643f0334d2f5}\label{class_main_behaviour_a02549994a41e7957da33643f0334d2f5}} 
+void {\bfseries Confirm\+Pressed} (bool yes\+Or\+No)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aba997c0ce91e31d05fd31dec9f120437}\label{class_main_behaviour_aba997c0ce91e31d05fd31dec9f120437}} 
+void {\bfseries Load\+City\+Gml} (string file\+Name)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a6900d3302315fa5f6a6559c9c1840fc5}\label{class_main_behaviour_a6900d3302315fa5f6a6559c9c1840fc5}} 
+void {\bfseries On\+Button\+Check\+Indoor\+Gml} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ac3efa4925ffa08e1f707e88eff1bb64e}\label{class_main_behaviour_ac3efa4925ffa08e1f707e88eff1bb64e}} 
+float {\bfseries speed} = 2.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a794759e18d9097a84241d0f3916fc8c2}\label{class_main_behaviour_a794759e18d9097a84241d0f3916fc8c2}} 
+\mbox{\hyperlink{class_assets_1_1_scripts_1_1_building}{Building}} {\bfseries Global\+Building}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a46fea49ad0339f392ed873249c5b5a66}\label{class_main_behaviour_a46fea49ad0339f392ed873249c5b5a66}} 
+bool {\bfseries Show\+Line}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a506b15aeb77ddc8fee1deb2e1856372d}\label{class_main_behaviour_a506b15aeb77ddc8fee1deb2e1856372d}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a6db723c05116e05514fa7b8a08504746}\label{class_main_behaviour_a6db723c05116e05514fa7b8a08504746}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_abc2e6ad87dc02f3a4b9af3947640a0cc}\label{class_main_behaviour_abc2e6ad87dc02f3a4b9af3947640a0cc}} 
+void {\bfseries Create\+Link\+Button} (\mbox{\hyperlink{class_node_behaviour}{Node\+Behaviour}} node\+Behaviour)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a27ea917b6ea92bbec5e2edbbe494fe10}\label{class_main_behaviour_a27ea917b6ea92bbec5e2edbbe494fe10}} 
+void {\bfseries add\+Button\+To\+Content} (Game\+Object new\+Node\+Link\+Button)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aa7ba472fd3c5cf563fa1e863a10c48b6}\label{class_main_behaviour_aa7ba472fd3c5cf563fa1e863a10c48b6}} 
+void {\bfseries clear\+Node\+Link\+Listbox} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a40e4d8e377dfa2d951924c06a44f86d1}\label{class_main_behaviour_a40e4d8e377dfa2d951924c06a44f86d1}} 
+void {\bfseries \+\_\+process\+Draw\+Room} (Raycast\+Hit hit)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a1b74a0883440814bb78a1989349a7078}\label{class_main_behaviour_a1b74a0883440814bb78a1989349a7078}} 
+Vector3 {\bfseries handle\+Mouse\+Control} (Vector3 to\+Position)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a0b89e091b73d8812495a86f1239f68a4}\label{class_main_behaviour_a0b89e091b73d8812495a86f1239f68a4}} 
+I\+Enumerator {\bfseries Load\+City\+Gml} (string file\+Name, Game\+Object original\+Mesh\+Object, string\mbox{[}$\,$\mbox{]} element\+Filter\+List)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ad475540dfbc0ec04ea00fb08dc28e8c3}\label{class_main_behaviour_ad475540dfbc0ec04ea00fb08dc28e8c3}} 
+Vector3 {\bfseries get\+Surface\+Normal} (Mesh mesh)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a87bdd643b38afa0bb7b511cc44acea67}\label{class_main_behaviour_a87bdd643b38afa0bb7b511cc44acea67}} 
+double\mbox{[}$\,$\mbox{]} {\bfseries get\+Vector3\+From\+Pos\+Node} (string\mbox{[}$\,$\mbox{]} pos\+Splitter, Xml\+Node pos\+Node)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a6f236a6115a7d1e4c964ab00f83da004}\label{class_main_behaviour_a6f236a6115a7d1e4c964ab00f83da004}} 
+void {\bfseries Set\+Wireframe\+Material} (Game\+Object root)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ae88904e5e0f696d071a6433c23b1786c}\label{class_main_behaviour_ae88904e5e0f696d071a6433c23b1786c}} 
+void {\bfseries Restore\+Material} (Game\+Object root)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af610b2ccb1cdba5b018b0b327a6f5eab}\label{class_main_behaviour_af610b2ccb1cdba5b018b0b327a6f5eab}} 
+Game\+Object {\bfseries get\+Polygon\+Obj} (\mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} room)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5959af16b474b328160e6093469914c2}\label{class_main_behaviour_a5959af16b474b328160e6093469914c2}} 
+void {\bfseries create\+New\+Room} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_afdc5111d62b62baa9c8452cd5862e7d5}\label{class_main_behaviour_afdc5111d62b62baa9c8452cd5862e7d5}} 
+void {\bfseries Remove\+Current\+Room} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a4debb8ec278d9912a98a77ef8cf64d7d}\label{class_main_behaviour_a4debb8ec278d9912a98a77ef8cf64d7d}} 
+Vector3 {\bfseries get\+Snap\+Position} (Vector3 pos)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a3b7ee37a49f81cbcd83f05e9c9e4c5bf}\label{class_main_behaviour_a3b7ee37a49f81cbcd83f05e9c9e4c5bf}} 
+void {\bfseries Create\+Floor\+Group} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aaa4ac2157c791cd16fa2221a18e7952a}\label{class_main_behaviour_aaa4ac2157c791cd16fa2221a18e7952a}} 
+bool {\bfseries is\+Node\+Place\+In\+Same\+Floor} (Game\+Object node1, Game\+Object node2)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5e1f31eb51e2c0c75609efa674cc62b4}\label{class_main_behaviour_a5e1f31eb51e2c0c75609efa674cc62b4}} 
+void {\bfseries Process\+Room\+Objects} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ae5171720d54935cdc64f5ab9a792faff}\label{class_main_behaviour_ae5171720d54935cdc64f5ab9a792faff}} 
+void {\bfseries On\+G\+UI} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a0d45f016eb122b45701689fe61218ae0}\label{class_main_behaviour_a0d45f016eb122b45701689fe61218ae0}} 
+void {\bfseries Create\+Nodes} (Game\+Object root)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aac035745443a816193da540f3e06a403}\label{class_main_behaviour_aac035745443a816193da540f3e06a403}} 
+void {\bfseries Process\+Floor\+Objects} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aa90de34606b4e3457c7b37398a641ec9}\label{class_main_behaviour_aa90de34606b4e3457c7b37398a641ec9}} 
+void {\bfseries Process\+Door\+Objects\+Single\+Side} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a2c4d0c36f46d081d6c04df78c41bb392}\label{class_main_behaviour_a2c4d0c36f46d081d6c04df78c41bb392}} 
+void {\bfseries Process\+Door\+Objects} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ae6a0e1db92134dbd2ac372d974ea87e2}\label{class_main_behaviour_ae6a0e1db92134dbd2ac372d974ea87e2}} 
+void {\bfseries Create\+Connection\+Data} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a44d8105dd6ed3c1ee4a3d6af340a57ec}\label{class_main_behaviour_a44d8105dd6ed3c1ee4a3d6af340a57ec}} 
+Game\+Object {\bfseries Get\+Node} (Game\+Object parent\+Object)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a7fad2e9b80138ec15355c9ab0695f6b7}\label{class_main_behaviour_a7fad2e9b80138ec15355c9ab0695f6b7}} 
+void {\bfseries Node\+Link\+Button\+Pressed} (Game\+Object node\+Link)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a8cc4165e2464487d1de5c245bab999f2}\label{class_main_behaviour_a8cc4165e2464487d1de5c245bab999f2}} 
+\mbox{\hyperlink{class_assets_1_1_scripts_1_1_building}{Building}} {\bfseries Create\+Building\+Data} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5d1bae68d89bae993e25135ca6f13bb7}\label{class_main_behaviour_a5d1bae68d89bae993e25135ca6f13bb7}} 
+void {\bfseries Delete\+Link} (Game\+Object link)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a84821e0edcb8956bda4b0601df78bae5}\label{class_main_behaviour_a84821e0edcb8956bda4b0601df78bae5}} 
+void {\bfseries Execute\+Command} (string command)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a665db486907f1e5ffd9adb94cc80283d}\label{class_main_behaviour_a665db486907f1e5ffd9adb94cc80283d}} 
+void {\bfseries Check\+Indoor\+Gml} (string path\+To\+File)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a59a249b3da6420e71712fe3bb68288ee}\label{class_main_behaviour_a59a249b3da6420e71712fe3bb68288ee}} 
+void {\bfseries Open\+File} (string path\+To\+File)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a3c918b444ac63483c64fca739fedf8ad}\label{class_main_behaviour_a3c918b444ac63483c64fca739fedf8ad}} 
+void {\bfseries Delete\+Node} (Game\+Object node)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a3f15c05c26ecab05e6bf5556ab72cb97}\label{class_main_behaviour_a3f15c05c26ecab05e6bf5556ab72cb97}} 
+void {\bfseries Add\+Floor\+Height} ()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a032501d80d8285827d910f794fcdeb78}\label{class_main_behaviour_a032501d80d8285827d910f794fcdeb78}} 
+Bounds {\bfseries Get\+Room\+Node\+Bounds} (Game\+Object room\+Root)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a43f0aa45743161aef23f294f06356fb4}\label{class_main_behaviour_a43f0aa45743161aef23f294f06356fb4}} 
+Bounds {\bfseries Get\+Bounds} (Game\+Object obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a653d75045fe8dfc54e8f1c32c925fb18}\label{class_main_behaviour_a653d75045fe8dfc54e8f1c32c925fb18}} 
+static List$<$ Vector3 $>$ {\bfseries get\+Vector3\+From\+Pos\+List\+Node} (string\mbox{[}$\,$\mbox{]} pos\+Splitter, Xml\+Node pos\+List\+Node, double\mbox{[}$\,$\mbox{]} center\+Pos)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a06f7713659aaaf5ed27913c3ebee2219}\label{class_main_behaviour_a06f7713659aaaf5ed27913c3ebee2219}} 
+static Vector3 {\bfseries get\+Vector3\+From\+Pos\+Node} (string\mbox{[}$\,$\mbox{]} pos\+Splitter, Xml\+Node pos\+Node, double\mbox{[}$\,$\mbox{]} center\+Pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a02ea24bf504728fd5d1fc54aed18f2ac}\label{class_main_behaviour_a02ea24bf504728fd5d1fc54aed18f2ac}} 
+Game\+Object {\bfseries number} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a1dbb2fa9a2cefc1f0a68a323d1e7c457}\label{class_main_behaviour_a1dbb2fa9a2cefc1f0a68a323d1e7c457}} 
+Game\+Object {\bfseries target} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5dd4259a5bc2568a85b35989c2113f07}\label{class_main_behaviour_a5dd4259a5bc2568a85b35989c2113f07}} 
+Game\+Object {\bfseries original\+Wall\+Mesh\+Object} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a977c7934dc33961d34dc1f8b6e9ef577}\label{class_main_behaviour_a977c7934dc33961d34dc1f8b6e9ef577}} 
+Game\+Object {\bfseries base\+Plane} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab95ce60037133f434c761e9cdb2021e9}\label{class_main_behaviour_ab95ce60037133f434c761e9cdb2021e9}} 
+Game\+Object {\bfseries building\+Root} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a98caa80f8f94b2d338f03b25a56c2351}\label{class_main_behaviour_a98caa80f8f94b2d338f03b25a56c2351}} 
+Material {\bfseries wireframe\+Material} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a704c8616ea2f3e4971c1b0c10e12938c}\label{class_main_behaviour_a704c8616ea2f3e4971c1b0c10e12938c}} 
+Game\+Object {\bfseries current\+Position2D} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af9bfeef171eb53e372268e5d1be7ceb3}\label{class_main_behaviour_af9bfeef171eb53e372268e5d1be7ceb3}} 
+Game\+Object {\bfseries original\+Line} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a2a50c62aec6a9264f48134261ff6fe46}\label{class_main_behaviour_a2a50c62aec6a9264f48134261ff6fe46}} 
+Game\+Object {\bfseries sphere\+Red} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5abdc90e0f1c37559c3a80c6999473b0}\label{class_main_behaviour_a5abdc90e0f1c37559c3a80c6999473b0}} 
+Game\+Object {\bfseries original\+Polygon} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a60ec0c573d9eb442f0ca81b135a4ce0b}\label{class_main_behaviour_a60ec0c573d9eb442f0ca81b135a4ce0b}} 
+Game\+Object {\bfseries original\+Room} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a041b3310ca3dac0a66ede923271d506b}\label{class_main_behaviour_a041b3310ca3dac0a66ede923271d506b}} 
+Game\+Object {\bfseries background2D} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ac4d1e7178cb4b3625d8aca13d5ca32ee}\label{class_main_behaviour_ac4d1e7178cb4b3625d8aca13d5ca32ee}} 
+Game\+Object {\bfseries main\+Camera} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af5cd941927e063e21636de0c5ca36a8e}\label{class_main_behaviour_af5cd941927e063e21636de0c5ca36a8e}} 
+Game\+Object {\bfseries sub\+Camera} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5a87d72303936186ab543669b8fa38f8}\label{class_main_behaviour_a5a87d72303936186ab543669b8fa38f8}} 
+Material {\bfseries line\+Material} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aee6a04d683bf4dab37276384ac7d33e7}\label{class_main_behaviour_aee6a04d683bf4dab37276384ac7d33e7}} 
+Transform {\bfseries grid2\+D\+Transform} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a99303ac2c7d98426ab17e3341325b089}\label{class_main_behaviour_a99303ac2c7d98426ab17e3341325b089}} 
+float {\bfseries grid\+Z\+Pos} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a24f2260ea8afe9887c8c00a94c508e05}\label{class_main_behaviour_a24f2260ea8afe9887c8c00a94c508e05}} 
+float {\bfseries grid\+Step} = 1.\+0f
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a544422d7d534cfb134efdd978421f527}\label{class_main_behaviour_a544422d7d534cfb134efdd978421f527}} 
+Game\+Object {\bfseries door\+Base\+Root} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aee2d3c4ab083efa36290e0b22517470a}\label{class_main_behaviour_aee2d3c4ab083efa36290e0b22517470a}} 
+Game\+Object {\bfseries original\+Node} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a36eed251a0b871a7f3b8819be65d4920}\label{class_main_behaviour_a36eed251a0b871a7f3b8819be65d4920}} 
+Game\+Object {\bfseries node\+Root} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a3b4bf33e7eb66dc7a52673c6f825fd6b}\label{class_main_behaviour_a3b4bf33e7eb66dc7a52673c6f825fd6b}} 
+Game\+Object {\bfseries laser\+Line} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ae5546da76f351c61f22abc4e66b2666f}\label{class_main_behaviour_ae5546da76f351c61f22abc4e66b2666f}} 
+Game\+Object {\bfseries move\+Gizmo} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aa4f126a1df3ead8fb8f3f4b78cc9442b}\label{class_main_behaviour_aa4f126a1df3ead8fb8f3f4b78cc9442b}} 
+Game\+Object {\bfseries topology\+Panel} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab141db7389e108843b6539ce710cad64}\label{class_main_behaviour_ab141db7389e108843b6539ce710cad64}} 
+Material {\bfseries node\+Link\+Material} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a1d20e705e5ec3aabab40ab90ab08fe3e}\label{class_main_behaviour_a1d20e705e5ec3aabab40ab90ab08fe3e}} 
+Material {\bfseries selecte\+Node\+Link\+Material} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a7f442d0f7a3bbcdf323139fa6a607590}\label{class_main_behaviour_a7f442d0f7a3bbcdf323139fa6a607590}} 
+Game\+Object {\bfseries node\+Link\+Button} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ac0397264a0e0f8c7cd3fb0c5d4bea03a}\label{class_main_behaviour_ac0397264a0e0f8c7cd3fb0c5d4bea03a}} 
+Game\+Object {\bfseries panel\+Confirm} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab1246388c7187bd4df77e24d6bd0371b}\label{class_main_behaviour_ab1246388c7187bd4df77e24d6bd0371b}} 
+Unity\+Engine.\+U\+I.\+Text {\bfseries text\+Result} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a9f90987b89e98cadf2560fd6f1d643dc}\label{class_main_behaviour_a9f90987b89e98cadf2560fd6f1d643dc}} 
+\mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} {\bfseries current\+Room} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_acc378e5c754008076d189bfde36a35de}\label{class_main_behaviour_acc378e5c754008076d189bfde36a35de}} 
+Game\+Object {\bfseries current\+Polygon} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5aa7e798eac87678769abfe77510b241}\label{class_main_behaviour_a5aa7e798eac87678769abfe77510b241}} 
+Game\+Object {\bfseries selected\+Node} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a2fd91f7639f2ac93bd87f383fea0084c}\label{class_main_behaviour_a2fd91f7639f2ac93bd87f383fea0084c}} 
+Game\+Object {\bfseries selected\+Link} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a860ae13534bce3e66fecb868123ab331}\label{class_main_behaviour_a860ae13534bce3e66fecb868123ab331}} 
+List$<$ \mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}} $>$ {\bfseries room\+List} = new List$<$\mbox{\hyperlink{class_room_behaviour}{Room\+Behaviour}}$>$()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aa814d5e6e4bc7091b4d817f5479a21bb}\label{class_main_behaviour_aa814d5e6e4bc7091b4d817f5479a21bb}} 
+List$<$ Game\+Object $>$ {\bfseries polygon\+List} = new List$<$Game\+Object$>$()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a7aa6209172e051231f8ef3bf68c08a8e}\label{class_main_behaviour_a7aa6209172e051231f8ef3bf68c08a8e}} 
+Game\+Object {\bfseries selected\+Sphere} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a4780b33bce1d5257a934e01360fc931e}\label{class_main_behaviour_a4780b33bce1d5257a934e01360fc931e}} 
+Color {\bfseries grid\+Line\+Color} = new Color(0f, 1f, 0f, 1f)
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a125eae98965fe512a650698a1d8621a0}\label{class_main_behaviour_a125eae98965fe512a650698a1d8621a0}} 
+bool {\bfseries is\+Draw\+Mode} = false
+\item 
+string\mbox{[}$\,$\mbox{]} {\bfseries element\+Filters}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab7b06c20a50054d6547328ea98029739}\label{class_main_behaviour_ab7b06c20a50054d6547328ea98029739}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries element\+Names} = \{ \char`\"{}Door Root\char`\"{}, \char`\"{}\mbox{\hyperlink{class_assets_1_1_scripts_1_1_floor}{Floor}} Root\char`\"{} ,\char`\"{}Closure Surface\char`\"{},\char`\"{}Interior Wall Surface\char`\"{},\char`\"{}Composite Surface\char`\"{}\}
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af5169a2df1358d242f3a89ab8c781445}\label{class_main_behaviour_af5169a2df1358d242f3a89ab8c781445}} 
+Dictionary$<$ string, string $>$ {\bfseries element\+Name\+Map} = new Dictionary$<$string, string$>$()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a3eb1043fd73bafdecfa32d9321688bf5}\label{class_main_behaviour_a3eb1043fd73bafdecfa32d9321688bf5}} 
+Edit\+Mode {\bfseries current\+Edit\+Mode} = Edit\+Mode.\+None
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aeea52bf64461e09ac890cfbf512d976e}\label{class_main_behaviour_aeea52bf64461e09ac890cfbf512d976e}} 
+Vector3 {\bfseries old\+Target\+Pos} = new Vector3()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_aa77faae6f799254811325165ca9e682d}\label{class_main_behaviour_aa77faae6f799254811325165ca9e682d}} 
+bool {\bfseries is\+First\+Update} = true
+\item 
+\mbox{\Hypertarget{class_main_behaviour_afc355c2e2f7693d8ca6056f515af1681}\label{class_main_behaviour_afc355c2e2f7693d8ca6056f515af1681}} 
+Dictionary$<$ string, Material $>$ {\bfseries material\+Map} = new Dictionary$<$string, Material$>$()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a2e13ee5adb45ba8892781fcf908d1965}\label{class_main_behaviour_a2e13ee5adb45ba8892781fcf908d1965}} 
+bool {\bfseries is\+Wireframe\+Mode} = false
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ab564324c4d33c789931fccd0bfda92c2}\label{class_main_behaviour_ab564324c4d33c789931fccd0bfda92c2}} 
+bool {\bfseries show\+Line} = true
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a5b8e1ee946b167dde9501de7ee924f99}\label{class_main_behaviour_a5b8e1ee946b167dde9501de7ee924f99}} 
+Dictionary$<$ int, List$<$ Game\+Object $>$ $>$ {\bfseries floor\+Group} = new Dictionary$<$int, List$<$Game\+Object$>$$>$()
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a187aa799946d1e3b196dc19784fb4200}\label{class_main_behaviour_a187aa799946d1e3b196dc19784fb4200}} 
+bool {\bfseries is\+Floor\+Visible} = true
+\item 
+\mbox{\Hypertarget{class_main_behaviour_af0a7a74228d7a1726fd6a0b4bd5af28c}\label{class_main_behaviour_af0a7a74228d7a1726fd6a0b4bd5af28c}} 
+\mbox{\hyperlink{class_assets_1_1_scripts_1_1_building}{Building}} {\bfseries global\+Building} = null
+\item 
+\mbox{\Hypertarget{class_main_behaviour_afaac093ef5dfbe45765a157b0fa4c451}\label{class_main_behaviour_afaac093ef5dfbe45765a157b0fa4c451}} 
+int {\bfseries max\+Export\+Object\+Number} = 10000
+\item 
+\mbox{\Hypertarget{class_main_behaviour_ac26fa2382ea0ed527683f602ac523787}\label{class_main_behaviour_ac26fa2382ea0ed527683f602ac523787}} 
+bool {\bfseries is\+Delete\+Node\+Selected} = false
+\item 
+\mbox{\Hypertarget{class_main_behaviour_a1e23d5b824c0f82f034caa9d8459183a}\label{class_main_behaviour_a1e23d5b824c0f82f034caa9d8459183a}} 
+bool {\bfseries is\+Delete\+Link\+Selected} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_main_behaviour_aa1678f67da762d287ea5374c0ae4ed63}\label{class_main_behaviour_aa1678f67da762d287ea5374c0ae4ed63}} 
+\index{MainBehaviour@{MainBehaviour}!elementFilters@{elementFilters}}
+\index{elementFilters@{elementFilters}!MainBehaviour@{MainBehaviour}}
+\doxysubsubsection{\texorpdfstring{elementFilters}{elementFilters}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Main\+Behaviour.\+element\+Filters\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries 초기값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ \textcolor{stringliteral}{"//bldg:Door"}, \textcolor{stringliteral}{"//bldg:FloorSurface"},\textcolor{stringliteral}{"//bldg:ClosureSurface"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"//bldg:InteriorWallSurface"},\textcolor{stringliteral}{"//bldg:CompositeSurface"} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Main\+Behaviour.\+cs\end{DoxyCompactItemize}

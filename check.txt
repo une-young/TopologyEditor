@@ -1,0 +1,105 @@
+//평창 아레나 door 부분
+//Door surface가 door node 안에 있음
+<bldg:Door gml:id="_53_Layer0_BD.KefeplOQoKoGaRWc51yd_BP.GGfVpyKNVDPPiqkdPkep">
+  <bldg:lod3MultiSurface>
+    <gml:MultiSurface>
+      <gml:surfaceMember>
+        <gml:Polygon>
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">
+98.316 185.626 3.888
+99.354 186.074 3.888
+99.354 186.074 1.644
+98.316 185.626 1.644
+98.316 185.626 3.888
+</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </gml:surfaceMember>
+      <gml:surfaceMember>
+        <gml:Polygon>
+          <gml:exterior>
+            <gml:LinearRing>
+              <gml:posList srsDimension="3">
+99.429 185.899 3.888
+98.391 185.451 3.888
+98.391 185.451 1.644
+99.429 185.899 1.644
+99.429 185.899 3.888
+</gml:posList>
+            </gml:LinearRing>
+          </gml:exterior>
+        </gml:Polygon>
+      </gml:surfaceMember>
+    </gml:MultiSurface>
+  </bldg:lod3MultiSurface>
+</bldg:Door>
+
+//------------------------------------------------------------//
+//Revit에서 변환한 citygml의 Door 부분
+<bldg:Door>
+  <gml:name>Door_706733</gml:name>
+  <bldg:lod4MultiSurface>
+    <gml:MultiSurface>
+      <gml:surfaceMember>
+        <gml:OrientableSurface orientation="-">
+          <gml:baseSurface xlink:href="706733"/>
+        </gml:OrientableSurface>
+      </gml:surfaceMember>
+    </gml:MultiSurface>
+  </bldg:lod4MultiSurface>
+</bldg:Door>
+
+//Door가 속한 Wall의 surface 부분
+//여기서 Door의 Surface와의 연관관계를 찾을 수 없음 
+<bldg:lod4MultiSurface>
+  <bldg:MultiSurface>
+    <bldg:surfaceMember>
+      <bldg:CompositeSurface gml:id="8">
+        <gml:surfaceMember>
+          <gml:Polygon gml:id="8interiorDoor">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList> 10.3625402450562 17.7571582794189 0.984251976013184 10.3625402450562 17.7571582794189 8.98425197601318 17.5551471710205 17.7968006134033 8.98425197601318 17.5551471710205 17.7968006134033 0.984251976013184</gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+            <gml:interior>
+              <gml:LinearRing>
+                <gml:posList> 10.6166894098322 17.7585588569379 0.984251968503941 10.6166894098322 17.7585588569379 7.89698162729659 13.7805076043928 17.7759967860988 7.89698162729659 13.7805076043928 17.7759967860988 0.984251968503941</gml:posList>
+              </gml:LinearRing>
+            </gml:interior>
+          </gml:Polygon>
+        </gml:surfaceMember>
+        <gml:surfaceMember>
+          <gml:Polygon gml:id="Door706733Room687709id1">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList> 13.7805076043928 17.7759967860988 0.984251968503941 13.7805076043928 17.7759967860988 7.89698162729659 13.7832633986934 17.2760043805587 7.89698162729659 13.7832633986934 17.2760043805587 0.984251968503941</gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </gml:surfaceMember>
+        <gml:surfaceMember>
+          <gml:Polygon gml:id="Door706733Room687709id2">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList> 10.6166894098322 17.7585588569379 0.984251968503941 10.6166894098322 17.7585588569379 7.89698162729659 10.6194452041328 17.2585664513978 7.89698162729659 10.6194452041328 17.2585664513978 0.984251968503941</gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </gml:surfaceMember>
+        <gml:surfaceMember>
+          <gml:Polygon gml:id="Door706733Room687709id3">
+            <gml:exterior>
+              <gml:LinearRing>
+                <gml:posList> 10.6166894098322 17.7585588569379 7.89698162729659 10.6194452041328 17.2585664513978 7.89698162729659 13.7832633986934 17.2760043805587 7.89698162729659 13.7805076043928 17.7759967860988 7.89698162729659</gml:posList>
+              </gml:LinearRing>
+            </gml:exterior>
+          </gml:Polygon>
+        </gml:surfaceMember>
+      </bldg:CompositeSurface>
+    </bldg:surfaceMember>
+  </bldg:MultiSurface>
+</bldg:lod4MultiSurface>

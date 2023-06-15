@@ -1,0 +1,5 @@
+<map id="Poly2Mesh.ConvertPoints" name="Poly2Mesh.ConvertPoints">
+<area shape="rect" id="node1" title="Helper method to convert a set of 3D points into the 2D polygon points needed by the Poly2Tri code." alt="" coords="465,5,636,32"/>
+<area shape="rect" id="node2" href="$class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,5,417,32"/>
+<area shape="rect" id="node3" href="$class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,5,208,32"/>
+</map>

@@ -1,0 +1,522 @@
+\hypertarget{class_poly2_tri_1_1_point2_d_list}{}\doxysection{Poly2\+Tri.\+Point2\+D\+List 클래스 참조}
+\label{class_poly2_tri_1_1_point2_d_list}\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+
+
+Poly2\+Tri.\+Point2\+D\+List에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Poly2\+Tri.\+Point2\+D\+List에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a04faaf45cf0efc793e9c59b7fcbf50ac}\label{class_poly2_tri_1_1_point2_d_list_a04faaf45cf0efc793e9c59b7fcbf50ac}} 
+enum {\bfseries Winding\+Order\+Type} \{ {\bfseries CW}, 
+{\bfseries C\+CW}, 
+{\bfseries Unknown}, 
+{\bfseries Default} = C\+CW
+ \}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a08157a249eb345867a68bd3f709bb39f}\label{class_poly2_tri_1_1_point2_d_list_a08157a249eb345867a68bd3f709bb39f}} 
+enum {\bfseries Polygon\+Error} \+: uint \{ \newline
+{\bfseries None} = 0, 
+{\bfseries Not\+Enough\+Vertices} = 1 $<$$<$ 0, 
+{\bfseries Not\+Convex} = 1 $<$$<$ 1, 
+{\bfseries Not\+Simple} = 1 $<$$<$ 2, 
+\newline
+{\bfseries Area\+Too\+Small} = 1 $<$$<$ 3, 
+{\bfseries Sides\+Too\+Close\+To\+Parallel} = 1 $<$$<$ 4, 
+{\bfseries Too\+Thin} = 1 $<$$<$ 5, 
+{\bfseries Degenerate} = 1 $<$$<$ 6, 
+\newline
+{\bfseries Unknown} = 1 $<$$<$ 30
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aecd8fde0bf275b18078957c76907df1b}\label{class_poly2_tri_1_1_point2_d_list_aecd8fde0bf275b18078957c76907df1b}} 
+{\bfseries Point2\+D\+List} (int capacity)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aee260c2f71fa7cbf0ace2c58ce5f2a50}\label{class_poly2_tri_1_1_point2_d_list_aee260c2f71fa7cbf0ace2c58ce5f2a50}} 
+{\bfseries Point2\+D\+List} (I\+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ l)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_af811dc230f5577233d93ed22e1812a24}\label{class_poly2_tri_1_1_point2_d_list_af811dc230f5577233d93ed22e1812a24}} 
+{\bfseries Point2\+D\+List} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} l)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a4ba76312cee416d57a52c5ee56896c85}\label{class_poly2_tri_1_1_point2_d_list_a4ba76312cee416d57a52c5ee56896c85}} 
+override string {\bfseries To\+String} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a3da69c0be1013a668c713dd0a14318ff}\label{class_poly2_tri_1_1_point2_d_list_a3da69c0be1013a668c713dd0a14318ff}} 
+void {\bfseries Clear} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a4b8871a564212df0f02b32f15c243087}\label{class_poly2_tri_1_1_point2_d_list_a4b8871a564212df0f02b32f15c243087}} 
+int {\bfseries Index\+Of} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a6ba95104025a62d73480173413cf4ae7}\label{class_poly2_tri_1_1_point2_d_list_a6ba95104025a62d73480173413cf4ae7}} 
+virtual void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a0718a01994326269975639307d90cc46}\label{class_poly2_tri_1_1_point2_d_list_a0718a01994326269975639307d90cc46}} 
+virtual void {\bfseries Add\+Range} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list}{Point2\+D\+List}} l)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a706c59488412452fff760c9ab6fd06b2}\label{class_poly2_tri_1_1_point2_d_list_a706c59488412452fff760c9ab6fd06b2}} 
+virtual void {\bfseries Add\+Range} (I\+Enumerator$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ iter, Winding\+Order\+Type winding\+Order)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a51de8385d31670e704d04d3ba58e908f}\label{class_poly2_tri_1_1_point2_d_list_a51de8385d31670e704d04d3ba58e908f}} 
+virtual void {\bfseries Insert} (int idx, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} item)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_addbc0034341dbefc0c4c1c0c804d0fb5}\label{class_poly2_tri_1_1_point2_d_list_addbc0034341dbefc0c4c1c0c804d0fb5}} 
+virtual bool {\bfseries Remove} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a69d8ccff79a47037d1275b3c448a8be1}\label{class_poly2_tri_1_1_point2_d_list_a69d8ccff79a47037d1275b3c448a8be1}} 
+virtual void {\bfseries Remove\+At} (int idx)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a7c915abed2bf3b05ec504cb6147503be}\label{class_poly2_tri_1_1_point2_d_list_a7c915abed2bf3b05ec504cb6147503be}} 
+virtual void {\bfseries Remove\+Range} (int idx\+Start, int count)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a962a1d0637fe54dd610cf3b6603dcc7c}\label{class_poly2_tri_1_1_point2_d_list_a962a1d0637fe54dd610cf3b6603dcc7c}} 
+bool {\bfseries Contains} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a57b24bf564b14c97a6fdac47f3d27976}\label{class_poly2_tri_1_1_point2_d_list_a57b24bf564b14c97a6fdac47f3d27976}} 
+void {\bfseries Copy\+To} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a569280ecde141e98129b29165101c00b}\label{class_poly2_tri_1_1_point2_d_list_a569280ecde141e98129b29165101c00b}} 
+void {\bfseries Calculate\+Bounds} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_adbc3d48d738e6e7961360ed8e801f119}\label{class_poly2_tri_1_1_point2_d_list_adbc3d48d738e6e7961360ed8e801f119}} 
+double {\bfseries Calculate\+Epsilon} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_adff192a5282eb25b8c1d457143597a84}\label{class_poly2_tri_1_1_point2_d_list_adff192a5282eb25b8c1d457143597a84}} 
+Winding\+Order\+Type {\bfseries Calculate\+Winding\+Order} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a31aef6b66b667115a10a9b2e8679a1df}\label{class_poly2_tri_1_1_point2_d_list_a31aef6b66b667115a10a9b2e8679a1df}} 
+int {\bfseries Next\+Index} (int index)
+\item 
+int \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497}{Previous\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Gets the previous index. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_aee2f1c0b71aaa7d6debeacd655a7c1ae}{Get\+Signed\+Area}} ()
+\begin{DoxyCompactList}\small\item\em Gets the signed area. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23}{Get\+Area}} ()
+\begin{DoxyCompactList}\small\item\em Gets the area. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_aad906704765f7e7e90ef1cd2866ed053}{Get\+Centroid}} ()
+\begin{DoxyCompactList}\small\item\em Gets the centroid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a758d898616566c5c6ea8ec3133f028fc}{Translate}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} vector)
+\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a0bb2e8e82a4adaee7c6076d3c3e45163}{Scale}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} value)
+\begin{DoxyCompactList}\small\item\em Scales the vertices with the specified vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_ab8ea5f079841c175b2ed2e15f7d9fcfb}{Rotate}} (double radians)
+\begin{DoxyCompactList}\small\item\em Rotate the vertices with the defined value in radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a79ada9011436eafca02a27278ba172d7}\label{class_poly2_tri_1_1_point2_d_list_a79ada9011436eafca02a27278ba172d7}} 
+bool {\bfseries Is\+Degenerate} ()
+\item 
+bool \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a5b7278a52ae5aeadcc140721272a3689}{Is\+Convex}} ()
+\begin{DoxyCompactList}\small\item\em Assuming the polygon is simple; determines whether the polygon is convex. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5}{Is\+Simple}} ()
+\begin{DoxyCompactList}\small\item\em Check for edge crossings \end{DoxyCompactList}\item 
+Polygon\+Error \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a}{Check\+Polygon}} ()
+\begin{DoxyCompactList}\small\item\em Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons are added to world geometry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a9a19298af49b42e49c578138e4250f65}{Remove\+Duplicate\+Neighbor\+Points}} ()
+\begin{DoxyCompactList}\small\item\em Removes duplicate points that lie next to each other in the list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a1f4f4e72c08bd56fb4f4df371e843e30}{Simplify}} ()
+\begin{DoxyCompactList}\small\item\em Removes all collinear points on the polygon. Has a default bias of 0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62}{Simplify}} (double bias)
+\begin{DoxyCompactList}\small\item\em Removes all collinear points on the polygon. Note that this is N\+OT safe to run on a complex polygon as it will remove points that it should not. For example, consider this polygon\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a9290e3e833ce5798077c5f3227b8b982}{Merge\+Parallel\+Edges}} (double tolerance)
+\begin{DoxyCompactList}\small\item\em Merges all parallel edges in the list of vertices \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_aad76ce316a56cb9f42a947cfff7226d8}{Project\+To\+Axis}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} axis, out double min, out double max)
+\begin{DoxyCompactList}\small\item\em Projects to axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a21e70da3378b814e3fa4a302dc45a0ea}\label{class_poly2_tri_1_1_point2_d_list_a21e70da3378b814e3fa4a302dc45a0ea}} 
+static string {\bfseries Get\+Error\+String} (Polygon\+Error error)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_ac33077678a1f6dc3d143cd7048b93763}\label{class_poly2_tri_1_1_point2_d_list_ac33077678a1f6dc3d143cd7048b93763}} 
+static readonly int {\bfseries k\+Max\+Polygon\+Vertices} = 100000
+\item 
+static readonly double \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a813a93d07764fc5cd30cc840d7bf5028}{k\+Linear\+Slop}} = 0.\+005
+\item 
+static readonly double \mbox{\hyperlink{class_poly2_tri_1_1_point2_d_list_a382853cd70050d7021695da0693863b5}{k\+Angular\+Slop}} = (2.\+0 / (180.\+0 $\ast$ Math.\+PI))
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a2fad8f3853b2a1a9a2491f3a6574ef9f}\label{class_poly2_tri_1_1_point2_d_list_a2fad8f3853b2a1a9a2491f3a6574ef9f}} 
+virtual void {\bfseries Add} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p, int idx, bool b\+Calc\+Winding\+Order\+And\+Epsilon)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a869f371fade917e8a5e2f1e3bf208a6e}\label{class_poly2_tri_1_1_point2_d_list_a869f371fade917e8a5e2f1e3bf208a6e}} 
+List$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ {\bfseries m\+Points} = new List$<$\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}$>$()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_ae81780bcb1e3bbe45a22132409d8de26}\label{class_poly2_tri_1_1_point2_d_list_ae81780bcb1e3bbe45a22132409d8de26}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} {\bfseries m\+Bounding\+Box} = new \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}}()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a1ecd489e33af5c7aa6dc26c2c962f424}\label{class_poly2_tri_1_1_point2_d_list_a1ecd489e33af5c7aa6dc26c2c962f424}} 
+Winding\+Order\+Type {\bfseries m\+Winding\+Order} = Winding\+Order\+Type.\+Unknown
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_adf5bb8c0a3c5b716995dd649861e31cb}\label{class_poly2_tri_1_1_point2_d_list_adf5bb8c0a3c5b716995dd649861e31cb}} 
+double {\bfseries m\+Epsilon} = Math\+Util.\+E\+P\+S\+I\+L\+ON
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a3072adbf07f59d6b6b1baead56eb0222}\label{class_poly2_tri_1_1_point2_d_list_a3072adbf07f59d6b6b1baead56eb0222}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} {\bfseries Bounding\+Box}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a0a442c46810d16b49f8b6256c5538545}\label{class_poly2_tri_1_1_point2_d_list_a0a442c46810d16b49f8b6256c5538545}} 
+Winding\+Order\+Type {\bfseries Winding\+Order}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a685a5b38de65791cba1073991a7eb9ac}\label{class_poly2_tri_1_1_point2_d_list_a685a5b38de65791cba1073991a7eb9ac}} 
+double {\bfseries Epsilon}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aca9aefa6bc19bf620d3ba29d831f01e7}\label{class_poly2_tri_1_1_point2_d_list_aca9aefa6bc19bf620d3ba29d831f01e7}} 
+\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} {\bfseries this\mbox{[}int index\mbox{]}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aea21f9009be244de185dab3fed628c92}\label{class_poly2_tri_1_1_point2_d_list_aea21f9009be244de185dab3fed628c92}} 
+int {\bfseries Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_ac3d647e18c23e87e411b744def5834ac}\label{class_poly2_tri_1_1_point2_d_list_ac3d647e18c23e87e411b744def5834ac}} 
+virtual bool {\bfseries Is\+Read\+Only}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_ae32c8319311903d89387c4e487c7c752}\label{class_poly2_tri_1_1_point2_d_list_ae32c8319311903d89387c4e487c7c752}} 
+I\+Enumerator I\+Enumerable. {\bfseries Get\+Enumerator} ()
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a65bf23f31ce07908f8831d52f2127458}\label{class_poly2_tri_1_1_point2_d_list_a65bf23f31ce07908f8831d52f2127458}} 
+I\+Enumerator$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$ I\+Enumerable$<$ \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} $>$. {\bfseries Get\+Enumerator} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a}\label{class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!CheckPolygon@{CheckPolygon}}
+\index{CheckPolygon@{CheckPolygon}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{CheckPolygon()}{CheckPolygon()}}
+{\footnotesize\ttfamily Polygon\+Error Poly2\+Tri.\+Point2\+D\+List.\+Check\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons are added to world geometry. 
+
+Performs a full check, for simplicity, convexity, orientation, minimum angle, and volume. This won\textquotesingle{}t be very efficient, and a lot of it is redundant when other tools in this section are used.
+
+From Eric Jordan\textquotesingle{}s convex decomposition library
+
+
+\begin{DoxyParams}{매개변수}
+{\em print\+Errors} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23}\label{class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!GetArea@{GetArea}}
+\index{GetArea@{GetArea}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{GetArea()}{GetArea()}}
+{\footnotesize\ttfamily double Poly2\+Tri.\+Point2\+D\+List.\+Get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the area. 
+
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aad906704765f7e7e90ef1cd2866ed053}\label{class_poly2_tri_1_1_point2_d_list_aad906704765f7e7e90ef1cd2866ed053}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!GetCentroid@{GetCentroid}}
+\index{GetCentroid@{GetCentroid}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{GetCentroid()}{GetCentroid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} Poly2\+Tri.\+Point2\+D\+List.\+Get\+Centroid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the centroid. 
+
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aee2f1c0b71aaa7d6debeacd655a7c1ae}\label{class_poly2_tri_1_1_point2_d_list_aee2f1c0b71aaa7d6debeacd655a7c1ae}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!GetSignedArea@{GetSignedArea}}
+\index{GetSignedArea@{GetSignedArea}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{GetSignedArea()}{GetSignedArea()}}
+{\footnotesize\ttfamily double Poly2\+Tri.\+Point2\+D\+List.\+Get\+Signed\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the signed area. 
+
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a5b7278a52ae5aeadcc140721272a3689}\label{class_poly2_tri_1_1_point2_d_list_a5b7278a52ae5aeadcc140721272a3689}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!IsConvex@{IsConvex}}
+\index{IsConvex@{IsConvex}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{IsConvex()}{IsConvex()}}
+{\footnotesize\ttfamily bool Poly2\+Tri.\+Point2\+D\+List.\+Is\+Convex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Assuming the polygon is simple; determines whether the polygon is convex. 
+
+\begin{DoxyReturn}{반환값}
+{\ttfamily true} if it is convex; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5}\label{class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!IsSimple@{IsSimple}}
+\index{IsSimple@{IsSimple}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{IsSimple()}{IsSimple()}}
+{\footnotesize\ttfamily bool Poly2\+Tri.\+Point2\+D\+List.\+Is\+Simple (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check for edge crossings 
+
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_cgraph}
+\end{center}
+\end{figure}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a9290e3e833ce5798077c5f3227b8b982}\label{class_poly2_tri_1_1_point2_d_list_a9290e3e833ce5798077c5f3227b8b982}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!MergeParallelEdges@{MergeParallelEdges}}
+\index{MergeParallelEdges@{MergeParallelEdges}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{MergeParallelEdges()}{MergeParallelEdges()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Merge\+Parallel\+Edges (\begin{DoxyParamCaption}\item[{double}]{tolerance }\end{DoxyParamCaption})}
+
+
+
+Merges all parallel edges in the list of vertices 
+
+
+\begin{DoxyParams}{매개변수}
+{\em tolerance} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497}\label{class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!PreviousIndex@{PreviousIndex}}
+\index{PreviousIndex@{PreviousIndex}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{PreviousIndex()}{PreviousIndex()}}
+{\footnotesize\ttfamily int Poly2\+Tri.\+Point2\+D\+List.\+Previous\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Gets the previous index. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em index} & The index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_aad76ce316a56cb9f42a947cfff7226d8}\label{class_poly2_tri_1_1_point2_d_list_aad76ce316a56cb9f42a947cfff7226d8}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!ProjectToAxis@{ProjectToAxis}}
+\index{ProjectToAxis@{ProjectToAxis}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{ProjectToAxis()}{ProjectToAxis()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Project\+To\+Axis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{axis,  }\item[{out double}]{min,  }\item[{out double}]{max }\end{DoxyParamCaption})}
+
+
+
+Projects to axis. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em axis} & The axis.\\
+\hline
+{\em min} & The min.\\
+\hline
+{\em max} & The max.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a9a19298af49b42e49c578138e4250f65}\label{class_poly2_tri_1_1_point2_d_list_a9a19298af49b42e49c578138e4250f65}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!RemoveDuplicateNeighborPoints@{RemoveDuplicateNeighborPoints}}
+\index{RemoveDuplicateNeighborPoints@{RemoveDuplicateNeighborPoints}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{RemoveDuplicateNeighborPoints()}{RemoveDuplicateNeighborPoints()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Remove\+Duplicate\+Neighbor\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes duplicate points that lie next to each other in the list 
+
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_ab8ea5f079841c175b2ed2e15f7d9fcfb}\label{class_poly2_tri_1_1_point2_d_list_ab8ea5f079841c175b2ed2e15f7d9fcfb}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Rotate (\begin{DoxyParamCaption}\item[{double}]{radians }\end{DoxyParamCaption})}
+
+
+
+Rotate the vertices with the defined value in radians. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em value} & The amount to rotate by in radians.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a0bb2e8e82a4adaee7c6076d3c3e45163}\label{class_poly2_tri_1_1_point2_d_list_a0bb2e8e82a4adaee7c6076d3c3e45163}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!Scale@{Scale}}
+\index{Scale@{Scale}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{Scale()}{Scale()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Scales the vertices with the specified vector. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em value} & The Value.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a1f4f4e72c08bd56fb4f4df371e843e30}\label{class_poly2_tri_1_1_point2_d_list_a1f4f4e72c08bd56fb4f4df371e843e30}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!Simplify@{Simplify}}
+\index{Simplify@{Simplify}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{Simplify()}{Simplify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Simplify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes all collinear points on the polygon. Has a default bias of 0 
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon} & The polygon that needs simplification.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A simplified polygon.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62}\label{class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!Simplify@{Simplify}}
+\index{Simplify@{Simplify}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{Simplify()}{Simplify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Simplify (\begin{DoxyParamCaption}\item[{double}]{bias }\end{DoxyParamCaption})}
+
+
+
+Removes all collinear points on the polygon. Note that this is N\+OT safe to run on a complex polygon as it will remove points that it should not. For example, consider this polygon\+: 
+
+\begin{DoxyVerb}      2
+      +
+     / \
+    /   \
+   /     \
+\end{DoxyVerb}
+ 0 +---+-\/-\/-\/-\/---+ 3 1
+
+This algorithm would delete point 3, leaving you with the polygon 0,1,2 -\/ definitely N\+OT the correct polygon. Caveat Emptor!
+
+
+\begin{DoxyParams}{매개변수}
+{\em polygon} & The polygon that needs simplification.\\
+\hline
+{\em bias} & The distance bias between points. Points closer than this will be \textquotesingle{}joined\textquotesingle{}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+A simplified polygon.
+\end{DoxyReturn}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a758d898616566c5c6ea8ec3133f028fc}\label{class_poly2_tri_1_1_point2_d_list_a758d898616566c5c6ea8ec3133f028fc}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!Translate@{Translate}}
+\index{Translate@{Translate}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily void Poly2\+Tri.\+Point2\+D\+List.\+Translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{vector }\end{DoxyParamCaption})}
+
+
+
+
+
+Translates the vertices with the specified vector.
+
+
+\begin{DoxyParams}{매개변수}
+{\em vector} & The vector.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a382853cd70050d7021695da0693863b5}\label{class_poly2_tri_1_1_point2_d_list_a382853cd70050d7021695da0693863b5}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!kAngularSlop@{kAngularSlop}}
+\index{kAngularSlop@{kAngularSlop}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{kAngularSlop}{kAngularSlop}}
+{\footnotesize\ttfamily readonly double Poly2\+Tri.\+Point2\+D\+List.\+k\+Angular\+Slop = (2.\+0 / (180.\+0 $\ast$ Math.\+PI))\hspace{0.3cm}{\ttfamily [static]}}
+
+A small angle used as a collision and constraint tolerance. Usually it is chosen to be numerically significant, but visually insignificant. \mbox{\Hypertarget{class_poly2_tri_1_1_point2_d_list_a813a93d07764fc5cd30cc840d7bf5028}\label{class_poly2_tri_1_1_point2_d_list_a813a93d07764fc5cd30cc840d7bf5028}} 
+\index{Poly2Tri.Point2DList@{Poly2Tri.Point2DList}!kLinearSlop@{kLinearSlop}}
+\index{kLinearSlop@{kLinearSlop}!Poly2Tri.Point2DList@{Poly2Tri.Point2DList}}
+\doxysubsubsection{\texorpdfstring{kLinearSlop}{kLinearSlop}}
+{\footnotesize\ttfamily readonly double Poly2\+Tri.\+Point2\+D\+List.\+k\+Linear\+Slop = 0.\+005\hspace{0.3cm}{\ttfamily [static]}}
+
+A small length used as a collision and constraint tolerance. Usually it is chosen to be numerically significant, but visually insignificant. 
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Utility/Point2\+D\+List.\+cs\end{DoxyCompactItemize}

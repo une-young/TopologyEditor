@@ -1,0 +1,147 @@
+\hypertarget{class_poly2_tri_1_1_triangulation_util}{}\doxysection{Poly2\+Tri.\+Triangulation\+Util 클래스 참조}
+\label{class_poly2_tri_1_1_triangulation_util}\index{Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_util_a5529e2866f2a35dacb303b41a94a08cf}{Smart\+Incircle}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pa, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pb, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pc, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pd)
+\begin{DoxyCompactList}\small\item\em Requirements\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a3e17a94b04c29b1fbafbcd3ec7412df4}\label{class_poly2_tri_1_1_triangulation_util_a3e17a94b04c29b1fbafbcd3ec7412df4}} 
+static bool {\bfseries In\+Scan\+Area} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pa, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pb, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pc, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pd)
+\item 
+static Orientation \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_util_a03b5cb31846006443dfae4ab79872709}{Orient2d}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pa, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pb, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pc)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_ad537e918cd0490d6dc8f1d46c14857f5}\label{class_poly2_tri_1_1_triangulation_util_ad537e918cd0490d6dc8f1d46c14857f5}} 
+static bool {\bfseries Point\+In\+Bounding\+Box} (double xmin, double xmax, double ymin, double ymax, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a749e3487162db129be8d999335e68002}\label{class_poly2_tri_1_1_triangulation_util_a749e3487162db129be8d999335e68002}} 
+static bool {\bfseries Point\+On\+Line\+Segment2D} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} line\+Start, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} line\+End, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p, double epsilon)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a315ac535f68b19614603fa4f57109a43}\label{class_poly2_tri_1_1_triangulation_util_a315ac535f68b19614603fa4f57109a43}} 
+static bool {\bfseries Point\+On\+Line\+Segment2D} (double x1, double y1, double x2, double y2, double x, double y, double epsilon)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a7a6416c9610f86f5f6c0da31dd07cc61}\label{class_poly2_tri_1_1_triangulation_util_a7a6416c9610f86f5f6c0da31dd07cc61}} 
+static bool {\bfseries Rects\+Intersect} (\mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} r1, \mbox{\hyperlink{class_poly2_tri_1_1_rect2_d}{Rect2D}} r2)
+\item 
+static bool \mbox{\hyperlink{class_poly2_tri_1_1_triangulation_util_ac46c6c3a292146300095b929815d216f}{Lines\+Intersect2D}} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Start0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+End0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Start1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+End1, bool first\+Is\+Segment, bool second\+Is\+Segment, bool coincident\+End\+Point\+Collisions, ref \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p\+Intersection\+Pt, double epsilon)
+\begin{DoxyCompactList}\small\item\em This method detects if two line segments (or lines) intersect, and, if so, the point of intersection. Use the {\itshape first\+Is\+Segment}  and {\itshape second\+Is\+Segment}  parameters to set whether the intersection point must be on the first and second line segments. Setting these both to true means you are doing a line-\/segment to line-\/segment intersection. Setting one of them to true means you are doing a line to line-\/segment intersection test, and so on. Note\+: If two line segments are coincident, then no intersection is detected (there are actually infinite intersection points). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a214bbd9b60f1edafd897bab128fa6e4f}\label{class_poly2_tri_1_1_triangulation_util_a214bbd9b60f1edafd897bab128fa6e4f}} 
+static bool {\bfseries Lines\+Intersect2D} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Start0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+End0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Start1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+End1, ref \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} p\+Intersection\+Pt, double epsilon)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_afdcbdc8347910b10d28307a2e293629b}\label{class_poly2_tri_1_1_triangulation_util_afdcbdc8347910b10d28307a2e293629b}} 
+static double {\bfseries L\+I2\+D\+Dot\+Product} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} v0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} v1)
+\item 
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a8668716abe48a4e52d012650992c8894}\label{class_poly2_tri_1_1_triangulation_util_a8668716abe48a4e52d012650992c8894}} 
+static bool {\bfseries Rays\+Intersect2D} (\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Ray\+Origin0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Ray\+Vector0, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Ray\+Origin1, \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Ray\+Vector1, ref \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}} pt\+Intersection)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\begin{DoxyAuthor}{작성자}
+Thomas Åhlén, \href{mailto:thahlen@gmail.com}{\texttt{ thahlen@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_ac46c6c3a292146300095b929815d216f}\label{class_poly2_tri_1_1_triangulation_util_ac46c6c3a292146300095b929815d216f}} 
+\index{Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}!LinesIntersect2D@{LinesIntersect2D}}
+\index{LinesIntersect2D@{LinesIntersect2D}!Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}}
+\doxysubsubsection{\texorpdfstring{LinesIntersect2D()}{LinesIntersect2D()}}
+{\footnotesize\ttfamily static bool Poly2\+Tri.\+Triangulation\+Util.\+Lines\+Intersect2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pt\+Start0,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pt\+End0,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pt\+Start1,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pt\+End1,  }\item[{bool}]{first\+Is\+Segment,  }\item[{bool}]{second\+Is\+Segment,  }\item[{bool}]{coincident\+End\+Point\+Collisions,  }\item[{ref \mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{p\+Intersection\+Pt,  }\item[{double}]{epsilon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This method detects if two line segments (or lines) intersect, and, if so, the point of intersection. Use the {\itshape first\+Is\+Segment}  and {\itshape second\+Is\+Segment}  parameters to set whether the intersection point must be on the first and second line segments. Setting these both to true means you are doing a line-\/segment to line-\/segment intersection. Setting one of them to true means you are doing a line to line-\/segment intersection test, and so on. Note\+: If two line segments are coincident, then no intersection is detected (there are actually infinite intersection points). 
+
+
+\begin{DoxyParams}{매개변수}
+{\em pt\+Start0} & The first point of the first line segment.\\
+\hline
+{\em pt\+End0} & The second point of the first line segment.\\
+\hline
+{\em pt\+Start1} & The first point of the second line segment.\\
+\hline
+{\em pt\+End1} & The second point of the second line segment.\\
+\hline
+{\em first\+Is\+Segment} & Set this to true to require that the intersection point be on the first line segment.\\
+\hline
+{\em second\+Is\+Segment} & Set this to true to require that the intersection point be on the second line segment.\\
+\hline
+{\em coincident\+End\+Point\+Collisions} & Set this to true to enable collisions if the line segments share an endpoint\\
+\hline
+{\em p\+Intersection\+Pt} & This is set to the intersection point if an intersection is detected.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+True if an intersection is detected, false otherwise.
+\end{DoxyReturn}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_triangulation_util_ac46c6c3a292146300095b929815d216f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a03b5cb31846006443dfae4ab79872709}\label{class_poly2_tri_1_1_triangulation_util_a03b5cb31846006443dfae4ab79872709}} 
+\index{Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}!Orient2d@{Orient2d}}
+\index{Orient2d@{Orient2d}!Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}}
+\doxysubsubsection{\texorpdfstring{Orient2d()}{Orient2d()}}
+{\footnotesize\ttfamily static Orientation Poly2\+Tri.\+Triangulation\+Util.\+Orient2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pa,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pb,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Forumla to calculate signed area Positive if C\+CW Negative if CW 0 if collinear A\mbox{[}P1,P2,P3\mbox{]} = (x1$\ast$y2 -\/ y1$\ast$x2) + (x2$\ast$y3 -\/ y2$\ast$x3) + (x3$\ast$y1 -\/ y3$\ast$x1) = (x1-\/x3)$\ast$(y2-\/y3) -\/ (y1-\/y3)$\ast$(x2-\/x3) 이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_triangulation_util_a03b5cb31846006443dfae4ab79872709_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_poly2_tri_1_1_triangulation_util_a5529e2866f2a35dacb303b41a94a08cf}\label{class_poly2_tri_1_1_triangulation_util_a5529e2866f2a35dacb303b41a94a08cf}} 
+\index{Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}!SmartIncircle@{SmartIncircle}}
+\index{SmartIncircle@{SmartIncircle}!Poly2Tri.TriangulationUtil@{Poly2Tri.TriangulationUtil}}
+\doxysubsubsection{\texorpdfstring{SmartIncircle()}{SmartIncircle()}}
+{\footnotesize\ttfamily static bool Poly2\+Tri.\+Triangulation\+Util.\+Smart\+Incircle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pa,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pb,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pc,  }\item[{\mbox{\hyperlink{class_poly2_tri_1_1_point2_d}{Point2D}}}]{pd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Requirements\+: 
+
+
+\begin{DoxyEnumerate}
+\item a,b and c form a triangle.
+\item a and d is know to be on opposite side of bc {\ttfamily  a
+\begin{DoxyItemize}
+\item / \textbackslash{} / \textbackslash{} b/ {\ttfamily +-\/-\/-\/-\/---+} / B \textbackslash{} ~\newline
+ / \textbackslash{}  Facts\+: d has to be in area B to have a chance to be inside the circle formed by a,b and c d is outside B if orient2d(a,b,d) or orient2d(c,a,d) is CW This preknowledge gives us a way to optimize the incircle test
+\end{DoxyItemize}}
+\end{DoxyEnumerate}
+
+{\ttfamily }
+
+{\ttfamily  
+\begin{DoxyParams}{매개변수}
+{\em pa} & triangle point, opposite d\\
+\hline
+{\em pb} & triangle point\\
+\hline
+{\em pc} & triangle point\\
+\hline
+{\em pd} & point opposite a\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+true if d is inside circle, false if on circle edge
+\end{DoxyReturn}
+}이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_poly2_tri_1_1_triangulation_util_a5529e2866f2a35dacb303b41a94a08cf_icgraph}
+\end{center}
+\end{figure}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Poly2\+Mesh/\+Poly2\+Tri/\+Triangulation/\+Util/Triangulation\+Util.\+cs\end{DoxyCompactItemize}

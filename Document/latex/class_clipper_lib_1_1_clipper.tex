@@ -1,0 +1,406 @@
+\hypertarget{class_clipper_lib_1_1_clipper}{}\doxysection{Clipper\+Lib.\+Clipper 클래스 참조}
+\label{class_clipper_lib_1_1_clipper}\index{ClipperLib.Clipper@{ClipperLib.Clipper}}
+
+
+Clipper\+Lib.\+Clipper에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_clipper_lib_1_1_clipper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Clipper\+Lib.\+Clipper에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_clipper_lib_1_1_clipper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ae9d18acece486890d8ce1a2a4e31f87f}\label{class_clipper_lib_1_1_clipper_ae9d18acece486890d8ce1a2a4e31f87f}} 
+{\bfseries Clipper} (int Init\+Options=0)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a34da1acdcffb6ad33a531f1b6a4df422}\label{class_clipper_lib_1_1_clipper_a34da1acdcffb6ad33a531f1b6a4df422}} 
+bool {\bfseries Execute} (Clip\+Type clip\+Type, Paths solution, Poly\+Fill\+Type subj\+Fill\+Type, Poly\+Fill\+Type clip\+Fill\+Type)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a8d2b851ab251861ccda9916a75f6f691}\label{class_clipper_lib_1_1_clipper_a8d2b851ab251861ccda9916a75f6f691}} 
+bool {\bfseries Execute} (Clip\+Type clip\+Type, \mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} polytree, Poly\+Fill\+Type subj\+Fill\+Type, Poly\+Fill\+Type clip\+Fill\+Type)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ac819d0e388af50d6721241651c2b0a2a}\label{class_clipper_lib_1_1_clipper_ac819d0e388af50d6721241651c2b0a2a}} 
+bool {\bfseries Execute} (Clip\+Type clip\+Type, Paths solution)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1bbd4ae4a5e927b757603ed4e775f97e}\label{class_clipper_lib_1_1_clipper_a1bbd4ae4a5e927b757603ed4e775f97e}} 
+bool {\bfseries Execute} (Clip\+Type clip\+Type, \mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} polytree)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1597dbfb150636614da4995ace020f91}\label{class_clipper_lib_1_1_clipper_a1597dbfb150636614da4995ace020f91}} 
+static void {\bfseries Reverse\+Paths} (Paths polys)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ae14ba468357c366ec8dadd304d8b210d}\label{class_clipper_lib_1_1_clipper_ae14ba468357c366ec8dadd304d8b210d}} 
+static bool {\bfseries Orientation} (Path poly)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aeafb926d5596e3b27e2c25753c10536d}\label{class_clipper_lib_1_1_clipper_aeafb926d5596e3b27e2c25753c10536d}} 
+static int {\bfseries Point\+In\+Polygon} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt, Path path)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a4b798b095948e975ff42100b72da1f6b}\label{class_clipper_lib_1_1_clipper_a4b798b095948e975ff42100b72da1f6b}} 
+static double {\bfseries Area} (Path poly)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a3bead0a948de2f0e72ba32789848b4b6}\label{class_clipper_lib_1_1_clipper_a3bead0a948de2f0e72ba32789848b4b6}} 
+static Paths {\bfseries Simplify\+Polygon} (Path poly, Poly\+Fill\+Type fill\+Type=Poly\+Fill\+Type.\+pft\+Even\+Odd)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aa8d366cc457e6d82e59758bee312656a}\label{class_clipper_lib_1_1_clipper_aa8d366cc457e6d82e59758bee312656a}} 
+static Paths {\bfseries Simplify\+Polygons} (Paths polys, Poly\+Fill\+Type fill\+Type=Poly\+Fill\+Type.\+pft\+Even\+Odd)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_acb0cc9970c14aa53f8f0dd15a52ce869}\label{class_clipper_lib_1_1_clipper_acb0cc9970c14aa53f8f0dd15a52ce869}} 
+static Path {\bfseries Clean\+Polygon} (Path path, double distance=1.\+415)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1e421a1398cd693bc8d95d01dbac2a6c}\label{class_clipper_lib_1_1_clipper_a1e421a1398cd693bc8d95d01dbac2a6c}} 
+static Paths {\bfseries Clean\+Polygons} (Paths polys, double distance=1.\+415)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_af6108e31019d25c9eacb75dd7a781c30}\label{class_clipper_lib_1_1_clipper_af6108e31019d25c9eacb75dd7a781c30}} 
+static Paths {\bfseries Minkowski\+Sum} (Path pattern, Path path, bool path\+Is\+Closed)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_acd94f620a03e068fcb9f793c77a7c6ec}\label{class_clipper_lib_1_1_clipper_acd94f620a03e068fcb9f793c77a7c6ec}} 
+static Paths {\bfseries Minkowski\+Sum} (Path pattern, Paths paths, bool path\+Is\+Closed)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_af72b0aeabe160003097c0c7ac6fde6a7}\label{class_clipper_lib_1_1_clipper_af72b0aeabe160003097c0c7ac6fde6a7}} 
+static Paths {\bfseries Minkowski\+Diff} (Path poly1, Path poly2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a564b311285a4aea4deee9b6b9e4fdb83}\label{class_clipper_lib_1_1_clipper_a564b311285a4aea4deee9b6b9e4fdb83}} 
+static Paths {\bfseries Poly\+Tree\+To\+Paths} (\mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} polytree)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a844d6fc410d246d107bb02473e5a9bb9}\label{class_clipper_lib_1_1_clipper_a844d6fc410d246d107bb02473e5a9bb9}} 
+static Paths {\bfseries Open\+Paths\+From\+Poly\+Tree} (\mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} polytree)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a21167e6e3c89dd7683dff6fc6829002a}\label{class_clipper_lib_1_1_clipper_a21167e6e3c89dd7683dff6fc6829002a}} 
+static Paths {\bfseries Closed\+Paths\+From\+Poly\+Tree} (\mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} polytree)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a876b9675dcf4f3f10d108630a0a9f5e9}\label{class_clipper_lib_1_1_clipper_a876b9675dcf4f3f10d108630a0a9f5e9}} 
+const int {\bfseries io\+Reverse\+Solution} = 1
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5b7b852dcc269acec4319376d0df45f6}\label{class_clipper_lib_1_1_clipper_a5b7b852dcc269acec4319376d0df45f6}} 
+const int {\bfseries io\+Strictly\+Simple} = 2
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a0583ef60e8582620e3bb4c94e23f70cc}\label{class_clipper_lib_1_1_clipper_a0583ef60e8582620e3bb4c94e23f70cc}} 
+const int {\bfseries io\+Preserve\+Collinear} = 4
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a49c332d3d20ce391fa1e0d2138542699}\label{class_clipper_lib_1_1_clipper_a49c332d3d20ce391fa1e0d2138542699}} 
+override void {\bfseries Reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a8faf85b4638f84c7d7f68faf7b3b4315}\label{class_clipper_lib_1_1_clipper_a8faf85b4638f84c7d7f68faf7b3b4315}} 
+bool {\bfseries Reverse\+Solution}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ac8a8d6a2e7ffa61fc069b1048f654f72}\label{class_clipper_lib_1_1_clipper_ac8a8d6a2e7ffa61fc069b1048f654f72}} 
+bool {\bfseries Strictly\+Simple}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1ddc3e75613bbce28a520432322a45d3}\label{class_clipper_lib_1_1_clipper_a1ddc3e75613bbce28a520432322a45d3}} 
+void {\bfseries Dispose\+Scanbeam\+List} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1edf29682e146c8af2b397804c7e0a6e}\label{class_clipper_lib_1_1_clipper_a1edf29682e146c8af2b397804c7e0a6e}} 
+void {\bfseries Insert\+Scanbeam} (c\+Int Y)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a8275de2a965d0dfc4358d45c056f35a0}\label{class_clipper_lib_1_1_clipper_a8275de2a965d0dfc4358d45c056f35a0}} 
+bool {\bfseries Execute\+Internal} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a80cc2768e60165ae3f1e3e14a370ee95}\label{class_clipper_lib_1_1_clipper_a80cc2768e60165ae3f1e3e14a370ee95}} 
+c\+Int {\bfseries Pop\+Scanbeam} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ad00a61891f811cb8e6995bc0b7f029fa}\label{class_clipper_lib_1_1_clipper_ad00a61891f811cb8e6995bc0b7f029fa}} 
+void {\bfseries Dispose\+All\+Poly\+Pts} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aa7cb8e05e7e6963a5e5c76dae6f6b0dc}\label{class_clipper_lib_1_1_clipper_aa7cb8e05e7e6963a5e5c76dae6f6b0dc}} 
+void {\bfseries Dispose\+Out\+Rec} (int index)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a91f2792c2540295b65f0e26f50713d07}\label{class_clipper_lib_1_1_clipper_a91f2792c2540295b65f0e26f50713d07}} 
+void {\bfseries Add\+Join} (Out\+Pt Op1, Out\+Pt Op2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} Off\+Pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_afc514784e7f98a7c02b0506f230c4356}\label{class_clipper_lib_1_1_clipper_afc514784e7f98a7c02b0506f230c4356}} 
+void {\bfseries Add\+Ghost\+Join} (Out\+Pt Op, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} Off\+Pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a7c259b646b6c6b6690a308df2e036a79}\label{class_clipper_lib_1_1_clipper_a7c259b646b6c6b6690a308df2e036a79}} 
+void {\bfseries Insert\+Local\+Minima\+Into\+A\+EL} (c\+Int botY)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a688f1fa7454e65b5e7b6c7dd8cda8757}\label{class_clipper_lib_1_1_clipper_a688f1fa7454e65b5e7b6c7dd8cda8757}} 
+void {\bfseries Insert\+Edge\+Into\+A\+EL} (T\+Edge edge, T\+Edge start\+Edge)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_acba1cca1d695644200dcc5867c46eb14}\label{class_clipper_lib_1_1_clipper_acba1cca1d695644200dcc5867c46eb14}} 
+bool {\bfseries E2\+Inserts\+Before\+E1} (T\+Edge e1, T\+Edge e2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a4f7dc20dcc41c9f36cb1d92583955ddf}\label{class_clipper_lib_1_1_clipper_a4f7dc20dcc41c9f36cb1d92583955ddf}} 
+bool {\bfseries Is\+Even\+Odd\+Fill\+Type} (T\+Edge edge)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ae47d574c5cd21a16b616a91e579975de}\label{class_clipper_lib_1_1_clipper_ae47d574c5cd21a16b616a91e579975de}} 
+bool {\bfseries Is\+Even\+Odd\+Alt\+Fill\+Type} (T\+Edge edge)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a531675af123de522eaa26b14bf10e04b}\label{class_clipper_lib_1_1_clipper_a531675af123de522eaa26b14bf10e04b}} 
+bool {\bfseries Is\+Contributing} (T\+Edge edge)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a4e91ea3be6a06a192466748db2150b30}\label{class_clipper_lib_1_1_clipper_a4e91ea3be6a06a192466748db2150b30}} 
+void {\bfseries Set\+Winding\+Count} (T\+Edge edge)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_af6b7310089b5a66dd76af4cebc51a0c5}\label{class_clipper_lib_1_1_clipper_af6b7310089b5a66dd76af4cebc51a0c5}} 
+void {\bfseries Add\+Edge\+To\+S\+EL} (T\+Edge edge)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a53f94ed3827ae3e9935e325f29fc8c14}\label{class_clipper_lib_1_1_clipper_a53f94ed3827ae3e9935e325f29fc8c14}} 
+void {\bfseries Copy\+A\+E\+L\+To\+S\+EL} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ac24467f3f0982e108114439eb5785f62}\label{class_clipper_lib_1_1_clipper_ac24467f3f0982e108114439eb5785f62}} 
+void {\bfseries Swap\+Positions\+In\+A\+EL} (T\+Edge edge1, T\+Edge edge2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a67fbab28cd8ac653615ed00d24fc29b0}\label{class_clipper_lib_1_1_clipper_a67fbab28cd8ac653615ed00d24fc29b0}} 
+void {\bfseries Swap\+Positions\+In\+S\+EL} (T\+Edge edge1, T\+Edge edge2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aeba888f91847bf4627481ad74b5c2e6f}\label{class_clipper_lib_1_1_clipper_aeba888f91847bf4627481ad74b5c2e6f}} 
+void {\bfseries Add\+Local\+Max\+Poly} (T\+Edge e1, T\+Edge e2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ae9fc1e26ef64492300e108c192f6c337}\label{class_clipper_lib_1_1_clipper_ae9fc1e26ef64492300e108c192f6c337}} 
+Out\+Pt {\bfseries Add\+Local\+Min\+Poly} (T\+Edge e1, T\+Edge e2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a78c24758c3e5cc230f5185f5c4d7fbb7}\label{class_clipper_lib_1_1_clipper_a78c24758c3e5cc230f5185f5c4d7fbb7}} 
+Out\+Rec {\bfseries Create\+Out\+Rec} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5e5849368860ea42d15719f59f4d9f08}\label{class_clipper_lib_1_1_clipper_a5e5849368860ea42d15719f59f4d9f08}} 
+Out\+Pt {\bfseries Add\+Out\+Pt} (T\+Edge e, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a47c26f25ddeabdd6a9bfa4eb7d213e64}\label{class_clipper_lib_1_1_clipper_a47c26f25ddeabdd6a9bfa4eb7d213e64}} 
+bool {\bfseries Horz\+Segments\+Overlap} (c\+Int seg1a, c\+Int seg1b, c\+Int seg2a, c\+Int seg2b)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a9285cba18e77825b46935ad29fdcc6b4}\label{class_clipper_lib_1_1_clipper_a9285cba18e77825b46935ad29fdcc6b4}} 
+void {\bfseries Set\+Hole\+State} (T\+Edge e, Out\+Rec out\+Rec)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a682b79578ef76d1601cf45a84e63804b}\label{class_clipper_lib_1_1_clipper_a682b79578ef76d1601cf45a84e63804b}} 
+double {\bfseries Get\+Dx} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a6abce554de90b661e92c52ec6a8a27d4}\label{class_clipper_lib_1_1_clipper_a6abce554de90b661e92c52ec6a8a27d4}} 
+bool {\bfseries First\+Is\+Bottom\+Pt} (Out\+Pt btm\+Pt1, Out\+Pt btm\+Pt2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aae7a7dbe14047c5f57e5d83100f08d1a}\label{class_clipper_lib_1_1_clipper_aae7a7dbe14047c5f57e5d83100f08d1a}} 
+Out\+Pt {\bfseries Get\+Bottom\+Pt} (Out\+Pt pp)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ad8e53cacfd5bbf4a5eebe4b102d569ca}\label{class_clipper_lib_1_1_clipper_ad8e53cacfd5bbf4a5eebe4b102d569ca}} 
+Out\+Rec {\bfseries Get\+Lowermost\+Rec} (Out\+Rec out\+Rec1, Out\+Rec out\+Rec2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a10f3fc3279833e6cdbeadd15a7b25bf3}\label{class_clipper_lib_1_1_clipper_a10f3fc3279833e6cdbeadd15a7b25bf3}} 
+bool {\bfseries Param1\+Right\+Of\+Param2} (Out\+Rec out\+Rec1, Out\+Rec out\+Rec2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a70b7b03b16247340c1ef5aff8bc9951f}\label{class_clipper_lib_1_1_clipper_a70b7b03b16247340c1ef5aff8bc9951f}} 
+Out\+Rec {\bfseries Get\+Out\+Rec} (int idx)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ad8ecd5f40529423970205509366a5284}\label{class_clipper_lib_1_1_clipper_ad8ecd5f40529423970205509366a5284}} 
+void {\bfseries Append\+Polygon} (T\+Edge e1, T\+Edge e2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a4c65c17010cd50ea9d2f5570e991793d}\label{class_clipper_lib_1_1_clipper_a4c65c17010cd50ea9d2f5570e991793d}} 
+void {\bfseries Reverse\+Poly\+Pt\+Links} (Out\+Pt pp)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_abcc9934f8f7356bd23024c1545988a07}\label{class_clipper_lib_1_1_clipper_abcc9934f8f7356bd23024c1545988a07}} 
+void {\bfseries Intersect\+Edges} (T\+Edge e1, T\+Edge e2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a398f68f4ed8db83a494603363a8fe7b9}\label{class_clipper_lib_1_1_clipper_a398f68f4ed8db83a494603363a8fe7b9}} 
+void {\bfseries Delete\+From\+A\+EL} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5b41733cafb2ec889b8bb1bfeed2f1d5}\label{class_clipper_lib_1_1_clipper_a5b41733cafb2ec889b8bb1bfeed2f1d5}} 
+void {\bfseries Delete\+From\+S\+EL} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aa8d768474bf5744c64b26e971afcdf3b}\label{class_clipper_lib_1_1_clipper_aa8d768474bf5744c64b26e971afcdf3b}} 
+void {\bfseries Update\+Edge\+Into\+A\+EL} (ref T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a0241efbb2bccfe9cee7ac687f01950df}\label{class_clipper_lib_1_1_clipper_a0241efbb2bccfe9cee7ac687f01950df}} 
+void {\bfseries Process\+Horizontals} (bool is\+Top\+Of\+Scanbeam)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a41fec0fa4cc156143334d1837815d61c}\label{class_clipper_lib_1_1_clipper_a41fec0fa4cc156143334d1837815d61c}} 
+void {\bfseries Get\+Horz\+Direction} (T\+Edge Horz\+Edge, out Direction Dir, out c\+Int Left, out c\+Int Right)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ae34521a301de200a14b2bd7be9de0cea}\label{class_clipper_lib_1_1_clipper_ae34521a301de200a14b2bd7be9de0cea}} 
+void {\bfseries Process\+Horizontal} (T\+Edge horz\+Edge, bool is\+Top\+Of\+Scanbeam)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_afd729b7d14d82d9658461c667e029fc2}\label{class_clipper_lib_1_1_clipper_afd729b7d14d82d9658461c667e029fc2}} 
+T\+Edge {\bfseries Get\+Next\+In\+A\+EL} (T\+Edge e, Direction Direction)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a4c1f1f7291653c92bb94e51e5a7e68fa}\label{class_clipper_lib_1_1_clipper_a4c1f1f7291653c92bb94e51e5a7e68fa}} 
+bool {\bfseries Is\+Minima} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a558e15540f786d3e52c2392068d487f9}\label{class_clipper_lib_1_1_clipper_a558e15540f786d3e52c2392068d487f9}} 
+bool {\bfseries Is\+Maxima} (T\+Edge e, double Y)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a470cfca55fe7e76501c84e6b2e5fa35b}\label{class_clipper_lib_1_1_clipper_a470cfca55fe7e76501c84e6b2e5fa35b}} 
+bool {\bfseries Is\+Intermediate} (T\+Edge e, double Y)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a6b2c65025edaaa5e051ab4db5e3f86f4}\label{class_clipper_lib_1_1_clipper_a6b2c65025edaaa5e051ab4db5e3f86f4}} 
+T\+Edge {\bfseries Get\+Maxima\+Pair} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5e8e5ccc3c776ce54c093c501ef395f4}\label{class_clipper_lib_1_1_clipper_a5e8e5ccc3c776ce54c093c501ef395f4}} 
+bool {\bfseries Process\+Intersections} (c\+Int topY)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aeccfb1b3e0da7713645c5bac97feafc8}\label{class_clipper_lib_1_1_clipper_aeccfb1b3e0da7713645c5bac97feafc8}} 
+void {\bfseries Build\+Intersect\+List} (c\+Int topY)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a60436be934b20f1487551321a05712a1}\label{class_clipper_lib_1_1_clipper_a60436be934b20f1487551321a05712a1}} 
+bool {\bfseries Edges\+Adjacent} (\mbox{\hyperlink{class_clipper_lib_1_1_intersect_node}{Intersect\+Node}} inode)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5913ccd8ceff24aa390f363119b97285}\label{class_clipper_lib_1_1_clipper_a5913ccd8ceff24aa390f363119b97285}} 
+bool {\bfseries Fixup\+Intersection\+Order} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1df489448e460646adb46fd9bcabe10c}\label{class_clipper_lib_1_1_clipper_a1df489448e460646adb46fd9bcabe10c}} 
+void {\bfseries Process\+Intersect\+List} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a456e2e75229c6ec5302778637a3b82bb}\label{class_clipper_lib_1_1_clipper_a456e2e75229c6ec5302778637a3b82bb}} 
+void {\bfseries Intersect\+Point} (T\+Edge edge1, T\+Edge edge2, out \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} ip)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a52d6837a37de2558e7df432224df548d}\label{class_clipper_lib_1_1_clipper_a52d6837a37de2558e7df432224df548d}} 
+void {\bfseries Process\+Edges\+At\+Top\+Of\+Scanbeam} (c\+Int topY)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a3f8f288c23686995583cb74ee0ccdcd2}\label{class_clipper_lib_1_1_clipper_a3f8f288c23686995583cb74ee0ccdcd2}} 
+void {\bfseries Do\+Maxima} (T\+Edge e)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a65bb4af4c631a358f1aff21ef059972c}\label{class_clipper_lib_1_1_clipper_a65bb4af4c631a358f1aff21ef059972c}} 
+int {\bfseries Point\+Count} (Out\+Pt pts)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a7f98721fc7043c5f3a35ce4c0fc56c2a}\label{class_clipper_lib_1_1_clipper_a7f98721fc7043c5f3a35ce4c0fc56c2a}} 
+void {\bfseries Build\+Result} (Paths polyg)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_afa4cd0766a29552b8855682e7ff813af}\label{class_clipper_lib_1_1_clipper_afa4cd0766a29552b8855682e7ff813af}} 
+void {\bfseries Build\+Result2} (\mbox{\hyperlink{class_clipper_lib_1_1_poly_tree}{Poly\+Tree}} polytree)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aa419fc298510d0a3a5152700ed886240}\label{class_clipper_lib_1_1_clipper_aa419fc298510d0a3a5152700ed886240}} 
+void {\bfseries Fixup\+Out\+Polygon} (Out\+Rec out\+Rec)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1c95186ca7b6d8eff671dd5ef54b5da3}\label{class_clipper_lib_1_1_clipper_a1c95186ca7b6d8eff671dd5ef54b5da3}} 
+Out\+Pt {\bfseries Dup\+Out\+Pt} (Out\+Pt out\+Pt, bool Insert\+After)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a939403da1739e1ef05f40e6b3a47f536}\label{class_clipper_lib_1_1_clipper_a939403da1739e1ef05f40e6b3a47f536}} 
+bool {\bfseries Get\+Overlap} (c\+Int a1, c\+Int a2, c\+Int b1, c\+Int b2, out c\+Int Left, out c\+Int Right)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a80add3647f8967c60308333a4c437fc1}\label{class_clipper_lib_1_1_clipper_a80add3647f8967c60308333a4c437fc1}} 
+bool {\bfseries Join\+Horz} (Out\+Pt op1, Out\+Pt op1b, Out\+Pt op2, Out\+Pt op2b, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} Pt, bool Discard\+Left)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aa6a9960a961ad7bba9401bfe54ae3e0e}\label{class_clipper_lib_1_1_clipper_aa6a9960a961ad7bba9401bfe54ae3e0e}} 
+bool {\bfseries Join\+Points} (Join j, Out\+Rec out\+Rec1, Out\+Rec out\+Rec2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_afaed951cbf2f5902abbb387994e0ca09}\label{class_clipper_lib_1_1_clipper_afaed951cbf2f5902abbb387994e0ca09}} 
+void {\bfseries Fixup\+First\+Lefts1} (Out\+Rec Old\+Out\+Rec, Out\+Rec New\+Out\+Rec)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1b6c5e2453f2fc0766f93857c2afa708}\label{class_clipper_lib_1_1_clipper_a1b6c5e2453f2fc0766f93857c2afa708}} 
+void {\bfseries Fixup\+First\+Lefts2} (Out\+Rec Old\+Out\+Rec, Out\+Rec New\+Out\+Rec)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_af1652b1f5a7745698dee444dd12c216d}\label{class_clipper_lib_1_1_clipper_af1652b1f5a7745698dee444dd12c216d}} 
+void {\bfseries Join\+Common\+Edges} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_acf802ac368ec402caaca86fcb2f55a41}\label{class_clipper_lib_1_1_clipper_acf802ac368ec402caaca86fcb2f55a41}} 
+void {\bfseries Update\+Out\+Pt\+Idxs} (Out\+Rec outrec)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a342be599b766bc64b4013fc76f5c3dec}\label{class_clipper_lib_1_1_clipper_a342be599b766bc64b4013fc76f5c3dec}} 
+void {\bfseries Do\+Simple\+Polygons} ()
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5c0a883b0b494d1162172a1ddec58617}\label{class_clipper_lib_1_1_clipper_a5c0a883b0b494d1162172a1ddec58617}} 
+double {\bfseries Area} (Out\+Rec out\+Rec)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a8fe226f347a76aa09cb25119a576e61a}\label{class_clipper_lib_1_1_clipper_a8fe226f347a76aa09cb25119a576e61a}} 
+static void {\bfseries Swap\+Sides} (T\+Edge edge1, T\+Edge edge2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_acd3423abfbcfd878363f5e179e3a8597}\label{class_clipper_lib_1_1_clipper_acd3423abfbcfd878363f5e179e3a8597}} 
+static void {\bfseries Swap\+Poly\+Indexes} (T\+Edge edge1, T\+Edge edge2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ada3607fc425ccfde0eca18dbab66cbd1}\label{class_clipper_lib_1_1_clipper_ada3607fc425ccfde0eca18dbab66cbd1}} 
+static int {\bfseries Intersect\+Node\+Sort} (\mbox{\hyperlink{class_clipper_lib_1_1_intersect_node}{Intersect\+Node}} node1, \mbox{\hyperlink{class_clipper_lib_1_1_intersect_node}{Intersect\+Node}} node2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ab5f60ff7a8c8e02e44f6e1109f753b61}\label{class_clipper_lib_1_1_clipper_ab5f60ff7a8c8e02e44f6e1109f753b61}} 
+static c\+Int {\bfseries TopX} (T\+Edge edge, c\+Int currentY)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aee74b3d38588bd9d3f027d21a767e1c7}\label{class_clipper_lib_1_1_clipper_aee74b3d38588bd9d3f027d21a767e1c7}} 
+static int {\bfseries Point\+In\+Polygon} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt, Out\+Pt op)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a7f221223b8c373890794aafea58970d1}\label{class_clipper_lib_1_1_clipper_a7f221223b8c373890794aafea58970d1}} 
+static bool {\bfseries Poly2\+Contains\+Poly1} (Out\+Pt out\+Pt1, Out\+Pt out\+Pt2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5f576e38cedfc2204c82ee16f7fa7335}\label{class_clipper_lib_1_1_clipper_a5f576e38cedfc2204c82ee16f7fa7335}} 
+static Out\+Rec {\bfseries Parse\+First\+Left} (Out\+Rec First\+Left)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a8d7c7cd1adfed6c1ca5e68d5d57cd269}\label{class_clipper_lib_1_1_clipper_a8d7c7cd1adfed6c1ca5e68d5d57cd269}} 
+static double {\bfseries Distance\+Sqrd} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a156d4eefafc314bed68fd4c38893ab80}\label{class_clipper_lib_1_1_clipper_a156d4eefafc314bed68fd4c38893ab80}} 
+static double {\bfseries Distance\+From\+Line\+Sqrd} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} ln1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} ln2)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a582c4f220fcd47fec81b2771993f2660}\label{class_clipper_lib_1_1_clipper_a582c4f220fcd47fec81b2771993f2660}} 
+static bool {\bfseries Slopes\+Near\+Collinear} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt2, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt3, double dist\+Sqrd)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a0ae43749bf60840e614e8a62ced979dc}\label{class_clipper_lib_1_1_clipper_a0ae43749bf60840e614e8a62ced979dc}} 
+static bool {\bfseries Points\+Are\+Close} (\mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt1, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} pt2, double dist\+Sqrd)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a047d1f5e8a486c97762ccdb1ba0e4e7f}\label{class_clipper_lib_1_1_clipper_a047d1f5e8a486c97762ccdb1ba0e4e7f}} 
+static Out\+Pt {\bfseries Exclude\+Op} (Out\+Pt op)
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a5000bb9adcf2241b7e0d656d759587d4}\label{class_clipper_lib_1_1_clipper_a5000bb9adcf2241b7e0d656d759587d4}} 
+static Path {\bfseries Translate\+Path} (Path path, \mbox{\hyperlink{struct_clipper_lib_1_1_int_point}{Int\+Point}} delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a0991dd197414ca9e922f1ccebd812136}\label{class_clipper_lib_1_1_clipper_a0991dd197414ca9e922f1ccebd812136}} 
+List$<$ Out\+Rec $>$ {\bfseries m\+\_\+\+Poly\+Outs}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_ae3951052785520af7327ba4df4936783}\label{class_clipper_lib_1_1_clipper_ae3951052785520af7327ba4df4936783}} 
+Clip\+Type {\bfseries m\+\_\+\+Clip\+Type}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a069f68350bf314ae5338442cf796fcc3}\label{class_clipper_lib_1_1_clipper_a069f68350bf314ae5338442cf796fcc3}} 
+Scanbeam {\bfseries m\+\_\+\+Scanbeam}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a31d96514289f4aa1ddb6fc25472184de}\label{class_clipper_lib_1_1_clipper_a31d96514289f4aa1ddb6fc25472184de}} 
+T\+Edge {\bfseries m\+\_\+\+Active\+Edges}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_af2d25d9dd3d2e9f5042d516190fe736a}\label{class_clipper_lib_1_1_clipper_af2d25d9dd3d2e9f5042d516190fe736a}} 
+T\+Edge {\bfseries m\+\_\+\+Sorted\+Edges}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a524a9247c85c72da67aea7faff521469}\label{class_clipper_lib_1_1_clipper_a524a9247c85c72da67aea7faff521469}} 
+List$<$ \mbox{\hyperlink{class_clipper_lib_1_1_intersect_node}{Intersect\+Node}} $>$ {\bfseries m\+\_\+\+Intersect\+List}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a6792790cfd541c3ff4385b20dcc0cfef}\label{class_clipper_lib_1_1_clipper_a6792790cfd541c3ff4385b20dcc0cfef}} 
+I\+Comparer$<$ \mbox{\hyperlink{class_clipper_lib_1_1_intersect_node}{Intersect\+Node}} $>$ {\bfseries m\+\_\+\+Intersect\+Node\+Comparer}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a39f6fc734a308855c37f2f3aea2b7113}\label{class_clipper_lib_1_1_clipper_a39f6fc734a308855c37f2f3aea2b7113}} 
+bool {\bfseries m\+\_\+\+Execute\+Locked}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a9cc3360679c896172997c175abefa47c}\label{class_clipper_lib_1_1_clipper_a9cc3360679c896172997c175abefa47c}} 
+Poly\+Fill\+Type {\bfseries m\+\_\+\+Clip\+Fill\+Type}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a2640d91f1a75bf0f10a4098d29451062}\label{class_clipper_lib_1_1_clipper_a2640d91f1a75bf0f10a4098d29451062}} 
+Poly\+Fill\+Type {\bfseries m\+\_\+\+Subj\+Fill\+Type}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_aa149e4f9582259534706432f36a5ae51}\label{class_clipper_lib_1_1_clipper_aa149e4f9582259534706432f36a5ae51}} 
+List$<$ Join $>$ {\bfseries m\+\_\+\+Joins}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a102b8323156a9ada275ec28a100f44f1}\label{class_clipper_lib_1_1_clipper_a102b8323156a9ada275ec28a100f44f1}} 
+List$<$ Join $>$ {\bfseries m\+\_\+\+Ghost\+Joins}
+\item 
+\mbox{\Hypertarget{class_clipper_lib_1_1_clipper_a1b3895ccf35ab5b7b569dea9e66ed9e7}\label{class_clipper_lib_1_1_clipper_a1b3895ccf35ab5b7b569dea9e66ed9e7}} 
+bool {\bfseries m\+\_\+\+Using\+Poly\+Tree}
+\end{DoxyCompactItemize}
+\doxysubsection*{추가로 상속된 멤버들}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/Clipper.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="CameraMovement2D" name="CameraMovement2D">
+<area shape="rect" id="node1" title=" " alt="" coords="5,273,148,300"/>
+<area shape="rect" id="node2" title=" " alt="" coords="17,5,128,32"/>
+<area shape="rect" id="node3" href="$class_main_behaviour.html" title=" " alt="" coords="121,184,227,211"/>
+<area shape="rect" id="node4" href="$class_room_behaviour.html" title=" " alt="" coords="118,95,230,121"/>
+<area shape="rect" id="node5" href="$class_room.html" title=" " alt="" coords="153,5,209,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="255,95,347,121"/>
+<area shape="rect" id="node7" href="$class_assets_1_1_scripts_1_1_building.html" title=" " alt="" coords="371,95,529,121"/>
+</map>

@@ -1,0 +1,655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Topology Editor: Poly2Tri.DelaunayTriangle 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Topology Editor
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_poly2_tri.html">Poly2Tri</a></li><li class="navelem"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-attribs">Public 속성</a> &#124;
+<a href="#pro-methods">Protected 멤버 함수</a> &#124;
+<a href="#properties">속성</a> &#124;
+<a href="#pri-methods">Private 멤버 함수</a> &#124;
+<a href="#pri-attribs">Private 속성</a> &#124;
+<a href="class_poly2_tri_1_1_delaunay_triangle-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">Poly2Tri.DelaunayTriangle 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Poly2Tri.DelaunayTriangle에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle__coll__graph.png" border="0" usemap="#_poly2_tri_8_delaunay_triangle_coll__map" alt="Collaboration graph"/></div>
+<map name="_poly2_tri_8_delaunay_triangle_coll__map" id="_poly2_tri_8_delaunay_triangle_coll__map">
+<area shape="rect" title=" " alt="" coords="567,78,739,105"/>
+<area shape="rect" href="struct_poly2_tri_1_1_fixed_array3.html" title=" " alt="" coords="199,5,395,47"/>
+<area shape="rect" href="struct_poly2_tri_1_1_fixed_array3.html" title=" " alt="" coords="197,71,397,112"/>
+<area shape="rect" href="struct_poly2_tri_1_1_fixed_bit_array3.html" title=" " alt="" coords="218,138,377,165"/>
+<area shape="rect" title=" " alt="" coords="5,138,148,165"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">범례</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a610544d7947293f5e4e0f1697ca0a1c7"><td class="memItemLeft" align="right" valign="top"><a id="a610544d7947293f5e4e0f1697ca0a1c7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DelaunayTriangle</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p1, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p2, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p3)</td></tr>
+<tr class="separator:a610544d7947293f5e4e0f1697ca0a1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689d84a2f67aa0f742017a86127a87dc"><td class="memItemLeft" align="right" valign="top"><a id="a689d84a2f67aa0f742017a86127a87dc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IndexOf</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:a689d84a2f67aa0f742017a86127a87dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d97df678cd5daab4418735441517d49"><td class="memItemLeft" align="right" valign="top"><a id="a3d97df678cd5daab4418735441517d49"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IndexCWFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:a3d97df678cd5daab4418735441517d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7dd42033697bbbb8fcc89e8db82b225"><td class="memItemLeft" align="right" valign="top"><a id="ab7dd42033697bbbb8fcc89e8db82b225"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IndexCCWFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:ab7dd42033697bbbb8fcc89e8db82b225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a455febd7a66edf5502e02757ad98083a"><td class="memItemLeft" align="right" valign="top"><a id="a455febd7a66edf5502e02757ad98083a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:a455febd7a66edf5502e02757ad98083a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d5080672d8c4305a8c7b5713584791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a26d5080672d8c4305a8c7b5713584791">MarkNeighbor</a> (<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> t)</td></tr>
+<tr class="memdesc:a26d5080672d8c4305a8c7b5713584791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exhaustive search to update neighbor pointers  <a href="class_poly2_tri_1_1_delaunay_triangle.html#a26d5080672d8c4305a8c7b5713584791">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a26d5080672d8c4305a8c7b5713584791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9871d5135f98b2a90efb222d279ae9c2"><td class="memItemLeft" align="right" valign="top"><a id="a9871d5135f98b2a90efb222d279ae9c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearNeighbors</b> ()</td></tr>
+<tr class="separator:a9871d5135f98b2a90efb222d279ae9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca565e9ea403193716e607f4e75a1ab"><td class="memItemLeft" align="right" valign="top"><a id="acca565e9ea403193716e607f4e75a1ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearNeighbor</b> (<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> triangle)</td></tr>
+<tr class="separator:acca565e9ea403193716e607f4e75a1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae75687f50d9d73d7c3988c3107773e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a5ae75687f50d9d73d7c3988c3107773e">Clear</a> ()</td></tr>
+<tr class="memdesc:a5ae75687f50d9d73d7c3988c3107773e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all references to all other triangles and points  <a href="class_poly2_tri_1_1_delaunay_triangle.html#a5ae75687f50d9d73d7c3988c3107773e">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a5ae75687f50d9d73d7c3988c3107773e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586677240bcb4172609633b35e6b15ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a586677240bcb4172609633b35e6b15ea">OppositePoint</a> (<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> t, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:a586677240bcb4172609633b35e6b15ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086779b3410dcb2e9ce9ae34f9e249a5"><td class="memItemLeft" align="right" valign="top"><a id="a086779b3410dcb2e9ce9ae34f9e249a5"></a>
+<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NeighborCWFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> point)</td></tr>
+<tr class="separator:a086779b3410dcb2e9ce9ae34f9e249a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa592da5a2395ab6e78845b2ec8f0234"><td class="memItemLeft" align="right" valign="top"><a id="afa592da5a2395ab6e78845b2ec8f0234"></a>
+<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NeighborCCWFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> point)</td></tr>
+<tr class="separator:afa592da5a2395ab6e78845b2ec8f0234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76699ff22343b04473d3cf35c10b998d"><td class="memItemLeft" align="right" valign="top"><a id="a76699ff22343b04473d3cf35c10b998d"></a>
+<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NeighborAcrossFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> point)</td></tr>
+<tr class="separator:a76699ff22343b04473d3cf35c10b998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a3d31565632a38aa60500050947d64"><td class="memItemLeft" align="right" valign="top"><a id="a77a3d31565632a38aa60500050947d64"></a>
+<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PointCCWFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> point)</td></tr>
+<tr class="separator:a77a3d31565632a38aa60500050947d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e71e4a4531800a5ba7e372c155cc7a"><td class="memItemLeft" align="right" valign="top"><a id="a67e71e4a4531800a5ba7e372c155cc7a"></a>
+<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PointCWFrom</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> point)</td></tr>
+<tr class="separator:a67e71e4a4531800a5ba7e372c155cc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff435b32982ecd234e37bc0d5bf9bd0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#aff435b32982ecd234e37bc0d5bf9bd0e">Legalize</a> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> oPoint, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> nPoint)</td></tr>
+<tr class="memdesc:aff435b32982ecd234e37bc0d5bf9bd0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legalize triangle by rotating clockwise around oPoint  <a href="class_poly2_tri_1_1_delaunay_triangle.html#aff435b32982ecd234e37bc0d5bf9bd0e">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aff435b32982ecd234e37bc0d5bf9bd0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4581dcfae1c1f10984b1632a1d1900"><td class="memItemLeft" align="right" valign="top"><a id="a3d4581dcfae1c1f10984b1632a1d1900"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="separator:a3d4581dcfae1c1f10984b1632a1d1900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efc82a044bd38680923eb574730be6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a2efc82a044bd38680923eb574730be6b">MarkNeighborEdges</a> ()</td></tr>
+<tr class="memdesc:a2efc82a044bd38680923eb574730be6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize edge marking  <a href="class_poly2_tri_1_1_delaunay_triangle.html#a2efc82a044bd38680923eb574730be6b">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a2efc82a044bd38680923eb574730be6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad142787d079b0f5416d6ad79c273e0f9"><td class="memItemLeft" align="right" valign="top"><a id="ad142787d079b0f5416d6ad79c273e0f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkEdge</b> (<a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> triangle)</td></tr>
+<tr class="separator:ad142787d079b0f5416d6ad79c273e0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd3fa8003d347a645f947f89b2c3e90"><td class="memItemLeft" align="right" valign="top"><a id="adfd3fa8003d347a645f947f89b2c3e90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkEdge</b> (List&lt; <a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> &gt; tList)</td></tr>
+<tr class="separator:adfd3fa8003d347a645f947f89b2c3e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f8f109d252f9f33268c9604948e891"><td class="memItemLeft" align="right" valign="top"><a id="a84f8f109d252f9f33268c9604948e891"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkConstrainedEdge</b> (int index)</td></tr>
+<tr class="separator:a84f8f109d252f9f33268c9604948e891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d941867dced981d26b9db9ccf9e5387"><td class="memItemLeft" align="right" valign="top"><a id="a0d941867dced981d26b9db9ccf9e5387"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkConstrainedEdge</b> (<a class="el" href="class_poly2_tri_1_1_d_t_sweep_constraint.html">DTSweepConstraint</a> edge)</td></tr>
+<tr class="separator:a0d941867dced981d26b9db9ccf9e5387"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e227efedcd8b6caf082e6da792fb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a14e227efedcd8b6caf082e6da792fb03">MarkConstrainedEdge</a> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> q)</td></tr>
+<tr class="memdesc:a14e227efedcd8b6caf082e6da792fb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark edge as constrained  <a href="class_poly2_tri_1_1_delaunay_triangle.html#a14e227efedcd8b6caf082e6da792fb03">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a14e227efedcd8b6caf082e6da792fb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab782d05b6b6d5ab8a4e1b4da3476680"><td class="memItemLeft" align="right" valign="top"><a id="aab782d05b6b6d5ab8a4e1b4da3476680"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>Area</b> ()</td></tr>
+<tr class="separator:aab782d05b6b6d5ab8a4e1b4da3476680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007b8a227b2ec13892843dead65e1b83"><td class="memItemLeft" align="right" valign="top"><a id="a007b8a227b2ec13892843dead65e1b83"></a>
+<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Centroid</b> ()</td></tr>
+<tr class="separator:a007b8a227b2ec13892843dead65e1b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e670d3537b8a47d30a40bd4f882cd39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39">EdgeIndex</a> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p1, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p2)</td></tr>
+<tr class="memdesc:a0e670d3537b8a47d30a40bd4f882cd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the neighbor that shares this edge (or -1 if it isn't shared)  <a href="class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a0e670d3537b8a47d30a40bd4f882cd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8855b9da471d6a52d01ea86dbc7c848"><td class="memItemLeft" align="right" valign="top"><a id="ae8855b9da471d6a52d01ea86dbc7c848"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstrainedEdgeCCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:ae8855b9da471d6a52d01ea86dbc7c848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b3e73b22c6b5b6aa2b2b846b87cd33"><td class="memItemLeft" align="right" valign="top"><a id="a34b3e73b22c6b5b6aa2b2b846b87cd33"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstrainedEdgeCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:a34b3e73b22c6b5b6aa2b2b846b87cd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcddb500f51d0e9107970cf7b113e381"><td class="memItemLeft" align="right" valign="top"><a id="abcddb500f51d0e9107970cf7b113e381"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstrainedEdgeAcross</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:abcddb500f51d0e9107970cf7b113e381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe1e47fbef580c3764bbe204b6fd4db"><td class="memItemLeft" align="right" valign="top"><a id="aefe1e47fbef580c3764bbe204b6fd4db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConstrainedEdgeCCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, bool ce)</td></tr>
+<tr class="separator:aefe1e47fbef580c3764bbe204b6fd4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c3d6a1d6960bd3d86045e238913c37"><td class="memItemLeft" align="right" valign="top"><a id="a71c3d6a1d6960bd3d86045e238913c37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConstrainedEdgeCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, bool ce)</td></tr>
+<tr class="separator:a71c3d6a1d6960bd3d86045e238913c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48e829603e7dd3c6535a45b3453874b8"><td class="memItemLeft" align="right" valign="top"><a id="a48e829603e7dd3c6535a45b3453874b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConstrainedEdgeAcross</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, bool ce)</td></tr>
+<tr class="separator:a48e829603e7dd3c6535a45b3453874b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9272b3791aed4dfc79e5d871aba5f9e1"><td class="memItemLeft" align="right" valign="top"><a id="a9272b3791aed4dfc79e5d871aba5f9e1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDelaunayEdgeCCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:a9272b3791aed4dfc79e5d871aba5f9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f3c2c5461e43a680c847e52cdd3381"><td class="memItemLeft" align="right" valign="top"><a id="af4f3c2c5461e43a680c847e52cdd3381"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDelaunayEdgeCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:af4f3c2c5461e43a680c847e52cdd3381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40207847c7edba99d5690130a76fa82"><td class="memItemLeft" align="right" valign="top"><a id="af40207847c7edba99d5690130a76fa82"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDelaunayEdgeAcross</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p)</td></tr>
+<tr class="separator:af40207847c7edba99d5690130a76fa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7dc9ab088e50f512d121ed9f82aaed"><td class="memItemLeft" align="right" valign="top"><a id="adb7dc9ab088e50f512d121ed9f82aaed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDelaunayEdgeCCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, bool ce)</td></tr>
+<tr class="separator:adb7dc9ab088e50f512d121ed9f82aaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2fc3f859d73ed31bf5a0b8639dcdf4"><td class="memItemLeft" align="right" valign="top"><a id="a3c2fc3f859d73ed31bf5a0b8639dcdf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDelaunayEdgeCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, bool ce)</td></tr>
+<tr class="separator:a3c2fc3f859d73ed31bf5a0b8639dcdf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65db3072a2860ce96c4ebd27be30a7ae"><td class="memItemLeft" align="right" valign="top"><a id="a65db3072a2860ce96c4ebd27be30a7ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDelaunayEdgeAcross</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, bool ce)</td></tr>
+<tr class="separator:a65db3072a2860ce96c4ebd27be30a7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947f5e3ff868e3b75143b41d656f4b5d"><td class="memItemLeft" align="right" valign="top"><a id="a947f5e3ff868e3b75143b41d656f4b5d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEdge</b> (int idx, out <a class="el" href="class_poly2_tri_1_1_d_t_sweep_constraint.html">DTSweepConstraint</a> edge)</td></tr>
+<tr class="separator:a947f5e3ff868e3b75143b41d656f4b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4586666e452acaa92108d6bcaa23f52"><td class="memItemLeft" align="right" valign="top"><a id="af4586666e452acaa92108d6bcaa23f52"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEdgeCCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, out <a class="el" href="class_poly2_tri_1_1_d_t_sweep_constraint.html">DTSweepConstraint</a> edge)</td></tr>
+<tr class="separator:af4586666e452acaa92108d6bcaa23f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff23825ce8f567f85444cac0b05527f"><td class="memItemLeft" align="right" valign="top"><a id="a4ff23825ce8f567f85444cac0b05527f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEdgeCW</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, out <a class="el" href="class_poly2_tri_1_1_d_t_sweep_constraint.html">DTSweepConstraint</a> edge)</td></tr>
+<tr class="separator:a4ff23825ce8f567f85444cac0b05527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51d0b487e5b63ded3760f816b3a58bf"><td class="memItemLeft" align="right" valign="top"><a id="aa51d0b487e5b63ded3760f816b3a58bf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetEdgeAcross</b> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p, out <a class="el" href="class_poly2_tri_1_1_d_t_sweep_constraint.html">DTSweepConstraint</a> edge)</td></tr>
+<tr class="separator:aa51d0b487e5b63ded3760f816b3a58bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 속성</h2></td></tr>
+<tr class="memitem:a2917f8c045adc434926c6aa3b3ed7647"><td class="memItemLeft" align="right" valign="top"><a id="a2917f8c045adc434926c6aa3b3ed7647"></a>
+<a class="el" href="struct_poly2_tri_1_1_fixed_array3.html">FixedArray3</a>&lt; <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Points</b></td></tr>
+<tr class="separator:a2917f8c045adc434926c6aa3b3ed7647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adecbd156f3ff8ce0e5bf031dc25447d4"><td class="memItemLeft" align="right" valign="top"><a id="adecbd156f3ff8ce0e5bf031dc25447d4"></a>
+<a class="el" href="struct_poly2_tri_1_1_fixed_array3.html">FixedArray3</a>&lt; <a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Neighbors</b></td></tr>
+<tr class="separator:adecbd156f3ff8ce0e5bf031dc25447d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc125794f2e9be7cf66205fc3947d41"><td class="memItemLeft" align="right" valign="top"><a id="abbc125794f2e9be7cf66205fc3947d41"></a>
+<a class="el" href="struct_poly2_tri_1_1_fixed_bit_array3.html">FixedBitArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeIsDelaunay</b></td></tr>
+<tr class="separator:abbc125794f2e9be7cf66205fc3947d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 멤버 함수</h2></td></tr>
+<tr class="memitem:a0e7888b23736f5aa79d158d5f9719f38"><td class="memItemLeft" align="right" valign="top"><a id="a0e7888b23736f5aa79d158d5f9719f38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConstrainedEdge</b> (int idx, bool ce)</td></tr>
+<tr class="separator:a0e7888b23736f5aa79d158d5f9719f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+속성</h2></td></tr>
+<tr class="memitem:a2c84646d05627e43f7a30a2657f07d79"><td class="memItemLeft" align="right" valign="top"><a id="a2c84646d05627e43f7a30a2657f07d79"></a>
+<a class="el" href="struct_poly2_tri_1_1_fixed_bit_array3.html">FixedBitArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EdgeIsConstrained</b><code> [get]</code></td></tr>
+<tr class="separator:a2c84646d05627e43f7a30a2657f07d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753594be051bcbdce0b77bc5e421dfaf"><td class="memItemLeft" align="right" valign="top"><a id="a753594be051bcbdce0b77bc5e421dfaf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInterior</b><code> [get, set]</code></td></tr>
+<tr class="separator:a753594be051bcbdce0b77bc5e421dfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 멤버 함수</h2></td></tr>
+<tr class="memitem:a0d5f891ce36cd6761bba8966cecc7035"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html#a0d5f891ce36cd6761bba8966cecc7035">MarkNeighbor</a> (<a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p1, <a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> p2, <a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a> t)</td></tr>
+<tr class="memdesc:a0d5f891ce36cd6761bba8966cecc7035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update neighbor pointers  <a href="class_poly2_tri_1_1_delaunay_triangle.html#a0d5f891ce36cd6761bba8966cecc7035">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a0d5f891ce36cd6761bba8966cecc7035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5df8147408776598a229b99b2f0d06"><td class="memItemLeft" align="right" valign="top"><a id="a5d5df8147408776598a229b99b2f0d06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RotateCW</b> ()</td></tr>
+<tr class="separator:a5d5df8147408776598a229b99b2f0d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 속성</h2></td></tr>
+<tr class="memitem:a318942e6cd95a8e126fa01dcc6cb7c15"><td class="memItemLeft" align="right" valign="top"><a id="a318942e6cd95a8e126fa01dcc6cb7c15"></a>
+<a class="el" href="struct_poly2_tri_1_1_fixed_bit_array3.html">FixedBitArray3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mEdgeIsConstrained</b></td></tr>
+<tr class="separator:a318942e6cd95a8e126fa01dcc6cb7c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a5ae75687f50d9d73d7c3988c3107773e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae75687f50d9d73d7c3988c3107773e">&#9670;&nbsp;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.DelaunayTriangle.Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears all references to all other triangles and points </p>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a5ae75687f50d9d73d7c3988c3107773e_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a5ae75687f50d9d73d7c3988c3107773e_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a5ae75687f50d9d73d7c3988c3107773e_icgraph" id="class_poly2_tri_1_1_delaunay_triangle_a5ae75687f50d9d73d7c3988c3107773e_icgraph">
+<area shape="rect" title="Clears all references to all other triangles and points" alt="" coords="955,5,1131,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a127cc39b39d0b80b503ffb443fc7771f" title="If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexH..." alt="" coords="708,5,907,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,13,660,39"/>
+<area shape="rect" href="class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,13,417,39"/>
+<area shape="rect" href="class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,13,208,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0e670d3537b8a47d30a40bd4f882cd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e670d3537b8a47d30a40bd4f882cd39">&#9670;&nbsp;</a></span>EdgeIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Poly2Tri.DelaunayTriangle.EdgeIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the index of the neighbor that shares this edge (or -1 if it isn't shared) </p>
+<dl class="section return"><dt>반환값</dt><dd>index of the shared edge or -1 if edge isn't shared</dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a0e670d3537b8a47d30a40bd4f882cd39_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a0e670d3537b8a47d30a40bd4f882cd39_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a0e670d3537b8a47d30a40bd4f882cd39_icgraph" id="class_poly2_tri_1_1_delaunay_triangle_a0e670d3537b8a47d30a40bd4f882cd39_icgraph">
+<area shape="rect" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="2909,215,3085,257"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a14e227efedcd8b6caf082e6da792fb03" title="Mark edge as constrained" alt="" coords="2685,150,2861,191"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a0d5f891ce36cd6761bba8966cecc7035" title="Update neighbor pointers" alt="" coords="2685,215,2861,257"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1c8a1449893687580739f509e9e692af" title="After a flip we have two triangles and know that only one will still be intersecting the edge...." alt="" coords="1939,215,2119,257"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad796bebcdbf54e3c484d61f65a5ef491" title="Adds a triangle to the advancing front to fill a hole." alt="" coords="1955,164,2104,191"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a26d5080672d8c4305a8c7b5713584791" title="Exhaustive search to update neighbor pointers" alt="" coords="2430,215,2606,257"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ab330ccb161e7d84673a798bfa976ebfa" title="Creates a new front triangle and legalize it" alt="" coords="1936,98,2123,139"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a757b9ad196af61a017208cbec6c410d6" title="Rotates a triangle pair one vertex CW n2 n2 P +&#45;&#45;—+ P +&#45;&#45;—+ | t /| |\ t | &#160;&#160;| / | | \ | n1| / |n3 n1|..." alt="" coords="2399,281,2637,308"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#addb0d738f141be9a967a4fc8f8743376" title="Fills holes in the Advancing Front" alt="" coords="1169,98,1377,139"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1ef754bd75be0de5c4ec66091abe7e70" title="Find closes node to the left of the new point and create a new triangle. If needed new holes and basi..." alt="" coords="927,164,1121,191"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae6066a935df2d0cab34e302e1e6f1426" title="Recursive algorithm to fill a Basin with triangles" alt="" coords="1677,113,1883,140"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a694912090e07a2fe696380e41ad6a5cf" title="We will traverse the entire advancing front and fill it to form a convex hull." alt="" coords="1672,215,1888,257"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a830c669978e4da8e451abe040d5e35cb" title="Start sweeping the Y&#45;sorted point set from bottom to top" alt="" coords="708,167,879,193"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,193,660,220"/>
+<area shape="rect" href="class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,193,417,220"/>
+<area shape="rect" href="class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,193,208,220"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae914acc7045d1e5d79c7c45c3c1df254" title="Fills a basin that has formed on the Advancing Front to the right of given node. &#160;First we decide a l..." alt="" coords="1433,113,1616,140"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a127cc39b39d0b80b503ffb443fc7771f" title="If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexH..." alt="" coords="1425,215,1624,257"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad0d613a6e740a78655b3a8b2a59bbc04" title="Returns true if triangle was legalized" alt="" coords="2171,219,2351,245"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff435b32982ecd234e37bc0d5bf9bd0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff435b32982ecd234e37bc0d5bf9bd0e">&#9670;&nbsp;</a></span>Legalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.DelaunayTriangle.Legalize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>oPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>nPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Legalize triangle by rotating clockwise around oPoint </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oPoint</td><td>The origin point to rotate around</td></tr>
+    <tr><td class="paramname">nPoint</td><td>???</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_aff435b32982ecd234e37bc0d5bf9bd0e_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_aff435b32982ecd234e37bc0d5bf9bd0e_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_aff435b32982ecd234e37bc0d5bf9bd0e_icgraph" id="class_poly2_tri_1_1_delaunay_triangle_aff435b32982ecd234e37bc0d5bf9bd0e_icgraph">
+<area shape="rect" title="Legalize triangle by rotating clockwise around oPoint" alt="" coords="2679,17,2855,59"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a757b9ad196af61a017208cbec6c410d6" title="Rotates a triangle pair one vertex CW n2 n2 P +&#45;&#45;—+ P +&#45;&#45;—+ | t /| |\ t | &#160;&#160;| / | | \ | n1| / |n3 n1|..." alt="" coords="2392,25,2631,51"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a127cc39b39d0b80b503ffb443fc7771f" title="If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexH..." alt="" coords="1425,33,1624,75"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad0d613a6e740a78655b3a8b2a59bbc04" title="Returns true if triangle was legalized" alt="" coords="2164,95,2344,122"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,59,660,86"/>
+<area shape="rect" href="class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,59,417,86"/>
+<area shape="rect" href="class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,59,208,86"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad796bebcdbf54e3c484d61f65a5ef491" title="Adds a triangle to the advancing front to fill a hole." alt="" coords="1951,125,2101,151"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ab330ccb161e7d84673a798bfa976ebfa" title="Creates a new front triangle and legalize it" alt="" coords="1180,231,1367,272"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1c8a1449893687580739f509e9e692af" title="After a flip we have two triangles and know that only one will still be intersecting the edge...." alt="" coords="1936,59,2116,100"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#addb0d738f141be9a967a4fc8f8743376" title="Fills holes in the Advancing Front" alt="" coords="1169,151,1377,192"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1ef754bd75be0de5c4ec66091abe7e70" title="Find closes node to the left of the new point and create a new triangle. If needed new holes and basi..." alt="" coords="927,143,1121,170"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae6066a935df2d0cab34e302e1e6f1426" title="Recursive algorithm to fill a Basin with triangles" alt="" coords="1677,150,1883,177"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a694912090e07a2fe696380e41ad6a5cf" title="We will traverse the entire advancing front and fill it to form a convex hull." alt="" coords="1672,33,1888,75"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a830c669978e4da8e451abe040d5e35cb" title="Start sweeping the Y&#45;sorted point set from bottom to top" alt="" coords="708,115,879,142"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae914acc7045d1e5d79c7c45c3c1df254" title="Fills a basin that has formed on the Advancing Front to the right of given node. &#160;First we decide a l..." alt="" coords="1433,150,1616,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a14e227efedcd8b6caf082e6da792fb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e227efedcd8b6caf082e6da792fb03">&#9670;&nbsp;</a></span>MarkConstrainedEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.DelaunayTriangle.MarkConstrainedEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark edge as constrained </p>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a14e227efedcd8b6caf082e6da792fb03_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a14e227efedcd8b6caf082e6da792fb03_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a14e227efedcd8b6caf082e6da792fb03_cgraph" id="class_poly2_tri_1_1_delaunay_triangle_a14e227efedcd8b6caf082e6da792fb03_cgraph">
+<area shape="rect" title="Mark edge as constrained" alt="" coords="5,5,181,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="229,5,405,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a26d5080672d8c4305a8c7b5713584791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d5080672d8c4305a8c7b5713584791">&#9670;&nbsp;</a></span>MarkNeighbor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.DelaunayTriangle.MarkNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exhaustive search to update neighbor pointers </p>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a26d5080672d8c4305a8c7b5713584791_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a26d5080672d8c4305a8c7b5713584791_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a26d5080672d8c4305a8c7b5713584791_cgraph" id="class_poly2_tri_1_1_delaunay_triangle_a26d5080672d8c4305a8c7b5713584791_cgraph">
+<area shape="rect" title="Exhaustive search to update neighbor pointers" alt="" coords="5,5,181,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a0d5f891ce36cd6761bba8966cecc7035" title="Update neighbor pointers" alt="" coords="229,5,405,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="453,5,629,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d5f891ce36cd6761bba8966cecc7035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5f891ce36cd6761bba8966cecc7035">&#9670;&nbsp;</a></span>MarkNeighbor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.DelaunayTriangle.MarkNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a>&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update neighbor pointers </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Point 1 of the shared edge</td></tr>
+    <tr><td class="paramname">p2</td><td>Point 2 of the shared edge</td></tr>
+    <tr><td class="paramname">t</td><td>This triangle's new neighbor</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_cgraph" id="class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_cgraph">
+<area shape="rect" title="Update neighbor pointers" alt="" coords="5,5,181,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="229,5,405,47"/>
+</map>
+</div>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_icgraph" id="class_poly2_tri_1_1_delaunay_triangle_a0d5f891ce36cd6761bba8966cecc7035_icgraph">
+<area shape="rect" title="Update neighbor pointers" alt="" coords="2685,152,2861,193"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad796bebcdbf54e3c484d61f65a5ef491" title="Adds a triangle to the advancing front to fill a hole." alt="" coords="1955,135,2104,162"/>
+<area shape="rect" href="class_poly2_tri_1_1_delaunay_triangle.html#a26d5080672d8c4305a8c7b5713584791" title="Exhaustive search to update neighbor pointers" alt="" coords="2430,236,2606,277"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ab330ccb161e7d84673a798bfa976ebfa" title="Creates a new front triangle and legalize it" alt="" coords="1936,69,2123,110"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a757b9ad196af61a017208cbec6c410d6" title="Rotates a triangle pair one vertex CW n2 n2 P +&#45;&#45;—+ P +&#45;&#45;—+ | t /| |\ t | &#160;&#160;| / | | \ | n1| / |n3 n1|..." alt="" coords="2399,184,2637,211"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#addb0d738f141be9a967a4fc8f8743376" title="Fills holes in the Advancing Front" alt="" coords="1169,94,1377,136"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1ef754bd75be0de5c4ec66091abe7e70" title="Find closes node to the left of the new point and create a new triangle. If needed new holes and basi..." alt="" coords="927,160,1121,187"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae6066a935df2d0cab34e302e1e6f1426" title="Recursive algorithm to fill a Basin with triangles" alt="" coords="1677,59,1883,86"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a694912090e07a2fe696380e41ad6a5cf" title="We will traverse the entire advancing front and fill it to form a convex hull." alt="" coords="1672,212,1888,253"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a830c669978e4da8e451abe040d5e35cb" title="Start sweeping the Y&#45;sorted point set from bottom to top" alt="" coords="708,163,879,190"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,190,660,216"/>
+<area shape="rect" href="class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,190,417,216"/>
+<area shape="rect" href="class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,190,208,216"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae914acc7045d1e5d79c7c45c3c1df254" title="Fills a basin that has formed on the Advancing Front to the right of given node. &#160;First we decide a l..." alt="" coords="1433,59,1616,86"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a127cc39b39d0b80b503ffb443fc7771f" title="If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexH..." alt="" coords="1425,212,1624,253"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad0d613a6e740a78655b3a8b2a59bbc04" title="Returns true if triangle was legalized" alt="" coords="2171,184,2351,211"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1c8a1449893687580739f509e9e692af" title="After a flip we have two triangles and know that only one will still be intersecting the edge...." alt="" coords="1939,186,2119,228"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2efc82a044bd38680923eb574730be6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efc82a044bd38680923eb574730be6b">&#9670;&nbsp;</a></span>MarkNeighborEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.DelaunayTriangle.MarkNeighborEdges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finalize edge marking </p>
+
+</div>
+</div>
+<a id="a586677240bcb4172609633b35e6b15ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586677240bcb4172609633b35e6b15ea">&#9670;&nbsp;</a></span>OppositePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a> Poly2Tri.DelaunayTriangle.OppositePoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_delaunay_triangle.html">DelaunayTriangle</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_triangulation_point.html">TriangulationPoint</a>&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Opposite triangle</td></tr>
+    <tr><td class="paramname">p</td><td>The point in t that isn't shared between the triangles</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_delaunay_triangle_a586677240bcb4172609633b35e6b15ea_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_delaunay_triangle_a586677240bcb4172609633b35e6b15ea_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_delaunay_triangle_a586677240bcb4172609633b35e6b15ea_icgraph" id="class_poly2_tri_1_1_delaunay_triangle_a586677240bcb4172609633b35e6b15ea_icgraph">
+<area shape="rect" title=" " alt="" coords="2395,53,2571,94"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a127cc39b39d0b80b503ffb443fc7771f" title="If this is a Delaunay Triangulation of a pointset we need to fill so the triangle mesh gets a ConvexH..." alt="" coords="1425,41,1624,82"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a02c0c2e6e9b242186e1379483b5be39e" title="Scan part of the FlipScan algorithm &#160;When a triangle pair isn&#39;t flippable we will scan for the next p..." alt="" coords="2164,53,2347,94"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad0d613a6e740a78655b3a8b2a59bbc04" title="Returns true if triangle was legalized" alt="" coords="2165,144,2345,171"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a7f9a4b48f907ef96be2559a95c03a5cf" title="Triangulate simple polygon with holes" alt="" coords="465,67,660,93"/>
+<area shape="rect" href="class_poly2_mesh.html#a7e7e286f7eaae84f358453d58d49b76a" title="Create a Mesh from a given Polygon." alt="" coords="256,67,417,93"/>
+<area shape="rect" href="class_poly2_mesh.html#a2ef9c957f89be640d9d866c46e696ff5" title="Create a GameObject from the given polygon. The resulting object will have a Mesh,..." alt="" coords="5,67,208,93"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ad796bebcdbf54e3c484d61f65a5ef491" title="Adds a triangle to the advancing front to fill a hole." alt="" coords="1951,151,2101,177"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ab330ccb161e7d84673a798bfa976ebfa" title="Creates a new front triangle and legalize it" alt="" coords="1180,238,1367,279"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1c8a1449893687580739f509e9e692af" title="After a flip we have two triangles and know that only one will still be intersecting the edge...." alt="" coords="1936,85,2116,126"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#addb0d738f141be9a967a4fc8f8743376" title="Fills holes in the Advancing Front" alt="" coords="1169,158,1377,199"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a1ef754bd75be0de5c4ec66091abe7e70" title="Find closes node to the left of the new point and create a new triangle. If needed new holes and basi..." alt="" coords="927,151,1121,177"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae6066a935df2d0cab34e302e1e6f1426" title="Recursive algorithm to fill a Basin with triangles" alt="" coords="1677,157,1883,184"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a694912090e07a2fe696380e41ad6a5cf" title="We will traverse the entire advancing front and fill it to form a convex hull." alt="" coords="1672,41,1888,82"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#a830c669978e4da8e451abe040d5e35cb" title="Start sweeping the Y&#45;sorted point set from bottom to top" alt="" coords="708,123,879,149"/>
+<area shape="rect" href="class_poly2_tri_1_1_d_t_sweep.html#ae914acc7045d1e5d79c7c45c3c1df254" title="Fills a basin that has formed on the Advancing Front to the right of given node. &#160;First we decide a l..." alt="" coords="1433,157,1616,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>C:/Users/apple/Documents/Unity/TopologyEditor/Assets/Scripts/Poly2Mesh/Poly2Tri/Triangulation/Delaunay/DelaunayTriangle.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

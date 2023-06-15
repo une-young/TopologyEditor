@@ -1,0 +1,4 @@
+<map id="Poly2Tri.PolygonOperationContext.VerticesIntersect" name="Poly2Tri.PolygonOperationContext.VerticesIntersect">
+<area shape="rect" id="node1" title="Check and return polygon intersections" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_triangulation_util.html#ac46c6c3a292146300095b929815d216f" title="This method detects if two line segments (or lines) intersect, and, if so, the point of intersection...." alt="" coords="229,5,399,47"/>
+</map>

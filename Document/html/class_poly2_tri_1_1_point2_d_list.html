@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Topology Editor: Poly2Tri.Point2DList 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Topology Editor
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_poly2_tri.html">Poly2Tri</a></li><li class="navelem"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 타입</a> &#124;
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="#pub-static-attribs">정적 Public 속성</a> &#124;
+<a href="#pro-methods">Protected 멤버 함수</a> &#124;
+<a href="#pro-attribs">Protected 속성</a> &#124;
+<a href="#properties">속성</a> &#124;
+<a href="#pri-methods">Private 멤버 함수</a> &#124;
+<a href="class_poly2_tri_1_1_point2_d_list-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">Poly2Tri.Point2DList 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Poly2Tri.Point2DList에 대한 상속 다이어그램 : </div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list__inherit__graph.png" border="0" usemap="#_poly2_tri_8_point2_d_list_inherit__map" alt="Inheritance graph"/></div>
+<map name="_poly2_tri_8_point2_d_list_inherit__map" id="_poly2_tri_8_point2_d_list_inherit__map">
+<area shape="rect" title=" " alt="" coords="212,80,352,107"/>
+<area shape="rect" href="class_poly2_tri_1_1_contour.html" title="This is basically a light&#45;weight version of the Polygon class, but with limited functionality and use..." alt="" coords="5,155,124,181"/>
+<area shape="rect" href="class_poly2_tri_1_1_point_set.html" title=" " alt="" coords="149,155,271,181"/>
+<area shape="rect" href="class_poly2_tri_1_1_polygon.html" title=" " alt="" coords="295,155,415,181"/>
+<area shape="rect" href="class_poly2_tri_1_1_triangulation_point_list.html" title=" " alt="" coords="439,155,637,181"/>
+<area shape="rect" title=" " alt="" coords="119,5,283,32"/>
+<area shape="rect" title=" " alt="" coords="307,5,423,32"/>
+<area shape="rect" href="class_poly2_tri_1_1_constrained_point_set.html" title=" " alt="" coords="114,229,306,256"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">범례</a>]</span></center></div>
+<div class="dynheader">
+Poly2Tri.Point2DList에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list__coll__graph.png" border="0" usemap="#_poly2_tri_8_point2_d_list_coll__map" alt="Collaboration graph"/></div>
+<map name="_poly2_tri_8_point2_d_list_coll__map" id="_poly2_tri_8_point2_d_list_coll__map">
+<area shape="rect" title=" " alt="" coords="181,95,321,121"/>
+<area shape="rect" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" title=" " alt="" coords="193,5,309,32"/>
+<area shape="rect" href="class_poly2_tri_1_1_rect2_d.html" title=" " alt="" coords="333,5,449,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">범례</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 타입</h2></td></tr>
+<tr class="memitem:a04faaf45cf0efc793e9c59b7fcbf50ac"><td class="memItemLeft" align="right" valign="top"><a id="a04faaf45cf0efc793e9c59b7fcbf50ac"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WindingOrderType</b> { <b>CW</b>, 
+<b>CCW</b>, 
+<b>Unknown</b>, 
+<b>Default</b> = CCW
+ }</td></tr>
+<tr class="separator:a04faaf45cf0efc793e9c59b7fcbf50ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08157a249eb345867a68bd3f709bb39f"><td class="memItemLeft" align="right" valign="top"><a id="a08157a249eb345867a68bd3f709bb39f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PolygonError</b> : uint { <br />
+&#160;&#160;<b>None</b> = 0, 
+<b>NotEnoughVertices</b> = 1 &lt;&lt; 0, 
+<b>NotConvex</b> = 1 &lt;&lt; 1, 
+<b>NotSimple</b> = 1 &lt;&lt; 2, 
+<br />
+&#160;&#160;<b>AreaTooSmall</b> = 1 &lt;&lt; 3, 
+<b>SidesTooCloseToParallel</b> = 1 &lt;&lt; 4, 
+<b>TooThin</b> = 1 &lt;&lt; 5, 
+<b>Degenerate</b> = 1 &lt;&lt; 6, 
+<br />
+&#160;&#160;<b>Unknown</b> = 1 &lt;&lt; 30
+<br />
+ }</td></tr>
+<tr class="separator:a08157a249eb345867a68bd3f709bb39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:aecd8fde0bf275b18078957c76907df1b"><td class="memItemLeft" align="right" valign="top"><a id="aecd8fde0bf275b18078957c76907df1b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Point2DList</b> (int capacity)</td></tr>
+<tr class="separator:aecd8fde0bf275b18078957c76907df1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee260c2f71fa7cbf0ace2c58ce5f2a50"><td class="memItemLeft" align="right" valign="top"><a id="aee260c2f71fa7cbf0ace2c58ce5f2a50"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Point2DList</b> (IList&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; l)</td></tr>
+<tr class="separator:aee260c2f71fa7cbf0ace2c58ce5f2a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af811dc230f5577233d93ed22e1812a24"><td class="memItemLeft" align="right" valign="top"><a id="af811dc230f5577233d93ed22e1812a24"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Point2DList</b> (<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> l)</td></tr>
+<tr class="separator:af811dc230f5577233d93ed22e1812a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba76312cee416d57a52c5ee56896c85"><td class="memItemLeft" align="right" valign="top"><a id="a4ba76312cee416d57a52c5ee56896c85"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="separator:a4ba76312cee416d57a52c5ee56896c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da69c0be1013a668c713dd0a14318ff"><td class="memItemLeft" align="right" valign="top"><a id="a3da69c0be1013a668c713dd0a14318ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
+<tr class="separator:a3da69c0be1013a668c713dd0a14318ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8871a564212df0f02b32f15c243087"><td class="memItemLeft" align="right" valign="top"><a id="a4b8871a564212df0f02b32f15c243087"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>IndexOf</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> p)</td></tr>
+<tr class="separator:a4b8871a564212df0f02b32f15c243087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba95104025a62d73480173413cf4ae7"><td class="memItemLeft" align="right" valign="top"><a id="a6ba95104025a62d73480173413cf4ae7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> p)</td></tr>
+<tr class="separator:a6ba95104025a62d73480173413cf4ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0718a01994326269975639307d90cc46"><td class="memItemLeft" align="right" valign="top"><a id="a0718a01994326269975639307d90cc46"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRange</b> (<a class="el" href="class_poly2_tri_1_1_point2_d_list.html">Point2DList</a> l)</td></tr>
+<tr class="separator:a0718a01994326269975639307d90cc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706c59488412452fff760c9ab6fd06b2"><td class="memItemLeft" align="right" valign="top"><a id="a706c59488412452fff760c9ab6fd06b2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRange</b> (IEnumerator&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; iter, WindingOrderType windingOrder)</td></tr>
+<tr class="separator:a706c59488412452fff760c9ab6fd06b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51de8385d31670e704d04d3ba58e908f"><td class="memItemLeft" align="right" valign="top"><a id="a51de8385d31670e704d04d3ba58e908f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Insert</b> (int idx, <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> item)</td></tr>
+<tr class="separator:a51de8385d31670e704d04d3ba58e908f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbc0034341dbefc0c4c1c0c804d0fb5"><td class="memItemLeft" align="right" valign="top"><a id="addbc0034341dbefc0c4c1c0c804d0fb5"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> p)</td></tr>
+<tr class="separator:addbc0034341dbefc0c4c1c0c804d0fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d8ccff79a47037d1275b3c448a8be1"><td class="memItemLeft" align="right" valign="top"><a id="a69d8ccff79a47037d1275b3c448a8be1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAt</b> (int idx)</td></tr>
+<tr class="separator:a69d8ccff79a47037d1275b3c448a8be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c915abed2bf3b05ec504cb6147503be"><td class="memItemLeft" align="right" valign="top"><a id="a7c915abed2bf3b05ec504cb6147503be"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveRange</b> (int idxStart, int count)</td></tr>
+<tr class="separator:a7c915abed2bf3b05ec504cb6147503be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962a1d0637fe54dd610cf3b6603dcc7c"><td class="memItemLeft" align="right" valign="top"><a id="a962a1d0637fe54dd610cf3b6603dcc7c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> p)</td></tr>
+<tr class="separator:a962a1d0637fe54dd610cf3b6603dcc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b24bf564b14c97a6fdac47f3d27976"><td class="memItemLeft" align="right" valign="top"><a id="a57b24bf564b14c97a6fdac47f3d27976"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyTo</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>[] array, int arrayIndex)</td></tr>
+<tr class="separator:a57b24bf564b14c97a6fdac47f3d27976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569280ecde141e98129b29165101c00b"><td class="memItemLeft" align="right" valign="top"><a id="a569280ecde141e98129b29165101c00b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateBounds</b> ()</td></tr>
+<tr class="separator:a569280ecde141e98129b29165101c00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc3d48d738e6e7961360ed8e801f119"><td class="memItemLeft" align="right" valign="top"><a id="adbc3d48d738e6e7961360ed8e801f119"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateEpsilon</b> ()</td></tr>
+<tr class="separator:adbc3d48d738e6e7961360ed8e801f119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff192a5282eb25b8c1d457143597a84"><td class="memItemLeft" align="right" valign="top"><a id="adff192a5282eb25b8c1d457143597a84"></a>
+WindingOrderType&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateWindingOrder</b> ()</td></tr>
+<tr class="separator:adff192a5282eb25b8c1d457143597a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31aef6b66b667115a10a9b2e8679a1df"><td class="memItemLeft" align="right" valign="top"><a id="a31aef6b66b667115a10a9b2e8679a1df"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>NextIndex</b> (int index)</td></tr>
+<tr class="separator:a31aef6b66b667115a10a9b2e8679a1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ad18b603905ec2630d16684dbc4497"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a26ad18b603905ec2630d16684dbc4497">PreviousIndex</a> (int index)</td></tr>
+<tr class="memdesc:a26ad18b603905ec2630d16684dbc4497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the previous index.  <a href="class_poly2_tri_1_1_point2_d_list.html#a26ad18b603905ec2630d16684dbc4497">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a26ad18b603905ec2630d16684dbc4497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2f1c0b71aaa7d6debeacd655a7c1ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#aee2f1c0b71aaa7d6debeacd655a7c1ae">GetSignedArea</a> ()</td></tr>
+<tr class="memdesc:aee2f1c0b71aaa7d6debeacd655a7c1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the signed area.  <a href="class_poly2_tri_1_1_point2_d_list.html#aee2f1c0b71aaa7d6debeacd655a7c1ae">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aee2f1c0b71aaa7d6debeacd655a7c1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abee19493db108a8fe220fa35992fdb23"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#abee19493db108a8fe220fa35992fdb23">GetArea</a> ()</td></tr>
+<tr class="memdesc:abee19493db108a8fe220fa35992fdb23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the area.  <a href="class_poly2_tri_1_1_point2_d_list.html#abee19493db108a8fe220fa35992fdb23">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:abee19493db108a8fe220fa35992fdb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad906704765f7e7e90ef1cd2866ed053"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#aad906704765f7e7e90ef1cd2866ed053">GetCentroid</a> ()</td></tr>
+<tr class="memdesc:aad906704765f7e7e90ef1cd2866ed053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the centroid.  <a href="class_poly2_tri_1_1_point2_d_list.html#aad906704765f7e7e90ef1cd2866ed053">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aad906704765f7e7e90ef1cd2866ed053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a758d898616566c5c6ea8ec3133f028fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a758d898616566c5c6ea8ec3133f028fc">Translate</a> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> vector)</td></tr>
+<tr class="separator:a758d898616566c5c6ea8ec3133f028fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb2e8e82a4adaee7c6076d3c3e45163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a0bb2e8e82a4adaee7c6076d3c3e45163">Scale</a> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> value)</td></tr>
+<tr class="memdesc:a0bb2e8e82a4adaee7c6076d3c3e45163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the vertices with the specified vector.  <a href="class_poly2_tri_1_1_point2_d_list.html#a0bb2e8e82a4adaee7c6076d3c3e45163">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a0bb2e8e82a4adaee7c6076d3c3e45163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ea5f079841c175b2ed2e15f7d9fcfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#ab8ea5f079841c175b2ed2e15f7d9fcfb">Rotate</a> (double radians)</td></tr>
+<tr class="memdesc:ab8ea5f079841c175b2ed2e15f7d9fcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the vertices with the defined value in radians.  <a href="class_poly2_tri_1_1_point2_d_list.html#ab8ea5f079841c175b2ed2e15f7d9fcfb">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:ab8ea5f079841c175b2ed2e15f7d9fcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ada9011436eafca02a27278ba172d7"><td class="memItemLeft" align="right" valign="top"><a id="a79ada9011436eafca02a27278ba172d7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDegenerate</b> ()</td></tr>
+<tr class="separator:a79ada9011436eafca02a27278ba172d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7278a52ae5aeadcc140721272a3689"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a5b7278a52ae5aeadcc140721272a3689">IsConvex</a> ()</td></tr>
+<tr class="memdesc:a5b7278a52ae5aeadcc140721272a3689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assuming the polygon is simple; determines whether the polygon is convex.  <a href="class_poly2_tri_1_1_point2_d_list.html#a5b7278a52ae5aeadcc140721272a3689">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a5b7278a52ae5aeadcc140721272a3689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0d4f2502521d9a43b16de375f98ad5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a2f0d4f2502521d9a43b16de375f98ad5">IsSimple</a> ()</td></tr>
+<tr class="memdesc:a2f0d4f2502521d9a43b16de375f98ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for edge crossings  <a href="class_poly2_tri_1_1_point2_d_list.html#a2f0d4f2502521d9a43b16de375f98ad5">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a2f0d4f2502521d9a43b16de375f98ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f1190106595bfb47d30a786b30853a"><td class="memItemLeft" align="right" valign="top">PolygonError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a">CheckPolygon</a> ()</td></tr>
+<tr class="memdesc:a77f1190106595bfb47d30a786b30853a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons are added to world geometry.  <a href="class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a77f1190106595bfb47d30a786b30853a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a19298af49b42e49c578138e4250f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a9a19298af49b42e49c578138e4250f65">RemoveDuplicateNeighborPoints</a> ()</td></tr>
+<tr class="memdesc:a9a19298af49b42e49c578138e4250f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes duplicate points that lie next to each other in the list  <a href="class_poly2_tri_1_1_point2_d_list.html#a9a19298af49b42e49c578138e4250f65">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a9a19298af49b42e49c578138e4250f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4f4e72c08bd56fb4f4df371e843e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a1f4f4e72c08bd56fb4f4df371e843e30">Simplify</a> ()</td></tr>
+<tr class="memdesc:a1f4f4e72c08bd56fb4f4df371e843e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all collinear points on the polygon. Has a default bias of 0  <a href="class_poly2_tri_1_1_point2_d_list.html#a1f4f4e72c08bd56fb4f4df371e843e30">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a1f4f4e72c08bd56fb4f4df371e843e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad63631fc720adb9cc6c18b56df6c62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a5ad63631fc720adb9cc6c18b56df6c62">Simplify</a> (double bias)</td></tr>
+<tr class="memdesc:a5ad63631fc720adb9cc6c18b56df6c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all collinear points on the polygon. Note that this is NOT safe to run on a complex polygon as it will remove points that it should not. For example, consider this polygon:  <a href="class_poly2_tri_1_1_point2_d_list.html#a5ad63631fc720adb9cc6c18b56df6c62">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a5ad63631fc720adb9cc6c18b56df6c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9290e3e833ce5798077c5f3227b8b982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a9290e3e833ce5798077c5f3227b8b982">MergeParallelEdges</a> (double tolerance)</td></tr>
+<tr class="memdesc:a9290e3e833ce5798077c5f3227b8b982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges all parallel edges in the list of vertices  <a href="class_poly2_tri_1_1_point2_d_list.html#a9290e3e833ce5798077c5f3227b8b982">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:a9290e3e833ce5798077c5f3227b8b982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad76ce316a56cb9f42a947cfff7226d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#aad76ce316a56cb9f42a947cfff7226d8">ProjectToAxis</a> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> axis, out double min, out double max)</td></tr>
+<tr class="memdesc:aad76ce316a56cb9f42a947cfff7226d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects to axis.  <a href="class_poly2_tri_1_1_point2_d_list.html#aad76ce316a56cb9f42a947cfff7226d8">더 자세히 ...</a><br /></td></tr>
+<tr class="separator:aad76ce316a56cb9f42a947cfff7226d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a21e70da3378b814e3fa4a302dc45a0ea"><td class="memItemLeft" align="right" valign="top"><a id="a21e70da3378b814e3fa4a302dc45a0ea"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetErrorString</b> (PolygonError error)</td></tr>
+<tr class="separator:a21e70da3378b814e3fa4a302dc45a0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+정적 Public 속성</h2></td></tr>
+<tr class="memitem:ac33077678a1f6dc3d143cd7048b93763"><td class="memItemLeft" align="right" valign="top"><a id="ac33077678a1f6dc3d143cd7048b93763"></a>
+static readonly int&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxPolygonVertices</b> = 100000</td></tr>
+<tr class="separator:ac33077678a1f6dc3d143cd7048b93763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a813a93d07764fc5cd30cc840d7bf5028"><td class="memItemLeft" align="right" valign="top">static readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a813a93d07764fc5cd30cc840d7bf5028">kLinearSlop</a> = 0.005</td></tr>
+<tr class="separator:a813a93d07764fc5cd30cc840d7bf5028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382853cd70050d7021695da0693863b5"><td class="memItemLeft" align="right" valign="top">static readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poly2_tri_1_1_point2_d_list.html#a382853cd70050d7021695da0693863b5">kAngularSlop</a> = (2.0 / (180.0 * Math.PI))</td></tr>
+<tr class="separator:a382853cd70050d7021695da0693863b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 멤버 함수</h2></td></tr>
+<tr class="memitem:a2fad8f3853b2a1a9a2491f3a6574ef9f"><td class="memItemLeft" align="right" valign="top"><a id="a2fad8f3853b2a1a9a2491f3a6574ef9f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> p, int idx, bool bCalcWindingOrderAndEpsilon)</td></tr>
+<tr class="separator:a2fad8f3853b2a1a9a2491f3a6574ef9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 속성</h2></td></tr>
+<tr class="memitem:a869f371fade917e8a5e2f1e3bf208a6e"><td class="memItemLeft" align="right" valign="top"><a id="a869f371fade917e8a5e2f1e3bf208a6e"></a>
+List&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mPoints</b> = new List&lt;<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>&gt;()</td></tr>
+<tr class="separator:a869f371fade917e8a5e2f1e3bf208a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81780bcb1e3bbe45a22132409d8de26"><td class="memItemLeft" align="right" valign="top"><a id="ae81780bcb1e3bbe45a22132409d8de26"></a>
+<a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mBoundingBox</b> = new <a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a>()</td></tr>
+<tr class="separator:ae81780bcb1e3bbe45a22132409d8de26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecd489e33af5c7aa6dc26c2c962f424"><td class="memItemLeft" align="right" valign="top"><a id="a1ecd489e33af5c7aa6dc26c2c962f424"></a>
+WindingOrderType&#160;</td><td class="memItemRight" valign="bottom"><b>mWindingOrder</b> = WindingOrderType.Unknown</td></tr>
+<tr class="separator:a1ecd489e33af5c7aa6dc26c2c962f424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5bb8c0a3c5b716995dd649861e31cb"><td class="memItemLeft" align="right" valign="top"><a id="adf5bb8c0a3c5b716995dd649861e31cb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>mEpsilon</b> = MathUtil.EPSILON</td></tr>
+<tr class="separator:adf5bb8c0a3c5b716995dd649861e31cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+속성</h2></td></tr>
+<tr class="memitem:a3072adbf07f59d6b6b1baead56eb0222"><td class="memItemLeft" align="right" valign="top"><a id="a3072adbf07f59d6b6b1baead56eb0222"></a>
+<a class="el" href="class_poly2_tri_1_1_rect2_d.html">Rect2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BoundingBox</b><code> [get]</code></td></tr>
+<tr class="separator:a3072adbf07f59d6b6b1baead56eb0222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a442c46810d16b49f8b6256c5538545"><td class="memItemLeft" align="right" valign="top"><a id="a0a442c46810d16b49f8b6256c5538545"></a>
+WindingOrderType&#160;</td><td class="memItemRight" valign="bottom"><b>WindingOrder</b><code> [get, set]</code></td></tr>
+<tr class="separator:a0a442c46810d16b49f8b6256c5538545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685a5b38de65791cba1073991a7eb9ac"><td class="memItemLeft" align="right" valign="top"><a id="a685a5b38de65791cba1073991a7eb9ac"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>Epsilon</b><code> [get]</code></td></tr>
+<tr class="separator:a685a5b38de65791cba1073991a7eb9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9aefa6bc19bf620d3ba29d831f01e7"><td class="memItemLeft" align="right" valign="top"><a id="aca9aefa6bc19bf620d3ba29d831f01e7"></a>
+<a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this[int index]</b><code> [get, set]</code></td></tr>
+<tr class="separator:aca9aefa6bc19bf620d3ba29d831f01e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea21f9009be244de185dab3fed628c92"><td class="memItemLeft" align="right" valign="top"><a id="aea21f9009be244de185dab3fed628c92"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Count</b><code> [get]</code></td></tr>
+<tr class="separator:aea21f9009be244de185dab3fed628c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d647e18c23e87e411b744def5834ac"><td class="memItemLeft" align="right" valign="top"><a id="ac3d647e18c23e87e411b744def5834ac"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b><code> [get]</code></td></tr>
+<tr class="separator:ac3d647e18c23e87e411b744def5834ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 멤버 함수</h2></td></tr>
+<tr class="memitem:ae32c8319311903d89387c4e487c7c752"><td class="memItemLeft" align="right" valign="top"><a id="ae32c8319311903d89387c4e487c7c752"></a>
+IEnumerator IEnumerable.&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnumerator</b> ()</td></tr>
+<tr class="separator:ae32c8319311903d89387c4e487c7c752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bf23f31ce07908f8831d52f2127458"><td class="memItemLeft" align="right" valign="top"><a id="a65bf23f31ce07908f8831d52f2127458"></a>
+IEnumerator&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt; IEnumerable&lt; <a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> &gt;.&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnumerator</b> ()</td></tr>
+<tr class="separator:a65bf23f31ce07908f8831d52f2127458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a id="a77f1190106595bfb47d30a786b30853a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f1190106595bfb47d30a786b30853a">&#9670;&nbsp;</a></span>CheckPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PolygonError Poly2Tri.Point2DList.CheckPolygon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons are added to world geometry. </p>
+<p>Performs a full check, for simplicity, convexity, orientation, minimum angle, and volume. This won't be very efficient, and a lot of it is redundant when other tools in this section are used.</p>
+<p>From Eric Jordan's convex decomposition library</p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">printErrors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a_cgraph" id="class_poly2_tri_1_1_point2_d_list_a77f1190106595bfb47d30a786b30853a_cgraph">
+<area shape="rect" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="5,49,187,90"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#abee19493db108a8fe220fa35992fdb23" title="Gets the area." alt="" coords="236,5,428,32"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a2f0d4f2502521d9a43b16de375f98ad5" title="Check for edge crossings" alt="" coords="235,56,429,83"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a26ad18b603905ec2630d16684dbc4497" title="Gets the previous index." alt="" coords="235,107,429,149"/>
+<area shape="rect" href="class_poly2_tri_1_1_triangulation_util.html#ac46c6c3a292146300095b929815d216f" title="This method detects if two line segments (or lines) intersect, and, if so, the point of intersection...." alt="" coords="477,49,647,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abee19493db108a8fe220fa35992fdb23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abee19493db108a8fe220fa35992fdb23">&#9670;&nbsp;</a></span>GetArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Poly2Tri.Point2DList.GetArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the area. </p>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23_icgraph" id="class_poly2_tri_1_1_point2_d_list_abee19493db108a8fe220fa35992fdb23_icgraph">
+<area shape="rect" title="Gets the area." alt="" coords="235,13,427,39"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="5,5,187,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad906704765f7e7e90ef1cd2866ed053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad906704765f7e7e90ef1cd2866ed053">&#9670;&nbsp;</a></span>GetCentroid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a> Poly2Tri.Point2DList.GetCentroid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the centroid. </p>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aee2f1c0b71aaa7d6debeacd655a7c1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2f1c0b71aaa7d6debeacd655a7c1ae">&#9670;&nbsp;</a></span>GetSignedArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Poly2Tri.Point2DList.GetSignedArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the signed area. </p>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a5b7278a52ae5aeadcc140721272a3689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7278a52ae5aeadcc140721272a3689">&#9670;&nbsp;</a></span>IsConvex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Poly2Tri.Point2DList.IsConvex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assuming the polygon is simple; determines whether the polygon is convex. </p>
+<dl class="section return"><dt>반환값</dt><dd><code>true</code> if it is convex; otherwise, <code>false</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a2f0d4f2502521d9a43b16de375f98ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0d4f2502521d9a43b16de375f98ad5">&#9670;&nbsp;</a></span>IsSimple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Poly2Tri.Point2DList.IsSimple </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check for edge crossings </p>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_cgraph" id="class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_cgraph">
+<area shape="rect" title="Check for edge crossings" alt="" coords="5,13,200,39"/>
+<area shape="rect" href="class_poly2_tri_1_1_triangulation_util.html#ac46c6c3a292146300095b929815d216f" title="This method detects if two line segments (or lines) intersect, and, if so, the point of intersection...." alt="" coords="248,5,417,47"/>
+</map>
+</div>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_icgraph" id="class_poly2_tri_1_1_point2_d_list_a2f0d4f2502521d9a43b16de375f98ad5_icgraph">
+<area shape="rect" title="Check for edge crossings" alt="" coords="235,13,429,39"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="5,5,187,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9290e3e833ce5798077c5f3227b8b982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9290e3e833ce5798077c5f3227b8b982">&#9670;&nbsp;</a></span>MergeParallelEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.MergeParallelEdges </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tolerance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Merges all parallel edges in the list of vertices </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tolerance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a26ad18b603905ec2630d16684dbc4497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ad18b603905ec2630d16684dbc4497">&#9670;&nbsp;</a></span>PreviousIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Poly2Tri.Point2DList.PreviousIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the previous index. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd></dd></dl>
+<div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497_icgraph.png" border="0" usemap="#class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497_icgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497_icgraph" id="class_poly2_tri_1_1_point2_d_list_a26ad18b603905ec2630d16684dbc4497_icgraph">
+<area shape="rect" title="Gets the previous index." alt="" coords="244,35,437,76"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="10,5,191,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a5ad63631fc720adb9cc6c18b56df6c62" title="Removes all collinear points on the polygon. Note that this is NOT safe to run on a complex polygon a..." alt="" coords="5,71,196,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad76ce316a56cb9f42a947cfff7226d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad76ce316a56cb9f42a947cfff7226d8">&#9670;&nbsp;</a></span>ProjectToAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.ProjectToAxis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>&#160;</td>
+          <td class="paramname"><em>axis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Projects to axis. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">axis</td><td>The axis.</td></tr>
+    <tr><td class="paramname">min</td><td>The min.</td></tr>
+    <tr><td class="paramname">max</td><td>The max.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a19298af49b42e49c578138e4250f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a19298af49b42e49c578138e4250f65">&#9670;&nbsp;</a></span>RemoveDuplicateNeighborPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.RemoveDuplicateNeighborPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes duplicate points that lie next to each other in the list </p>
+
+</div>
+</div>
+<a id="ab8ea5f079841c175b2ed2e15f7d9fcfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ea5f079841c175b2ed2e15f7d9fcfb">&#9670;&nbsp;</a></span>Rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.Rotate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radians</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rotate the vertices with the defined value in radians. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The amount to rotate by in radians.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0bb2e8e82a4adaee7c6076d3c3e45163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb2e8e82a4adaee7c6076d3c3e45163">&#9670;&nbsp;</a></span>Scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.Scale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scales the vertices with the specified vector. </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The Value.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f4f4e72c08bd56fb4f4df371e843e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4f4e72c08bd56fb4f4df371e843e30">&#9670;&nbsp;</a></span>Simplify() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.Simplify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all collinear points on the polygon. Has a default bias of 0 </p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>The polygon that needs simplification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>A simplified polygon.</dd></dl>
+
+</div>
+</div>
+<a id="a5ad63631fc720adb9cc6c18b56df6c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad63631fc720adb9cc6c18b56df6c62">&#9670;&nbsp;</a></span>Simplify() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.Simplify </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bias</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes all collinear points on the polygon. Note that this is NOT safe to run on a complex polygon as it will remove points that it should not. For example, consider this polygon: </p>
+<pre class="fragment">      2
+      +
+     / \
+    /   \
+   /     \
+</pre><p> 0 +&mdash;+----&mdash;+ 3 1</p>
+<p>This algorithm would delete point 3, leaving you with the polygon 0,1,2 - definitely NOT the correct polygon. Caveat Emptor!</p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">polygon</td><td>The polygon that needs simplification.</td></tr>
+    <tr><td class="paramname">bias</td><td>The distance bias between points. Points closer than this will be 'joined'.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>반환값</dt><dd>A simplified polygon.</dd></dl>
+<div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62_cgraph.png" border="0" usemap="#class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62_cgraph" alt=""/></div>
+<map name="class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62_cgraph" id="class_poly2_tri_1_1_point2_d_list_a5ad63631fc720adb9cc6c18b56df6c62_cgraph">
+<area shape="rect" title="Removes all collinear points on the polygon. Note that this is NOT safe to run on a complex polygon a..." alt="" coords="5,46,196,73"/>
+<area shape="rect" href="class_poly2_tri_1_1_triangulation_util.html#a03b5cb31846006443dfae4ab79872709" title=" " alt="" coords="256,5,425,47"/>
+<area shape="rect" href="class_poly2_tri_1_1_point2_d_list.html#a26ad18b603905ec2630d16684dbc4497" title="Gets the previous index." alt="" coords="244,71,437,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a758d898616566c5c6ea8ec3133f028fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a758d898616566c5c6ea8ec3133f028fc">&#9670;&nbsp;</a></span>Translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Poly2Tri.Point2DList.Translate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_poly2_tri_1_1_point2_d.html">Point2D</a>&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+<p>Translates the vertices with the specified vector.</p>
+<dl class="params"><dt>매개변수</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>The vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이터 문서화</h2>
+<a id="a382853cd70050d7021695da0693863b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382853cd70050d7021695da0693863b5">&#9670;&nbsp;</a></span>kAngularSlop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double Poly2Tri.Point2DList.kAngularSlop = (2.0 / (180.0 * Math.PI))</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A small angle used as a collision and constraint tolerance. Usually it is chosen to be numerically significant, but visually insignificant. </p>
+
+</div>
+</div>
+<a id="a813a93d07764fc5cd30cc840d7bf5028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a813a93d07764fc5cd30cc840d7bf5028">&#9670;&nbsp;</a></span>kLinearSlop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly double Poly2Tri.Point2DList.kLinearSlop = 0.005</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A small length used as a collision and constraint tolerance. Usually it is chosen to be numerically significant, but visually insignificant. </p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>C:/Users/apple/Documents/Unity/TopologyEditor/Assets/Scripts/Poly2Mesh/Poly2Tri/Utility/Point2DList.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+다음에 의해 생성됨 :  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>

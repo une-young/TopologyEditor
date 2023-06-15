@@ -1,0 +1,78 @@
+\hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape}{}\doxysection{Polygon\+Cutting\+Ear.\+C\+Polygon\+Shape 클래스 참조}
+\label{class_polygon_cutting_ear_1_1_c_polygon_shape}\index{PolygonCuttingEar.CPolygonShape@{PolygonCuttingEar.CPolygonShape}}
+
+
+Summary description for Class1.  
+
+
+
+
+Polygon\+Cutting\+Ear.\+C\+Polygon\+Shape에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_polygon_cutting_ear_1_1_c_polygon_shape__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_aa8d17f34ca3fe993987b24d2ff452379}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_aa8d17f34ca3fe993987b24d2ff452379}} 
+\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}}\mbox{[}$\,$\mbox{]} {\bfseries Polygons} (int index)
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a0135b6b9327794bf366dcfac0ef2b065}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a0135b6b9327794bf366dcfac0ef2b065}} 
+{\bfseries C\+Polygon\+Shape} (\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}}\mbox{[}$\,$\mbox{]} vertices)
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a07acbc0b4b01abcac99d539cf23328bd}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a07acbc0b4b01abcac99d539cf23328bd}} 
+void {\bfseries Cut\+Ear} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a6d4ee4024f4d59f1ca5bdae7725671f4}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a6d4ee4024f4d59f1ca5bdae7725671f4}} 
+int {\bfseries Number\+Of\+Polygons}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a301a329e1cfb44c5e31724d55f15a96f}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a301a329e1cfb44c5e31724d55f15a96f}} 
+void {\bfseries Set\+Updated\+Polygon\+Vertices} ()
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a08a004f898382d41a0582ecfb8795b0e}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a08a004f898382d41a0582ecfb8795b0e}} 
+bool {\bfseries Triangle\+Contains\+Point} (\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}}\mbox{[}$\,$\mbox{]} triangle\+Pts, \mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}} pt)
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a5e4308e588a126144dca809e4d816f55}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a5e4308e588a126144dca809e4d816f55}} 
+bool {\bfseries Is\+Ear\+Of\+Updated\+Polygon} (\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}} vertex)
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_ae9f9cae34d46ff8efe6ef85de83291e3}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_ae9f9cae34d46ff8efe6ef85de83291e3}} 
+void {\bfseries Set\+Polygons} ()
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a6634d2ad4ec4de07a2b282ce0e363007}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a6634d2ad4ec4de07a2b282ce0e363007}} 
+void {\bfseries Update\+Polygon\+Vertices} (\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}} vertex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a8ace8bae0fecd2283ba24893ef0623a3}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a8ace8bae0fecd2283ba24893ef0623a3}} 
+\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}}\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+a\+Input\+Vertices}
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a45abeef26bcb6abdb9708b5d9659673b}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a45abeef26bcb6abdb9708b5d9659673b}} 
+\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}}\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+a\+Updated\+Polygon\+Vertices}
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_a7b9d668e8e0447bdd597e94726988e07}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_a7b9d668e8e0447bdd597e94726988e07}} 
+System.\+Collections.\+Array\+List {\bfseries m\+\_\+al\+Ears} =new System.\+Collections.\+Array\+List()
+\item 
+\mbox{\Hypertarget{class_polygon_cutting_ear_1_1_c_polygon_shape_ae81d4f1f3801eadef5e52b401668c708}\label{class_polygon_cutting_ear_1_1_c_polygon_shape_ae81d4f1f3801eadef5e52b401668c708}} 
+\mbox{\hyperlink{class_geometry_utility_1_1_c_point2_d}{C\+Point2D}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+a\+Polygons}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Summary description for Class1. 
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/apple/\+Documents/\+Unity/\+Topology\+Editor/\+Assets/\+Scripts/\+Triangulation/C\+Polygon\+Shape.\+cs\end{DoxyCompactItemize}

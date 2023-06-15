@@ -1,0 +1,4 @@
+<map id="Poly2Tri.DelaunayTriangle.MarkConstrainedEdge" name="Poly2Tri.DelaunayTriangle.MarkConstrainedEdge">
+<area shape="rect" id="node1" title="Mark edge as constrained" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_delaunay_triangle.html#a0e670d3537b8a47d30a40bd4f882cd39" title="Get the index of the neighbor that shares this edge (or &#45;1 if it isn&#39;t shared)" alt="" coords="229,5,405,47"/>
+</map>

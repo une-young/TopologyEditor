@@ -1,0 +1,4 @@
+<map id="Poly2Tri.DTSweep.NextFlipPoint" name="Poly2Tri.DTSweep.NextFlipPoint">
+<area shape="rect" id="node1" title="When we need to traverse from one triangle to the next we need the point in current triangle that is ..." alt="" coords="236,5,416,47"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_d_t_sweep.html#a02c0c2e6e9b242186e1379483b5be39e" title="Scan part of the FlipScan algorithm &#160;When a triangle pair isn&#39;t flippable we will scan for the next p..." alt="" coords="5,5,188,47"/>
+</map>

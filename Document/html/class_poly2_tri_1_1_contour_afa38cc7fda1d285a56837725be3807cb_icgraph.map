@@ -1,0 +1,3 @@
+<map id="Poly2Tri.Contour.GetNumHoles" name="Poly2Tri.Contour.GetNumHoles">
+<area shape="rect" id="node1" title="returns number of holes that are actually holes, including all children of children,..." alt="" coords="5,29,208,56"/>
+</map>

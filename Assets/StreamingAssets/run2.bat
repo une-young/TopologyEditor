@@ -1,0 +1,1 @@
+val3dity result.gml --verbose -r "C:\Users\apple\Downloads\val3dity-2.1.0\report"

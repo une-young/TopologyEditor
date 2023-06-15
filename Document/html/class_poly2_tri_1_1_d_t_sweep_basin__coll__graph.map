@@ -1,0 +1,12 @@
+<map id="Poly2Tri.DTSweepBasin" name="Poly2Tri.DTSweepBasin">
+<area shape="rect" id="node1" title=" " alt="" coords="1172,69,1333,96"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_advancing_front_node.html" title=" " alt="" coords="861,69,1053,96"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_triangulation_point.html" title=" " alt="" coords="588,33,764,60"/>
+<area shape="rect" id="node4" href="$class_poly2_tri_1_1_point2_d.html" title=" " alt="" coords="285,5,353,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node6" href="$class_poly2_tri_1_1_delaunay_triangle.html" title=" " alt="" coords="590,113,762,140"/>
+<area shape="rect" id="node7" href="$struct_poly2_tri_1_1_fixed_array3.html" title=" " alt="" coords="221,57,417,98"/>
+<area shape="rect" id="node8" href="$struct_poly2_tri_1_1_fixed_array3.html" title=" " alt="" coords="219,122,419,163"/>
+<area shape="rect" id="node9" href="$struct_poly2_tri_1_1_fixed_bit_array3.html" title=" " alt="" coords="239,188,398,215"/>
+<area shape="rect" id="node10" title=" " alt="" coords="16,188,159,215"/>
+</map>

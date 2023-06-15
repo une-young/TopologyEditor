@@ -1,0 +1,7 @@
+<map id="Poly2Tri.TriangulationUtil.LinesIntersect2D" name="Poly2Tri.TriangulationUtil.LinesIntersect2D">
+<area shape="rect" id="node1" title="This method detects if two line segments (or lines) intersect, and, if so, the point of intersection...." alt="" coords="477,64,647,105"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_point2_d_list.html#a2f0d4f2502521d9a43b16de375f98ad5" title="Check for edge crossings" alt="" coords="235,13,429,39"/>
+<area shape="rect" id="node4" href="$class_poly2_tri_1_1_polygon_util.html#af4e63fd30de838c90cc183990898f3b2" title="Trace the edge of a non&#45;simple polygon and return a simple polygon." alt="" coords="247,64,417,105"/>
+<area shape="rect" id="node5" href="$class_poly2_tri_1_1_polygon_operation_context.html#aa637f21c2d0cc526fc4ee09ead7319ae" title="Check and return polygon intersections" alt="" coords="244,129,420,171"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_point2_d_list.html#a77f1190106595bfb47d30a786b30853a" title="Checks if polygon is valid for use in Box2d engine. Last ditch effort to ensure no invalid polygons a..." alt="" coords="5,5,187,47"/>
+</map>

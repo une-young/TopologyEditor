@@ -1,0 +1,5 @@
+<map id="Poly2Tri.Point2DList.Simplify" name="Poly2Tri.Point2DList.Simplify">
+<area shape="rect" id="node1" title="Removes all collinear points on the polygon. Note that this is NOT safe to run on a complex polygon a..." alt="" coords="5,46,196,73"/>
+<area shape="rect" id="node2" href="$class_poly2_tri_1_1_triangulation_util.html#a03b5cb31846006443dfae4ab79872709" title=" " alt="" coords="256,5,425,47"/>
+<area shape="rect" id="node3" href="$class_poly2_tri_1_1_point2_d_list.html#a26ad18b603905ec2630d16684dbc4497" title="Gets the previous index." alt="" coords="244,71,437,112"/>
+</map>
